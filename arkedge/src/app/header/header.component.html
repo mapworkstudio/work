@@ -1,0 +1,110 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" routerLink="">
+      <i class="icon icon-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_logoFlat"></use>
+        </svg>
+      </i>
+      <div>
+        <span class="company-name">ARKEDGE</span>
+        <span class="company-type">TECHNOLOGIES</span>
+      </div>
+    </a>
+    <ul class="navbar-nav-list">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="OurProductComponent" routerLinkActive="active" skipLocationChange=true>Our
+          Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Advancesolution" routerLinkActive="active" skipLocationChange=true>Advance
+          Solution</a>
+      </li>
+      <li class="nav-item nav-dropdown-list">
+        <a class="nav-link" routerLink="ManagedServiceComponent" routerLinkActive="active"
+          skipLocationChange=true>Managed Service</a>
+        <ul class="sub-nav">
+          <li class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
+                     <h6> {{list.name}}</h6>
+                      <li class="inner-list" *ngFor="let inlist of list.managedServiceList">
+                        <a>{{inlist.name}}</a>
+                      </li>
+              </div>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <h5>Heading goes here.</h5>
+    <img src="../../assets/images/3.jpg" alt="">
+    <a>Read more...</a>
+  </div>
+
+  </div>
+  </li>
+  </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" routerLink="CompanyComponent" routerLinkActive="active" skipLocationChange=true>COMPANY</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="CareerComponent" routerLinkActive="active" skipLocationChange=true>CAREER</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="ContactusComponent" routerLinkActive="active" skipLocationChange=true>CONTACT US</a>
+  </li>
+  <li class="nav-item tele-no">
+    <a class="nav-link">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_phone"></use>
+        </svg>
+      </i>
+      321-321-6544
+    </a>
+  </li>
+  <li class="nav-item quick-link">
+    <a class="nav-link" (click)="slideToggel()">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_menu"></use>
+        </svg>
+      </i>
+    </a>
+  </li>
+  </ul>
+ 
+</nav>
+
+<div class="slider-menu" [ngClass]="isOpen ? '' : 'active'">
+  <a class="close-slide" (click)="slideToggel()">
+    <i class="icon icon-ex-small">
+      <svg focusable="false">
+        <use xlink:href="#icon_menu"></use>
+      </svg>
+    </i>
+  </a>
+
+  <a class="navbar-brand">
+    <i class="icon icon-small">
+      <svg focusable="false">
+        <use xlink:href="#icon_logo_color"></use>
+      </svg>
+    </i>
+    <div>
+      <span class="company-name">ARKEDGE</span>
+      <span class="company-type">TECHNOLOGIES</span>
+    </div>
+  </a>
+
+  <ul>
+    <li *ngFor="let item of list; index as i" class="menu-list">
+      {{i+1}}. {{item.name}}
+    </li>
+  </ul>
+</div>
+<div class="overlay" [ngClass]="isOpen ? '' : 'active'" (click)="slideToggel()">
+</div>
