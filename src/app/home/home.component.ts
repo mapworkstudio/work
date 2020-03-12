@@ -114,11 +114,11 @@ export class HomeComponent {
   ]
 
   client=[
-    {img: '../../assets/images/client'},
-    {img: '../../assets/images/client'},
-    {img: '../../assets/images/client'},
-    {img: '../../assets/images/client'},
-    {img: '../../assets/images/client'}
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'}
   ]
 
   testimonials = [
