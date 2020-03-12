@@ -1,0 +1,35 @@
+body{
+	color:#555555;
+	font-family: 'Noto Sans', sans-serif;
+}
+.heading-highlight{
+    color:#276CAA;
+}
+.btn{
+	border-radius: 30px;
+    padding: 10px 30px;
+}
+svg {
+	vertical-align: middle;
+	margin: auto;
+	align-content: center;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.icon-big>svg {
+	width: 100px;
+	height: 100px;
+}
+.icon-medium>svg {
+	width: 50px;
+	height: 50px;
+}
+.icon-small>svg {
+	width: 34px;
+	height: 34px;
+}
+.icon-ex-small>svg {
+	width: 24px;
+	height: 24px;
+}
