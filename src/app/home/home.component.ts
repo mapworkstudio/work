@@ -17,7 +17,7 @@ export class HomeComponent {
         title: 'IT, telecom and software',
         color: 'skyblue',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-        icon: '#icon_ITBpo'
+        icon: '#icon_telecom'
       },
       {
         title: 'ITES - BPO & KPO',
@@ -35,7 +35,7 @@ export class HomeComponent {
         title: 'Consumer goods and retail',
         color: 'limegreen',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-        icon: '#icon_consumerGood'
+        icon: '#icon_retail'
       },
       {
         title: 'Financial services and insurance',
@@ -47,7 +47,7 @@ export class HomeComponent {
         title: 'Health care & Pharmaceuticals',
         color: 'blue',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-        icon: '#icon_customerService'
+        icon: '#icon_healthCare'
       },
     ];
     this.solution = [
@@ -144,31 +144,31 @@ export class HomeComponent {
 projects = [
   {
     gridClass: 'col-lg-6 col-md-6 col-sm-6 col-xs-12',
-    imgPath: '../../assets/images/project',
+    imgPath: 'assets/images/project',
     title: 'DATANEST',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
   },
   {
     gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
-    imgPath: '../../assets/images/project',
+    imgPath: 'assets/images/project',
     title: 'DATANEST',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
   },
   {
     gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
-    imgPath: '../../assets/images/project',
+    imgPath: 'assets/images/project',
     title: 'DATANEST',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
   },
   {
     gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
-    imgPath: '../../assets/images/project',
+    imgPath: 'assets/images/project',
     title: 'DATANEST',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
   },
   {
     gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
-    imgPath: '../../assets/images/project',
+    imgPath: 'assets/images/project',
     title: 'DATANEST',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
   }
