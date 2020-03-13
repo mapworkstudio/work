@@ -23,12 +23,12 @@
     <div class="row">
         <div class="col-sm-12 center">
             <h1>Expand Your Business Through a <span class="heading-highlight">Strong Virtual Presence</span></h1>
-            <p>
+            <h6>
                 <b>The ultimate objective behind our every move is to give our customers utmost satisfaction with our
                     quality services and support.</b><br>
                 We try the best possible way out to provide our customers with top-notch services and at affordable
                 rates. So, give us a Oppurtunity to serve you !
-            </p>
+            </h6>
         </div>
         <div *ngFor="let item of solution" class="col-lg-4 col-md-4 col-sm-12 panel-container">
             <div class="panel">
@@ -62,14 +62,14 @@
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>INDUSTRIES <span class="heading-highlight">WE SERVE</span></h1>
-                <p>
-                    We ensure excellence in service through understanding of our client's business and their unique
-                    requirements.
+                <h6>
+                   <b>We ensure excellence in service through understanding of our client's business and their unique
+                    requirements.</b><br>
 
                     Due to our close relationships and constant interactions with clients,
 
                     we have developed solid understanding and insight in our focus industries that include:
-                </p>
+                   </h6>
             </div>
 
             <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12">
@@ -98,9 +98,9 @@
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>OUR <span class="heading-highlight">PROJECTS</span></h1>
-                <p>
+                <h6>
                     We bring powerful TOOLS for enhance your productivity.
-                </p>
+                </h6>
             </div>
         </div>
         <div class="project-grid">
@@ -114,6 +114,7 @@
                             <p class="show_more-desc"> 
                                 {{info.description}}
                             </p>
+                            <button *ngIf="i === 0" type="submit" class="btn btn-primary">LEARN MORE</button>
                         </figcaption>
                     </figure>
                 </a>
@@ -128,10 +129,10 @@
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>HAPPY <span class="heading-highlight">CLIENTS</span></h1>
-                <p>
+                <h6>
                     consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                     accumsan et viverra justo commodo. Proin sodales pulvinar tempor.lacus accumsan et viverra justo
-                    commodo. Proin sodales pulvinar tempor.</p>
+                    commodo. Proin sodales pulvinar tempor.</h6>
             </div>
 
             <div *ngFor="let client of client; index as i" class="col-lg-3 col-md-3 col-sm-12">

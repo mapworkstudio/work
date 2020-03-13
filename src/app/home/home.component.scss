@@ -149,12 +149,16 @@ $green:#4bbb57;
 		.panel-back
 		{
 			transform: rotateX(180deg);
+			p{
+				padding:10px;
+			}
 		}
 		h5{
 			margin:20px 0;
 		}
 		p{
 			margin:0;
+			
 		}
 	}
 }
@@ -175,6 +179,9 @@ $purple:#787fc2;
 		margin-bottom: 15px;
 		h5{
 			color:#88cedb;
+		}
+		p{
+			padding:0 10px;
 		}
 		.icon-circle{
 			margin: 15px auto;
@@ -202,6 +209,7 @@ $purple:#787fc2;
 			}
 		}
 	}
+
 }
 
 ::ng-deep .testimonials{
@@ -280,6 +288,10 @@ $purple:#787fc2;
 				}
 			}
 		}
+		button{
+			background:none;
+			border:2px solid #fff;
+		}
 	}
 	.p1{
 		padding:1px;
@@ -334,8 +346,8 @@ $purple:#787fc2;
 		}
 		.show_more-desc {
 			color: #fff;
-			font-size: 20px;
-			line-height: 27px;
+			font-size: 14px;
+			line-height: 18px;
 			font-weight: 300;
 		}
 		&::after{
