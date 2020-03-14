@@ -26,6 +26,9 @@ h6{
 h1{
 	font-weight:bold;
 }
+.center{
+	text-align: center; 
+}	
 .heading-highlight{
     color:#276CAA;
 }
@@ -57,3 +60,8 @@ svg:not(:root) {
 	width: 24px;
 	height: 24px;
 }
+
+.slick-slider {
+	width: 100%;
+	margin: auto;
+  }

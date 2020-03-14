@@ -1,1 +1,75 @@
-<p>career works!</p>
+<app-inner-page-header></app-inner-page-header>
+
+<section class="section-contact">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+        <p class="center">Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.</p>
+        </div>
+       <div *ngFor="let data of careerInfo" class="col-lg-6 col-md-6 col-sm-12 career-info">
+            <div class="panel">
+                    <div class="panel-heading">
+                       <h5>{{data.title}}</h5>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{data.info}}</p>
+                    </div>
+             </div>
+        </div>
+
+        <div class="col-sm-12">
+            <p>If you are interested in working in a fast-paced, challenging environment, Below are the Current Openings for open positions.</p>
+
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Job Code</th>
+                    <th>Job Title</th>
+                    <th>Location</th>
+                    <th>Target Date</th>
+                    <th>Details</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of career">
+                    <td>{{data.jobcode}}</td>
+                    <td>{{data.jobtitle}}</td>
+                    <td>{{data.location}}</td>
+                    <td>{{data.targetDate}}</td>
+                    <td><a>View Details</a></td>
+                  </tr>
+                </tbody>
+                </table>
+
+            </div>
+
+
+        <div class="col-sm-12">
+           <form>
+            <h1 class="center">Post your profile here...</h1>
+                <div class="row form-group">
+                    <div class="col">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="yourMail" placeholder="Your Mail" name="yourMail">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                    </div>
+                    <div class="col custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="customFile" name="filename">
+                        <label class="custom-file-label" for="customFile">Attachment</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</div>    
+</section>
