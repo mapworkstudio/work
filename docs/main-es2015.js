@@ -570,7 +570,7 @@ let AppComponent = class AppComponent {
         this.router.events.subscribe(routerEvent => {
             if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]) {
                 if (routerEvent.url === '/') {
-                    this.router.navigate(['Career'], { skipLocationChange: true });
+                    this.router.navigate(['home'], { skipLocationChange: true });
                 }
             }
         });
