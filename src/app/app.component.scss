@@ -65,3 +65,19 @@ svg:not(:root) {
 	width: 100%;
 	margin: auto;
   }
+
+  .inner-banner{
+    margin-top:70px;
+    position:relative;
+    img{
+        max-width:100%;
+    }
+    .page-title{
+        position: absolute;
+        bottom: 60px;
+        background:rgb(255, 255, 255, 0.5);
+        width: 100%;
+        padding: 70px 0;
+        color:#214f7a;
+    }
+}

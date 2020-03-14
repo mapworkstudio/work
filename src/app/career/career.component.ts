@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CareerComponent implements OnInit {
 
   careerInfo = [
-    {title : 'General Informaton', subtitle : 'Inquiry', id : 'info@arkedge.com'},
-    {title : 'Sales & Learning', subtitle : 'Business development', id : 'sales@arkedge.com'}
+    {title : 'How We Hire', info : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. '},
+    {title : 'Employee Benefits', info : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. '},
 ];
 
 career = [
