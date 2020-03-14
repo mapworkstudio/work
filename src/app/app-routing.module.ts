@@ -9,17 +9,20 @@ import { CareerComponent } from './career/career.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { InnerPageHeaderComponent } from './inner-page-header/inner-page-header.component';
+
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'Advancesolution', component: AdvancesolutionComponent},
-  {path: 'OurProductComponent', component: OurproductComponent},
-  {path: 'ManagedServiceComponent', component: ManagedserviceComponent},
-  {path: 'CompanyComponent', component: CompanyComponent},
-  {path: 'CareerComponent', component: CareerComponent},
-  {path: 'ContactusComponent', component: ContactusComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  {path: 'OurProduct', component: OurproductComponent},
+  {path: 'ManagedService', component: ManagedserviceComponent},
+  {path: 'Company', component: CompanyComponent},
+  {path: 'Career', component: CareerComponent},
+  {path: 'Contactus', component: ContactusComponent},
+  { path: '', redirectTo: '/Contactus', pathMatch: 'full' }
 
 ];
 
@@ -31,12 +34,14 @@ const routes: Routes = [
     ManagedserviceComponent,
     CompanyComponent,
     CareerComponent,
-    ContactusComponent
+    ContactusComponent,
+    InnerPageHeaderComponent
 ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
-    NgbModule
+    NgbModule,
+    SlickCarouselModule
   ],
   exports: [RouterModule]
 })
