@@ -236,6 +236,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/news/news.component.html":
+  /*!********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/news/news.component.html ***!
+    \********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppNewsNewsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"inner-banner\">\n    <img src=\"assets/images/inner-banner-news.jpg\">\n    <div class=\"page-title\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-sm-12 center\">\n        <h1>News Update</h1>\n        <h6>News, Press release and Media reports</h6>\n    </div></div></div>\n    </div>\n</div>\n<div class=\"container section-news\">\n    <div class=\"row\">\n        <ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-tabs\">\n            <li [ngbNavItem]=\"1\">\n              <a ngbNavLink>News</a>\n              <ng-template ngbNavContent>\n                <li *ngFor=\"let data of news; index as i\" class=\"p2 grid-li\">\n                    <div class=\"panel\">\n                        <div class=\"panel-heading\">\n                           <img src={{data.img}}-{{i+1}}.jpg alt=\"{{data.subtitle}}\">\n                        </div>\n                        <div class=\"panel-body\">\n                            <p>{{data.desc_1}}</p>\n                            <p>{{data.desc_2}}</p>\n                           \n                        </div>\n                 </div>\n                </li>\n            </ng-template>\n            </li>\n            <li [ngbNavItem]=\"2\">\n                <a ngbNavLink>Events</a>\n                <ng-template ngbNavContent>\n                  <li *ngFor=\"let data of news; index as i\" class=\"p2\">\n                      <div class=\"panel\">\n                          <div class=\"panel-heading\">\n                             <img src={{data.img}}-{{i+1}}.jpg alt=\"{{data.subtitle}}\">\n                          </div>\n                          <div class=\"panel-body\">\n                              <p>{{data.desc_1}}</p>\n                              <p>{{data.desc_2}}</p>\n                             \n                          </div>\n                   </div>\n                  </li>\n              </ng-template>\n              </li>\n              <li [ngbNavItem]=\"3\">\n                <a ngbNavLink>Webinars</a>\n                <ng-template ngbNavContent>\n                  <li *ngFor=\"let data of news; index as i\" class=\"p2\">\n                      <div class=\"panel\">\n                          <div class=\"panel-heading\">\n                             <img src={{data.img}}-{{i+1}}.jpg alt=\"{{data.subtitle}}\">\n                          </div>\n                          <div class=\"panel-body\">\n                              <p>{{data.desc_1}}</p>\n                              <p>{{data.desc_2}}</p>\n                             \n                          </div>\n                   </div>\n                  </li>\n              </ng-template>\n              </li>\n              <li [ngbNavItem]=\"4\">\n                <a ngbNavLink>Press Releases</a>\n                <ng-template ngbNavContent>\n                  <li *ngFor=\"let data of news; index as i\" class=\"p2\">\n                      <div class=\"panel\">\n                          <div class=\"panel-heading\">\n                             <img src={{data.img}}-{{i+1}}.jpg alt=\"{{data.subtitle}}\">\n                          </div>\n                          <div class=\"panel-body\">\n                              <p>{{data.desc_1}}</p>\n                              <p>{{data.desc_2}}</p>\n                             \n                          </div>\n                   </div>\n                  </li>\n              </ng-template>\n              </li>\n              <li [ngbNavItem]=\"5\">\n                <a ngbNavLink>Video Gallery</a>\n                <ng-template ngbNavContent>\n                  <li *ngFor=\"let data of news; index as i\" class=\"p2\">\n                      <div class=\"panel\">\n                          <div class=\"panel-heading\">\n                             <img src={{data.img}}-{{i+1}}.jpg alt=\"{{data.subtitle}}\">\n                          </div>\n                          <div class=\"panel-body\">\n                              <p>{{data.desc_1}}</p>\n                              <p>{{data.desc_2}}</p>\n                             \n                          </div>\n                   </div>\n                  </li>\n              </ng-template>\n              </li>\n          </ul>\n          \n          <div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n    </div>\n</div>\n\n<section class=\"news-video\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n\n                <div class=\"video\">\n                    <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zmEG-5zEmPw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n                </div>\n\n                <h3 class=\"center\">\n                    Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.\n                </h3>\n            </div>\n        </div>\n    </div>\n</section>\n  ";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/ourproduct/ourproduct.component.html":
   /*!********************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/ourproduct/ourproduct.component.html ***!
@@ -1030,6 +1050,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _inner_page_header_inner_page_header_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ./inner-page-header/inner-page-header.component */
     "./src/app/inner-page-header/inner-page-header.component.ts");
+    /* harmony import */
+
+
+    var _news_news_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! ./news/news.component */
+    "./src/app/news/news.component.ts");
 
     var routes = [{
       path: 'home',
@@ -1053,6 +1079,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       path: 'Contactus',
       component: _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_9__["ContactusComponent"]
     }, {
+      path: 'news',
+      component: _news_news_component__WEBPACK_IMPORTED_MODULE_14__["NewsComponent"]
+    }, {
       path: '',
       redirectTo: '/Contactus',
       pathMatch: 'full'
@@ -1063,7 +1092,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      declarations: [_advancesolution_advancesolution_component__WEBPACK_IMPORTED_MODULE_3__["AdvancesolutionComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _ourproduct_ourproduct_component__WEBPACK_IMPORTED_MODULE_5__["OurproductComponent"], _managedservice_managedservice_component__WEBPACK_IMPORTED_MODULE_6__["ManagedserviceComponent"], _company_company_component__WEBPACK_IMPORTED_MODULE_7__["CompanyComponent"], _career_career_component__WEBPACK_IMPORTED_MODULE_8__["CareerComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_9__["ContactusComponent"], _inner_page_header_inner_page_header_component__WEBPACK_IMPORTED_MODULE_13__["InnerPageHeaderComponent"]],
+      declarations: [_advancesolution_advancesolution_component__WEBPACK_IMPORTED_MODULE_3__["AdvancesolutionComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _ourproduct_ourproduct_component__WEBPACK_IMPORTED_MODULE_5__["OurproductComponent"], _managedservice_managedservice_component__WEBPACK_IMPORTED_MODULE_6__["ManagedserviceComponent"], _company_company_component__WEBPACK_IMPORTED_MODULE_7__["CompanyComponent"], _career_career_component__WEBPACK_IMPORTED_MODULE_8__["CareerComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_9__["ContactusComponent"], _inner_page_header_inner_page_header_component__WEBPACK_IMPORTED_MODULE_13__["InnerPageHeaderComponent"], _news_news_component__WEBPACK_IMPORTED_MODULE_14__["NewsComponent"]],
       imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes), _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_11__["NgbModule"], ngx_slick_carousel__WEBPACK_IMPORTED_MODULE_12__["SlickCarouselModule"]],
       exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
     })], AppRoutingModule);
@@ -1138,7 +1167,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       this.router.events.subscribe(function (routerEvent) {
         if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]) {
           if (routerEvent.url === '/') {
-            _this.router.navigate(['home'], {
+            _this.router.navigate(['news'], {
               skipLocationChange: true
             });
           }
@@ -2205,6 +2234,107 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./managedservice.component.scss */
       "./src/app/managedservice/managedservice.component.scss")).default]
     })], ManagedserviceComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/news/news.component.scss":
+  /*!******************************************!*\
+    !*** ./src/app/news/news.component.scss ***!
+    \******************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppNewsNewsComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".section-news {\n  margin: 70px auto;\n}\n.section-news .nav-tabs {\n  width: 100%;\n  border-bottom: 1px solid #214f7a;\n}\n.section-news .nav-tabs .nav-link {\n  border: none;\n  color: #214f7a;\n}\n.section-news .nav-tabs .nav-link.active {\n  border-bottom: 2px solid #214f7a;\n  font-weight: bold;\n}\n.section-news li.grid-li {\n  width: 25%;\n  float: left;\n  list-style-type: none;\n}\n.section-news li.grid-li p {\n  margin: 0;\n}\n.section-news li.grid-li .panel {\n  margin: 0 0 10px 10px;\n  border: 1px solid #ccc;\n}\n.section-news li.grid-li .panel .panel-body {\n  padding: 15px;\n}\n.section-news li.grid-li img {\n  max-width: 100%;\n}\n.section-news li.grid-li:first-child {\n  width: 50%;\n}\n.section-news li.grid-li:first-child .panel {\n  background: #e5f0fa;\n  border: none;\n  margin-left: 0;\n}\n.section-news li.grid-li:first-child .panel p {\n  font-size: 18px;\n}\n.section-news li.grid-li:first-child .panel p:first-child {\n  margin-top: 10px;\n  margin-bottom: 15px;\n}\n.news-video {\n  padding: 70px 0;\n  background: #e5f0fa;\n}\n.news-video .video {\n  margin-bottom: 70px;\n}\n.news-video .video iframe {\n  margin: 0 auto;\n  display: block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmV3cy9GOlxcZ2l0aHViXFx3b3JrL3NyY1xcYXBwXFxuZXdzXFxuZXdzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9uZXdzL25ld3MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxpQkFBQTtBQ0NKO0FEQUk7RUFDSSxXQUFBO0VBQ0EsZ0NBQUE7QUNFUjtBRERRO0VBQ0ksWUFBQTtFQUNBLGNBQUE7QUNHWjtBREZZO0VBQ0ksZ0NBQUE7RUFDQSxpQkFBQTtBQ0loQjtBREVJO0VBQ0ksVUFBQTtFQUNDLFdBQUE7RUFDQSxxQkFBQTtBQ0FUO0FEQ1M7RUFDSSxTQUFBO0FDQ2I7QURDUztFQUNHLHFCQUFBO0VBQ0Msc0JBQUE7QUNDYjtBREFhO0VBQ0ksYUFBQTtBQ0VqQjtBREVTO0VBQ0ksZUFBQTtBQ0FiO0FERVM7RUFDSSxVQUFBO0FDQWI7QURDYTtFQUNJLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7QUNDakI7QURBaUI7RUFDSSxlQUFBO0FDRXJCO0FERHFCO0VBQ0csZ0JBQUE7RUFDQSxtQkFBQTtBQ0d4QjtBRE9BO0VBQ0ksZUFBQTtFQUNBLG1CQUFBO0FDSko7QURLSTtFQUNJLG1CQUFBO0FDSFI7QURJTztFQUNDLGNBQUE7RUFDQSxjQUFBO0FDRlIiLCJmaWxlIjoic3JjL2FwcC9uZXdzL25ld3MuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VjdGlvbi1uZXdze1xyXG4gICAgbWFyZ2luOjcwcHggYXV0bztcclxuICAgIC5uYXYtdGFic3tcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICBib3JkZXItYm90dG9tOjFweCBzb2xpZCAjMjE0ZjdhO1xyXG4gICAgICAgIC5uYXYtbGlua3tcclxuICAgICAgICAgICAgYm9yZGVyOm5vbmU7XHJcbiAgICAgICAgICAgIGNvbG9yOiMyMTRmN2E7XHJcbiAgICAgICAgICAgICYuYWN0aXZle1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbToycHggc29saWQgIzIxNGY3YTtcclxuICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcbiAgICBsaVxyXG4gICB7XHJcbiAgICAmLmdyaWQtbGl7XHJcbiAgICAgICAgd2lkdGg6MjUlO1xyXG4gICAgICAgICBmbG9hdDpsZWZ0O1xyXG4gICAgICAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbiAgICAgICAgIHB7XHJcbiAgICAgICAgICAgICBtYXJnaW46MDtcclxuICAgICAgICAgfVxyXG4gICAgICAgICAucGFuZWx7XHJcbiAgICAgICAgICAgIG1hcmdpbjogMCAwIDEwcHggMTBweDs7XHJcbiAgICAgICAgICAgICBib3JkZXI6MXB4IHNvbGlkICNjY2M7XHJcbiAgICAgICAgICAgICAucGFuZWwtYm9keXtcclxuICAgICAgICAgICAgICAgICBwYWRkaW5nOjE1cHg7XHJcbiAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgXHJcbiAgICAgICAgIH1cclxuICAgICAgICAgaW1ne1xyXG4gICAgICAgICAgICAgbWF4LXdpZHRoOjEwMCU7XHJcbiAgICAgICAgIH1cclxuICAgICAgICAgJjpmaXJzdC1jaGlsZHtcclxuICAgICAgICAgICAgIHdpZHRoOjUwJTtcclxuICAgICAgICAgICAgIC5wYW5lbHtcclxuICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiAjZTVmMGZhO1xyXG4gICAgICAgICAgICAgICAgIGJvcmRlcjpub25lO1xyXG4gICAgICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OjA7XHJcbiAgICAgICAgICAgICAgICAgcHtcclxuICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOjE4cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICY6Zmlyc3QtY2hpbGR7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDE1cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgIH1cclxuICAgICAgICAgfVxyXG4gIFxyXG4gfVxyXG4gICB9XHJcbiAgIFxyXG59XHJcbi5uZXdzLXZpZGVve1xyXG4gICAgcGFkZGluZzo3MHB4IDA7XHJcbiAgICBiYWNrZ3JvdW5kOiNlNWYwZmE7XHJcbiAgICAudmlkZW97XHJcbiAgICAgICAgbWFyZ2luLWJvdHRvbTo3MHB4O1xyXG4gICAgICAgaWZyYW1le1xyXG4gICAgICAgIG1hcmdpbjowIGF1dG87XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbiIsIi5zZWN0aW9uLW5ld3Mge1xuICBtYXJnaW46IDcwcHggYXV0bztcbn1cbi5zZWN0aW9uLW5ld3MgLm5hdi10YWJzIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjMjE0ZjdhO1xufVxuLnNlY3Rpb24tbmV3cyAubmF2LXRhYnMgLm5hdi1saW5rIHtcbiAgYm9yZGVyOiBub25lO1xuICBjb2xvcjogIzIxNGY3YTtcbn1cbi5zZWN0aW9uLW5ld3MgLm5hdi10YWJzIC5uYXYtbGluay5hY3RpdmUge1xuICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzIxNGY3YTtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG4uc2VjdGlvbi1uZXdzIGxpLmdyaWQtbGkge1xuICB3aWR0aDogMjUlO1xuICBmbG9hdDogbGVmdDtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xufVxuLnNlY3Rpb24tbmV3cyBsaS5ncmlkLWxpIHAge1xuICBtYXJnaW46IDA7XG59XG4uc2VjdGlvbi1uZXdzIGxpLmdyaWQtbGkgLnBhbmVsIHtcbiAgbWFyZ2luOiAwIDAgMTBweCAxMHB4O1xuICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xufVxuLnNlY3Rpb24tbmV3cyBsaS5ncmlkLWxpIC5wYW5lbCAucGFuZWwtYm9keSB7XG4gIHBhZGRpbmc6IDE1cHg7XG59XG4uc2VjdGlvbi1uZXdzIGxpLmdyaWQtbGkgaW1nIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xufVxuLnNlY3Rpb24tbmV3cyBsaS5ncmlkLWxpOmZpcnN0LWNoaWxkIHtcbiAgd2lkdGg6IDUwJTtcbn1cbi5zZWN0aW9uLW5ld3MgbGkuZ3JpZC1saTpmaXJzdC1jaGlsZCAucGFuZWwge1xuICBiYWNrZ3JvdW5kOiAjZTVmMGZhO1xuICBib3JkZXI6IG5vbmU7XG4gIG1hcmdpbi1sZWZ0OiAwO1xufVxuLnNlY3Rpb24tbmV3cyBsaS5ncmlkLWxpOmZpcnN0LWNoaWxkIC5wYW5lbCBwIHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuLnNlY3Rpb24tbmV3cyBsaS5ncmlkLWxpOmZpcnN0LWNoaWxkIC5wYW5lbCBwOmZpcnN0LWNoaWxkIHtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLm5ld3MtdmlkZW8ge1xuICBwYWRkaW5nOiA3MHB4IDA7XG4gIGJhY2tncm91bmQ6ICNlNWYwZmE7XG59XG4ubmV3cy12aWRlbyAudmlkZW8ge1xuICBtYXJnaW4tYm90dG9tOiA3MHB4O1xufVxuLm5ld3MtdmlkZW8gLnZpZGVvIGlmcmFtZSB7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBkaXNwbGF5OiBibG9jaztcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/news/news.component.ts":
+  /*!****************************************!*\
+    !*** ./src/app/news/news.component.ts ***!
+    \****************************************/
+
+  /*! exports provided: NewsComponent */
+
+  /***/
+  function srcAppNewsNewsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "NewsComponent", function () {
+      return NewsComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var NewsComponent =
+    /*#__PURE__*/
+    function () {
+      function NewsComponent() {
+        _classCallCheck(this, NewsComponent);
+
+        this.news = [{
+          img: 'assets/images/news',
+          desc_1: 'Arkedge Technologies has schedule to launch Survey ans Poll product on 05 January 2018.',
+          desc_2: 'Arkedge Technologies has schedule to launch Survey ans Poll product on 05 January 2018... Please click on news and read the details of news section. '
+        }, {
+          img: 'assets/images/news',
+          desc_1: 'Arkedge',
+          desc_2: 'Technologies bags new Spend Analysis project...'
+        }, {
+          img: 'assets/images/news',
+          desc_1: 'Arkedge',
+          desc_2: 'Technologies bags new Spend Analysis project...'
+        }, {
+          img: 'assets/images/news',
+          desc_1: 'Arkedge',
+          desc_2: 'Technologies bags new Spend Analysis project...'
+        }, {
+          img: 'assets/images/news',
+          desc_1: 'Arkedge',
+          desc_2: 'Technologies bags new Spend Analysis project...'
+        }];
+      }
+
+      _createClass(NewsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return NewsComponent;
+    }();
+
+    NewsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-news',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./news.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/news/news.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./news.component.scss */
+      "./src/app/news/news.component.scss")).default]
+    })], NewsComponent);
     /***/
   },
 
