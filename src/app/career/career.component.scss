@@ -1,5 +1,10 @@
+.text-wrap{
+    margin:70px 0;
+}
 .section-contact{
-    margin:70px 0 0;
+    h2, p{
+        margin:70px 0;
+    }
     form{
         margin:70px 0;
         button{
@@ -9,7 +14,7 @@
     }
     .career-info{
     .panel{
-        padding:20px;
+        padding:30px;
         background:#e5f0fa;
         .panel-body{
             margin-top:30px;
@@ -19,10 +24,13 @@
             p{
                 margin:0;
             }
+            h4{
+                line-height: 40px;
+            }
         }
         &:hover{
             background:#214f7a;
-            h5, p{
+            h4, h1{
                 color:#fff;
             }
         }

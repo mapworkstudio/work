@@ -1,24 +1,34 @@
-<app-inner-page-header></app-inner-page-header>
-
+<!-- <app-inner-page-header></app-inner-page-header> -->
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-career.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+        <h1>Career @ Arkedge</h1>
+        <h6>come and join us our family...</h6>
+    </div></div></div>
+    </div>
+</div>
 <section class="section-contact">
     <div class="container">
     <div class="row">
         <div class="col-sm-12">
-        <p class="center">Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.</p>
+        <h2 class="center">Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.</h2>
         </div>
        <div *ngFor="let data of careerInfo" class="col-lg-6 col-md-6 col-sm-12 career-info">
             <div class="panel">
                     <div class="panel-heading">
-                       <h5>{{data.title}}</h5>
+                       <h1>{{data.title}}</h1>
                     </div>
                     <div class="panel-body">
-                        <p>{{data.info}}</p>
+                        <h4>{{data.info}}</h4>
                     </div>
              </div>
         </div>
 
         <div class="col-sm-12">
-            <p>If you are interested in working in a fast-paced, challenging environment, Below are the Current Openings for open positions.</p>
+            <h4 class="text-wrap">If you are interested in working in a fast-paced, challenging environment, Below are the Current Openings for open positions.</h4>
 
             <table class="table table-striped">
                 <thead>
