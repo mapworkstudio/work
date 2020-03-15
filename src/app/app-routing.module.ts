@@ -12,6 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { InnerPageHeaderComponent } from './inner-page-header/inner-page-header.component';
 import { NewsComponent } from './news/news.component';
+import { AboutComponent } from './about/about.component';
+import { ClientComponent } from './client/client.component';
 
 
 
@@ -24,6 +26,8 @@ const routes: Routes = [
   {path: 'Career', component: CareerComponent},
   {path: 'Contactus', component: ContactusComponent},
   {path: 'news', component: NewsComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'client', component: ClientComponent},
   { path: '', redirectTo: '/Contactus', pathMatch: 'full' }
 
 ];
@@ -38,7 +42,9 @@ const routes: Routes = [
     CareerComponent,
     ContactusComponent,
     InnerPageHeaderComponent,
-    NewsComponent
+    NewsComponent,
+    AboutComponent,
+    ClientComponent
 ],
   imports: [
     RouterModule.forRoot(routes),
