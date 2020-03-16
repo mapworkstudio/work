@@ -24,6 +24,11 @@ footer {
         li {
             padding: 10px 0;
             line-height: 12px;
+            a{
+                &.active{
+                    color:#eab119;
+                }
+            }
         }
     }
     .social-net {
