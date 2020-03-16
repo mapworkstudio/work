@@ -14,23 +14,24 @@
     <div class="container">
     <div class="row">
         <div class="col-sm-12">
-        <h2 class="center">Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.</h2>
+        <h6 class="center career">Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.
+        </h6>
         </div>
        <div *ngFor="let data of careerInfo" class="col-lg-6 col-md-6 col-sm-12 career-info">
             <div class="panel">
                     <div class="panel-heading">
-                       <h1>{{data.title}}</h1>
+                       <h6>{{data.title}}</h6>
                     </div>
                     <div class="panel-body">
-                        <h4>{{data.info}}</h4>
+                        <p>{{data.info}}</p>
                     </div>
              </div>
         </div>
 
         <div class="col-sm-12">
-            <h4 class="text-wrap">If you are interested in working in a fast-paced, challenging environment, Below are the Current Openings for open positions.</h4>
+            <h6 class="text-wrap">If you are interested in working in a fast-paced, challenging environment, Below are the Current Openings for open positions.</h6>
 
-            <table class="table table-striped">
+            <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
                     <th>Job Code</th>
@@ -56,7 +57,7 @@
 
         <div class="col-sm-12">
            <form>
-            <h1 class="center">Post your profile here...</h1>
+            <h2 class="center">Post your profile here...</h2>
                 <div class="row form-group">
                     <div class="col">
                         <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
