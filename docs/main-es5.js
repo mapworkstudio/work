@@ -1379,7 +1379,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       this.router.events.subscribe(function (routerEvent) {
         if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]) {
           if (routerEvent.url === '/') {
-            _this.router.navigate(['Career'], {
+            _this.router.navigate(['home'], {
               skipLocationChange: true
             });
           }
