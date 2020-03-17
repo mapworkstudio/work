@@ -34,14 +34,6 @@
 	}
 }
 
-input.form-control{
-	border-radius: 150px;
-}
-textarea.form-control{
-	border-radius: 15px;
-	resize: none;
-}
-
 .picsum-img-wrapper{
 	img{
 		width:100%;
@@ -276,10 +268,15 @@ $purple:#787fc2;
 			float:left;
 			list-style-type: none;
 			figure{
-				margin:0 0 1px 0;
+				margin:0 0 2px 0;
 			}
 			&:first-child{
 				width:50%;
+				figure{
+					margin:0;
+				}
+			}
+			&:nth-child(4), &:nth-child(5){
 				figure{
 					margin:0;
 				}
