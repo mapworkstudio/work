@@ -8,26 +8,24 @@ import { viewClassName } from '@angular/compiler';
 })
 export class HeaderComponent implements OnInit {
   list;
-  managedService
+  managedService;
   managedServiceSoftEng;
   isOpen = true;
   constructor() {
     this.list = [
-        {name: 'Link come here Consectetur'},
-        {name: 'Link come here Aenean euismod'},
-        {name: 'Link come here Proin gravida doloet'},
-        {name: 'Viverra justo commodo.'},
-        {name: 'Proin sodales'}
+        {name: 'about'},
+        {name: 'news'},
+        {name: 'client'}
     ];
     this.managedService = [
-      {name:'SOFTWARE ENGINEERING',
+      {name: 'SOFTWARE ENGINEERING',
       managedServiceList : [
-        {name:'Product Engineering'},
-        {name:'Application Development'},
-        {name:'UX/UI Development'},
-        {name:'Software Testing & QA'}
+        {name: 'Product Engineering'},
+        {name: 'Application Development'},
+        {name: 'UX/UI Development'},
+        {name: 'Software Testing & QA'}
       ]},
-      {name:'DATA MANAGEMENT',
+      {name: 'DATA MANAGEMENT',
       managedServiceList : [
         {name:'Cleanse Dataset'},
         {name:'Data Mapping & Conversion'},

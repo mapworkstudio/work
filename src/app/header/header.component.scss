@@ -170,10 +170,17 @@ nav {
     }
     li.menu-list{
         list-style-type: none;
+        a{
         padding: 10px 10px;
         font-size: 14px;
-        font-weight: bold;
         color:#555555;
+        display: block;
+        text-transform: capitalize;
+        text-decoration:none;
+        &.active, &:focus{
+            color:#eab119;   
+        }
+        }
     }
     .navbar-brand{
         margin:10px 0 10px 10px;
