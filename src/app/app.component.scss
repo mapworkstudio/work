@@ -1,6 +1,6 @@
 body{
 	color:#555555;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	font-size:14px;
 }
 ul{
@@ -38,7 +38,14 @@ h1{
 }
 .btn{
 	border-radius: 30px;
-    padding: 10px 30px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	&+ .btn{
+			margin-left:15px;
+	}
+	&.btn-primary{
+		background:#214f7a;
+	}
 }
 svg {
 	vertical-align: middle;
@@ -70,6 +77,13 @@ svg:not(:root) {
 	margin: auto;
   }
 
+  .section-product{
+	.slick-list{
+		padding:70px 0 !important;
+	}
+  }
+ 
+
   .inner-banner{
     margin-top:70px;
     position:relative;
@@ -81,7 +95,7 @@ svg:not(:root) {
         bottom: 60px;
         background:rgb(255, 255, 255, 0.5);
         width: 100%;
-        padding: 70px 0;
+        padding: 10px 0;
         color:#214f7a;
     }
 }

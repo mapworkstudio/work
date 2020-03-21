@@ -135,14 +135,11 @@
                     commodo. Proin sodales pulvinar tempor.</h6>
             </div>
 
-            <ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
-                        [config]="slideConfig" 
-                        >
-        <div ngxSlickItem *ngFor="let client of client; index as i" class="slide">
-              <img src="{{client.img}}-{{i+1}}.jpg" alt="" width="100%">
-        </div>
-    </ngx-slick-carousel>
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let client of client; index as i" class="slide">
+                    <img src="{{client.img}}-{{i+1}}.jpg" alt="" width="100%">
+                </div>
+            </ngx-slick-carousel>
 
             <!-- <div *ngFor="let client of client; index as i" class="col-lg-3 col-md-3 col-sm-12">
                 <img src="{{client.img}}-{{i+1}}.jpg" alt="client">

@@ -1,0 +1,27 @@
+.section-product-detail, .section-product{
+    padding:70px 0;
+}
+.section-product{
+    background:#e5f0fa;
+}
+.section-product-detail{
+    ul{
+        margin-bottom:15px;
+        li{
+            padding: 10px 0;
+            list-style: inside disc;
+            font-size: 16px;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+.slick-slide{
+    &.slick-current + .slick-active{
+        transform: scale(2);
+        transition:all 0.5s;
+    }
+}
+
