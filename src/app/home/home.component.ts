@@ -140,15 +140,15 @@ export class HomeComponent {
       title_2:'OPERATIONAL PERFORMANCE AND IT DELIVERY.',
       description: 'We do this by improving processes and technologies. Here is the place to envision, discover and fulfil your technology needs.'
     }
-  ]
+  ];
 
-  client=[
+  client = [
     {img: 'assets/images/client'},
     {img: 'assets/images/client'},
     {img: 'assets/images/client'},
     {img: 'assets/images/client'},
     {img: 'assets/images/client'}
-  ]
+  ];
 
   testimonials = [
     {
