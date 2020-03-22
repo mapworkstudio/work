@@ -36,6 +36,9 @@ h1{
 .heading-highlight{
     color:#276CAA;
 }
+section{
+    padding:70px 0;
+}
 .btn{
 	border-radius: 30px;
 	padding: 10px 30px;
@@ -55,7 +58,7 @@ svg {
 svg:not(:root) {
 	overflow: hidden;
 }
-.icon-big>svg {
+.icon-large>svg {
 	width: 100px;
 	height: 100px;
 }
@@ -93,7 +96,7 @@ svg:not(:root) {
     .page-title{
         position: absolute;
         bottom: 60px;
-        background:rgb(255, 255, 255, 0.5);
+        background:rgb(255, 255, 255, 0.8);
         width: 100%;
         padding: 10px 0;
         color:#214f7a;
@@ -108,3 +111,35 @@ textarea.form-control{
 	resize: none;
 }
 
+
+
+	.accordion{
+		.card{
+			border-radius:0px;
+			border:none;
+			 .card-header{
+				 border:none;
+				 background:none;
+				 padding:0 0 15px;
+				.btn{
+					border-radius:0;
+					padding:10px 15px;
+					background:#214f7a;
+					width:100%;
+					text-align: left;
+					color:#fff;
+					text-decoration: none;
+					&.collapsed{
+						background:#e5e5e5;
+						color:#333333;
+					}
+				}
+			}
+		}
+	}
+
+	.section-project-engineering{
+	.card-body{
+		padding:0px;
+	} 
+	}
