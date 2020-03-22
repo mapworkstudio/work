@@ -8,16 +8,12 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

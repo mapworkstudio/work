@@ -1,0 +1,37 @@
+.section-advance-solution{
+    ul{
+        li{
+            a{
+                padding:15px;
+                margin-bottom:15px;
+                background:#e5e5e5;
+                color:#333333;
+                display:block;
+                &.active{
+                    background:#214f7a;
+                    color:#fff;
+                }
+              }
+        }
+    }
+    & + section{
+        background:#e5f0fa;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.info{
+    background:#e5f0fa;
+    padding:15px;
+    p{
+       position: relative;
+       padding-right:100px;
+       i{
+           position: absolute;
+           right:0;
+           top:0;
+       }
+    }
+}

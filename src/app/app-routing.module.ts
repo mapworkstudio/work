@@ -14,12 +14,19 @@ import { InnerPageHeaderComponent } from './inner-page-header/inner-page-header.
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { ClientComponent } from './client/client.component';
+import { IndustriesComponent } from './industries/industries.component';
+import { TechnologyComponent } from './technology/technology.component';
+import { ProjectengineeringComponent } from './projectengineering/projectengineering.component';
+
+
 
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'Advancesolution', component: AdvancesolutionComponent},
+  {path: 'Technology', component: TechnologyComponent},
+  {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
   {path: 'ManagedService', component: ManagedserviceComponent},
   {path: 'Company', component: CompanyComponent},
@@ -28,7 +35,8 @@ const routes: Routes = [
   {path: 'news', component: NewsComponent},
   {path: 'about', component: AboutComponent},
   {path: 'client', component: ClientComponent},
-  { path: '', redirectTo: '/Contactus', pathMatch: 'full' }
+  {path: 'Projectengineering', component: ProjectengineeringComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
 
@@ -44,7 +52,10 @@ const routes: Routes = [
     InnerPageHeaderComponent,
     NewsComponent,
     AboutComponent,
-    ClientComponent
+    ClientComponent,
+    TechnologyComponent,
+    IndustriesComponent,
+    ProjectengineeringComponent
 ],
   imports: [
     RouterModule.forRoot(routes),
