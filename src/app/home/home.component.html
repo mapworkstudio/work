@@ -1,61 +1,65 @@
 <div class="main-banner">
-    <ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+    <ngb-carousel #carousel interval="2000" [showNavigationArrows]="showNavigationArrows" [pauseOnHover]="pauseOnHover"
+        (slide)="onSlide($event)">
         <ng-template ngbSlide *ngFor="let info of banner; index as i">
             <div class="container">
-            <div class="carousel-caption">
-                <h3>{{info.title}}</h3>
-                <h3>{{info.title_2}}</h3>
-                <p>{{info.description}}</p>
-                <button type="submit" class="btn btn-primary">LEARN MORE</button>
-                <button type="submit" class="btn btn-warning">CONTACT US</button>
+                    <div class="carousel-caption">
+                        <h3>{{info.title}}</h3>
+                        <h3>{{info.title_2}}</h3>
+                        <p>{{info.description}}</p>
+                        <button type="submit" class="btn btn-primary">LEARN MORE</button>
+                        <!-- <button type="submit" class="btn btn-warning">CONTACT US</button> -->
+                    </div>
+                    <div class="info-img">
+                        <img src="assets/images/banner-{{i+1}}-info.png" alt="My image {{i + 1}} description">
+                    </div>
             </div>
-        </div>
-            <a>
-                <div class="picsum-img-wrapper">
-                    <img src="{{info.img}}-{{i + 1}}.jpg" alt="My image {{i + 1}} description">
-                </div>
-            </a>
+            <div class="picsum-img-wrapper">
+                <img src="assets/images/banner-1.jpg" alt="My image {{i + 1}} description">
+            </div>
+
         </ng-template>
     </ngb-carousel>
 </div>
 <section class="section-info">
     <div class="container">
-    <div class="row">
-        <div class="col-sm-12 center">
-            <h1>Expand Your Business Through a <span class="heading-highlight">Strong Virtual Presence</span></h1>
-            <h6>
-                <b>The ultimate objective behind our every move is to give our customers utmost satisfaction with our
-                    quality services and support.</b><br>
-                We try the best possible way out to provide our customers with top-notch services and at affordable
-                rates. So, give us a Oppurtunity to serve you !
-            </h6>
-        </div>
-        <div *ngFor="let item of solution" class="col-lg-4 col-md-4 col-sm-12 panel-container">
-            <div class="panel">
-                <div class="panel-front {{item.color}}">
-                    <div class="panel-heading">
-                        <div class="icon-circle circle-bg">
-                            <i class="icon icon-medium">
-                                <svg focusable="false">
-                                    <use attr.xlink:href="{{item.icon}}"></use>
-                                </svg>
-                            </i>
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>Expand Your Business Through a <span class="heading-highlight">Strong Virtual Presence</span></h1>
+                <h6>
+                    <b>The ultimate objective behind our every move is to give our customers utmost satisfaction with
+                        our
+                        quality services and support.</b><br>
+                    We try the best possible way out to provide our customers with top-notch services and at affordable
+                    rates. So, give us a Oppurtunity to serve you !
+                </h6>
+            </div>
+            <div *ngFor="let item of solution" class="col-lg-4 col-md-4 col-sm-12 panel-container">
+                <div class="panel">
+                    <div class="panel-front {{item.color}}">
+                        <div class="panel-heading">
+                            <div class="icon-circle circle-bg">
+                                <i class="icon icon-medium">
+                                    <svg focusable="false">
+                                        <use attr.xlink:href="{{item.icon}}"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <h5>{{item.title}}</h5>
                         </div>
-                        <h5>{{item.title}}</h5>
-                    </div>
-                    <div class="panel-body">
+                        <div class="panel-body">
 
-                        <p *ngFor="let data of item.list">{{data.name}}</p>
+                            <p *ngFor="let data of item.list">{{data.name}}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="panel-back {{item.color}}">
-                    <h5>{{item.title}}</h5>
-                    <p>{{item.description}}</p>
+                    <div class="panel-back {{item.color}}">
+                        <h5>{{item.title}}</h5>
+                        <p>{{item.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
 </section>
 <section class="section-sevices">
     <div class="container">
@@ -63,13 +67,13 @@
             <div class="col-sm-12 center">
                 <h1>INDUSTRIES <span class="heading-highlight">WE SERVE</span></h1>
                 <h6>
-                   <b>We ensure excellence in service through understanding of our client's business and their unique
-                    requirements.</b><br>
+                    <b>We ensure excellence in service through understanding of our client's business and their unique
+                        requirements.</b><br>
 
                     Due to our close relationships and constant interactions with clients,
 
                     we have developed solid understanding and insight in our focus industries that include:
-                   </h6>
+                </h6>
             </div>
 
             <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12">
@@ -111,7 +115,7 @@
                         <div class="show-more-overlay"></div>
                         <figcaption>
                             <h2 class="show_more-title">{{info.title}}</h2>
-                            <p class="show_more-desc"> 
+                            <p class="show_more-desc">
                                 {{info.description}}
                             </p>
                             <button *ngIf="i === 0" type="submit" class="btn btn-primary">LEARN MORE</button>
@@ -119,7 +123,7 @@
                     </figure>
                 </a>
             </li>
-     </div>
+        </div>
     </div>
 </section>
 
@@ -137,7 +141,7 @@
 
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                 <div ngxSlickItem *ngFor="let client of client; index as i" class="slide">
-                    <img src="{{client.img}}-{{i+1}}.jpg" alt="" width="100%">
+                    <img src="assets/images/logo{{i+1}}.png" alt="" width="100%">
                 </div>
             </ngx-slick-carousel>
 
@@ -150,6 +154,7 @@
 </section>
 
 <section class="testimonials">
+    <img src="assets/images/testimonials.jpg"> 
     <div class="container">
         <div class="row">
             <div class="col-sm-12 center">
@@ -176,7 +181,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <h1>WHAT SET US <span class="heading-highlight">APART</span></h1>
-                <p>
+                <p class="set-part">
                     We ensure excellence in service through understanding of our client's business and their unique
                     requirements.
 
@@ -187,7 +192,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div>
-                            <h3>Address</h3>
+                            <h6>Address</h6>
                             <p>703, Wing "B", Galaxy L.X.APT.<br>
 
                                 Navre Park, Ambarnath (W),<br>
@@ -196,7 +201,7 @@
 
                                 INDIA</p>
 
-                            <h3>Contact</h3>
+                            <h6>Contact</h6>
                             <p>
                                 info@arkedge.com<br>
 
@@ -206,13 +211,13 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div>
-                            <h3>Working Hours</h3>
+                            <h6>Working Hours</h6>
                             <p>Monday To Friday: 11AM - 8PM<br>
 
                                 Week-End: 11 AM - 2PM</p>
 
 
-                            <h3>Socials</h3>
+                            <h6>Socials</h6>
                             <div class="social-net">
 
                                 <ul>

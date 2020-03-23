@@ -11,6 +11,8 @@ export class HomeComponent {
   sevices;
   solution;
 
+  showNavigationArrows = false;
+
   slideConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -123,22 +125,19 @@ export class HomeComponent {
 
   banner = [
     {
-      img: 'assets/images/banner',
       title: 'WE SPECIALIZE IN IMPROVING',
-      title_2:'OPERATIONAL PERFORMANCE AND IT DELIVERY.',
-      description: 'We do this by improving the way our clients use people, processes and technologies. Here is the place to envision, discover and fulfil your technology needs.'
+      title_2: 'OPERATIONAL PERFORMANCE AND IT DELIVERY.',
+      description: 'We do this by improving the way our clients use people, processes and technologies'
     },
     {
-      img: 'assets/images/banner',
-      title: 'WE SPECIALIZE IN IMPROVING',
-      title_2:'OPERATIONAL PERFORMANCE AND IT DELIVERY.',
-      description: 'We do this by improving the way our clients use people.'
+      title: 'Experience & expertise of',
+      title_2: 'consulting in technology & operations.',
+      description: 'Offers cutting edge technology solutions for specific business needs'
     },
     {
-      img: 'assets/images/banner',
-      title: 'WE SPECIALIZE IN IMPROVING',
-      title_2:'OPERATIONAL PERFORMANCE AND IT DELIVERY.',
-      description: 'We do this by improving processes and technologies. Here is the place to envision, discover and fulfil your technology needs.'
+      title: 'WITH HUGE',
+      title_2: 'ANDPERFORMANCE FEATURE UPDATE',
+      description: 'Customized Solutions For Dynamic Business'
     }
   ];
 
