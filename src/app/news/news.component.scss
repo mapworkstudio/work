@@ -30,7 +30,7 @@
            
          }
          img{
-             max-width:100%;
+             width:100%;
          }
          &:first-child{
              width:50%;
@@ -39,10 +39,12 @@
                  border:none;
                  margin-left:0;
                  p{
-                     font-size:18px;
+                     font-size:14px;
+                     margin-bottom: 20px;
                      &:first-child{
-                        margin-top: 10px;
-                        margin-bottom: 15px;
+                        margin-top: 20px;
+                        margin-bottom: 25px;
+                        font-size:18px;
                     }
                  }
              }

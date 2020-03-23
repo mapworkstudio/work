@@ -1,16 +1,15 @@
 .text-wrap{
     margin:50px 0 30px;
 }
-.section-contact{
-    margin-top:70px;
+.section-career{
     .career{
         margin-bottom:70px;
     }
     form{
         h2{
-            margin-bottom:30px;
+            margin-bottom:50px;
         }
-        margin:70px 0;
+        margin-top:70px;
         button{
             margin:30px auto 0;
             display: table;
@@ -47,12 +46,18 @@
     overflow:hidden;
 }
 .table{
+    margin-bottom:0px;
     thead{
         th{
             border-bottom: 1px;
             background:#d6d5d5;
             color:#000;
         }
+    }
+}
+td{
+    a{
+        color:#0761a9;
     }
 }
 }

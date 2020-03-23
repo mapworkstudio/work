@@ -11,6 +11,7 @@
 </div>
 <div class="container section-news">
     <div class="row">
+        <div class="col-sm-12">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
             <li [ngbNavItem]="1">
               <a ngbNavLink>News</a>
@@ -32,75 +33,31 @@
             <li [ngbNavItem]="2">
                 <a ngbNavLink>Events</a>
                 <ng-template ngbNavContent>
-                  <li *ngFor="let data of news; index as i" class="p2">
-                      <div class="panel">
-                          <div class="panel-heading">
-                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
-                          </div>
-                          <div class="panel-body">
-                              <p>{{data.desc_1}}</p>
-                              <p>{{data.desc_2}}</p>
-                             
-                          </div>
-                   </div>
-                  </li>
+                
               </ng-template>
               </li>
               <li [ngbNavItem]="3">
                 <a ngbNavLink>Webinars</a>
                 <ng-template ngbNavContent>
-                  <li *ngFor="let data of news; index as i" class="p2">
-                      <div class="panel">
-                          <div class="panel-heading">
-                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
-                          </div>
-                          <div class="panel-body">
-                              <p>{{data.desc_1}}</p>
-                              <p>{{data.desc_2}}</p>
-                             
-                          </div>
-                   </div>
-                  </li>
+                  
               </ng-template>
               </li>
               <li [ngbNavItem]="4">
                 <a ngbNavLink>Press Releases</a>
                 <ng-template ngbNavContent>
-                  <li *ngFor="let data of news; index as i" class="p2">
-                      <div class="panel">
-                          <div class="panel-heading">
-                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
-                          </div>
-                          <div class="panel-body">
-                              <p>{{data.desc_1}}</p>
-                              <p>{{data.desc_2}}</p>
-                             
-                          </div>
-                   </div>
-                  </li>
+                
               </ng-template>
               </li>
               <li [ngbNavItem]="5">
                 <a ngbNavLink>Video Gallery</a>
                 <ng-template ngbNavContent>
-                  <li *ngFor="let data of news; index as i" class="p2">
-                      <div class="panel">
-                          <div class="panel-heading">
-                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
-                          </div>
-                          <div class="panel-body">
-                              <p>{{data.desc_1}}</p>
-                              <p>{{data.desc_2}}</p>
-                             
-                          </div>
-                   </div>
-                  </li>
+                 
               </ng-template>
               </li>
           </ul>
           
           <div [ngbNavOutlet]="nav" class="mt-4"></div>
-    </div>
+    </div> </div>
 </div>
 
 <section class="news-video">

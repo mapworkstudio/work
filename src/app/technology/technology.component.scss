@@ -13,3 +13,18 @@ ul{
           }
     }
 }
+
+section{
+    &:nth-child(3){
+        background:#e5f0fa;
+        ul{
+            margin-left:20px;
+            li{
+                font-size:18px;
+                list-style-type: disc;
+                margin-top:15px;
+               
+            }
+        }
+    }
+}
