@@ -1,3 +1,72 @@
+::ng-deep .main-banner{
+	.carousel{
+		margin-top:-60px;
+		z-index:1;
+	}
+	.container{
+		position: relative;
+		height: 700px;
+		overflow: hidden;
+	}
+	.carousel-item{
+		display:block;
+	.carousel-caption {
+		top: 55%;
+		left: -100%;
+		z-index: 10;
+		color: #fff;
+		text-align: left;
+		width: 600px;
+		transform: translateY(-55%);
+		transition: all .5s;
+		opacity:0;
+		h3{
+			text-transform: uppercase;
+			font-weight:bold;
+		}
+		.btn{
+			border:2px solid #fff;
+			margin-right: 15px;
+    		margin-top: 50px;
+		}
+	}
+	.info-img{
+		position: absolute;
+		right:-100%;
+		top:60%;
+		transform:translateY(-60%);
+		z-index:1;
+		transition: all .5s;
+		opacity:0;
+	}
+	&.active{
+		.carousel-caption{
+			left:15px;
+			opacity:.9;
+		}
+		.info-img{
+			right:15px;	
+			opacity:.9;
+		}
+	}
+
+
+}
+	
+	.carousel-indicators {
+		li{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+	}
+	.picsum-img-wrapper{
+		position: absolute;
+		top:0;
+		left:0;
+	}
+}
+
 .panel-heading, .panel-body  {
 	border: none;
 	text-align: center;
@@ -7,9 +76,9 @@
 	padding:70px 0;
 }
 
-
 .clients{
 	background-color: rgba(247, 247, 247, 1);
+	border-top:1px solid #ccc;
 }
 
 .clear-float{
@@ -31,6 +100,15 @@
 				}
 			}
 		}
+	}
+	
+	.set-part{
+			margin:40px 0;
+		}
+	
+	h6{
+		color:#555;
+		font-weight:bold;
 	}
 }
 
@@ -167,7 +245,9 @@ $purple:#787fc2;
 		border-radius:5px;
 		margin-bottom: 15px;
 		h5{
-			color:#88cedb;
+			color:#333333;
+			font-weight:bold;
+			margin-bottom:25px;
 		}
 		p{
 			padding:0 10px;
@@ -202,7 +282,13 @@ $purple:#787fc2;
 }
 
 ::ng-deep .testimonials{
-	background:url(../../assets/images/testimonials.jpg) no-repeat bottom center #4277a8;
+	position:relative;
+	img{
+		max-width:100%;
+		position: absolute;
+		top:0;
+		left:0;
+	}
 	h1{
 		color:#fff;
 		margin-bottom:20px;
@@ -230,38 +316,13 @@ $purple:#787fc2;
 	}
 }
 
-
-.main-banner{
-	.carousel{
-		margin-top:-60px;
-		z-index:1;
-	}
-	.container{
-		position: relative;
-	}
-	.carousel-caption {
-		right: auto;
-		bottom:auto;
-		top: 200px;
-		left: 0;
-		z-index: 10;
-		color: #fff;
-		text-align: left;
-		width: 600px;
-		h3:first-child{
-			color: #FFC100;
-		}
-		.btn{
-			border:2px solid #fff;
-			margin-right: 15px;
-    		margin-top: 50px;
-		}
-	}
-}
 .section-projects {
 	position: relative;
 	float: left;
-    width: 100%;
+	width: 100%;
+	h6{
+		margin: 35px 0;
+	}
 	.project-grid{
 		li{
 			width:25%;
