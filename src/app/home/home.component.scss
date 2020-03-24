@@ -5,7 +5,7 @@
 	}
 	.container{
 		position: relative;
-		height: 700px;
+		height: 800px;
 		overflow: hidden;
 	}
 	.carousel-item{
@@ -20,7 +20,8 @@
 		transform: translateY(-55%);
 		transition: all 1s;
 		opacity:0;
-		h3{
+		h1{
+			color:#FFC100;
 			text-transform: uppercase;
 			font-weight:bold;
 		}
@@ -66,7 +67,26 @@
 		left:0;
 		height:100%;
 		width:100%;
+		
+		&::after{
+			content: "";
+			background:rgba(16,80,128,0.9);
+			width: 100%;
+			height: 100%;
+			opacity: 0.9;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		img{
+			width:100%;
+			
+		}
 	}
+}
+
+ngb-carousel{
+	outline: none;
 }
 
 .panel-heading, .panel-body  {
@@ -80,7 +100,9 @@
 
 .clients{
 	background-color: rgba(247, 247, 247, 1);
-	border-top:1px solid #ccc;
+	h6{
+		margin-bottom:50px;
+	}
 }
 
 .clear-float{
@@ -95,10 +117,14 @@
 			margin:0;
 			li{
 				list-style-type: none;
-				margin-bottom:15px;
+				margin-bottom:8px;
 			span{
 					margin-left:15px;
 					color:#555555;
+				}
+				svg{
+					width:20px;
+					height:20px;
 				}
 			}
 		}
@@ -112,11 +138,8 @@
 		color:#555;
 		font-weight:bold;
 	}
-}
-
-.picsum-img-wrapper{
-	img{
-		width:100%;
+	form{
+		margin-top:42px;
 	}
 }
 
@@ -131,9 +154,6 @@ $green:#4bbb57;
 	margin:0 auto;
 	i{
 		line-height:90px;
-		svg{
-			fill:#fff;
-		}
 	}
 	
 }
@@ -152,7 +172,7 @@ $green:#4bbb57;
 		width: 100%;
 		height: 100%;
 		text-align: center;
-		transition: transform 1s;
+		transition: transform 1s ease-in-out;
 		transform-style: preserve-3d;
 		.panel-front{
 			border-top: 5px solid;
@@ -230,6 +250,13 @@ $green:#4bbb57;
 			
 		}
 	}
+	h6{
+		margin-bottom:40px;
+	}
+
+	svg{
+		fill:#fff;
+	}
 }
 
 $skyblue:#88cedb;
@@ -246,11 +273,13 @@ $purple:#787fc2;
 		border:1px solid rgba(224, 224, 224, 1);
 		border-radius:5px;
 		margin-bottom: 15px;
+		padding: 15px 0;
 		h5{
 			color:#333333;
 			font-weight:bold;
 			margin-bottom:25px;
 		}
+		
 		p{
 			padding:0 10px;
 		}
@@ -281,12 +310,15 @@ $purple:#787fc2;
 		}
 	}
 
+	h6{
+		margin-bottom:40px;
+	}
 }
 
 ::ng-deep .testimonials{
 	position:relative;
 	img{
-		max-width:100%;
+		width:100%;
 		position: absolute;
 		top:0;
 		left:0;
@@ -299,6 +331,10 @@ $purple:#787fc2;
 		font-size:18px;
 		font-weight:700;
 		color:#fff;
+		margin-bottom:5px;
+		&:last-child{
+			margin-top:35px;
+		}
 	}
 	.carousel{
 		margin-top:0;
@@ -316,6 +352,16 @@ $purple:#787fc2;
 			background:#fff;
 		}
 	}
+	.carousel-item {
+		transition: opacity 1s ease !important;
+		position: absolute !important;
+		display: block !important;
+		opacity: 0;
+		&.active {
+				position: relative !important;
+				opacity: 1;
+			  }
+	  }
 }
 
 .section-projects {
@@ -323,7 +369,7 @@ $purple:#787fc2;
 	float: left;
 	width: 100%;
 	h6{
-		margin: 35px 0;
+		margin: 35px 0 40px;
 	}
 	.project-grid{
 		li{
