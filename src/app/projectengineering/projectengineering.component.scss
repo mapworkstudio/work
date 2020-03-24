@@ -15,6 +15,9 @@
         margin:0 auto;
         i{
             line-height: 90px;
+            svg{
+                fill:#fff;
+            }
         }
     }
    ul{
@@ -41,7 +44,11 @@
         }
         &:hover{
             .icon-circle
-            { border-color:#ffc100;
+            { 
+                border-color:#ffc100;
+                svg{
+                    fill:#ffc100;
+                }
             }
             h6{
                 color:#ffc100;
