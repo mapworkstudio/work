@@ -4,11 +4,11 @@
         <ng-template ngbSlide *ngFor="let info of banner; index as i">
             <div class="container">
                     <div class="carousel-caption">
-                        <h3>{{info.title}}</h3>
-                        <h3>{{info.title_2}}</h3>
-                        <p>{{info.description}}</p>
+                        <h1>{{info.title}}</h1>
+                        <h1>{{info.title_2}}</h1>
+                        <h3>{{info.description}}</h3>
                         <button type="submit" class="btn btn-primary">LEARN MORE</button>
-                        <!-- <button type="submit" class="btn btn-warning">CONTACT US</button> -->
+                        <button type="submit" class="btn btn-warning">CONTACT US</button>
                     </div>
                     <div class="info-img">
                         <img src="assets/images/banner-{{i+1}}-info.png" alt="My image {{i + 1}} description">
@@ -70,7 +70,7 @@
                     <b>We ensure excellence in service through understanding of our client's business and their unique
                         requirements.</b><br>
 
-                    Due to our close relationships and constant interactions with clients,
+                    Due to our close relationships and constant interactions with clients,<br>
 
                     we have developed solid understanding and insight in our focus industries that include:
                 </h6>
@@ -103,7 +103,9 @@
             <div class="col-sm-12 center">
                 <h1>OUR <span class="heading-highlight">PROJECTS</span></h1>
                 <h6>
-                    We bring powerful TOOLS for enhance your productivity.
+                    <b>We bring powerful TOOLS for enhance your productivity.</b><br>
+                
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.<br>  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
                 </h6>
             </div>
         </div>
@@ -135,12 +137,12 @@
                 <h1>HAPPY <span class="heading-highlight">CLIENTS</span></h1>
                 <h6>
                     consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                    accumsan et viverra justo commodo. Proin sodales pulvinar tempor.lacus accumsan et viverra justo
+                    accumsan et viverra justo commodo. <br>Proin sodales pulvinar tempor.lacus accumsan et viverra justo
                     commodo. Proin sodales pulvinar tempor.</h6>
             </div>
 
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                <div ngxSlickItem *ngFor="let client of client; index as i" class="slide">
+                <div ngxSlickItem *ngFor="let client of client; index as i" class="slide col-lg-3 col-md-3 col-sm-12">
                     <img src="assets/images/logo{{i+1}}.png" alt="" width="100%">
                 </div>
             </ngx-slick-carousel>
@@ -159,10 +161,16 @@
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>TESTIMONIALS</h1>
-                <ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                <ngb-carousel #carousel interval="5000" [showNavigationArrows]="showNavigationArrows" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
                     <ng-template ngbSlide *ngFor="let info of testimonials; index as i">
                         <p>
-                            {{info.clientView}}
+                            {{info.clientView_1}}
+                        </p>
+                        <p>
+                            {{info.clientView_2}}
+                        </p>
+                        <p>
+                            {{info.clientView_3}}
                         </p>
                         <p>
                             - {{info.clientName}}
@@ -271,7 +279,7 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">SUBMIT</button>

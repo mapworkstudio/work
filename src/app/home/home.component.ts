@@ -14,7 +14,7 @@ export class HomeComponent {
   showNavigationArrows = false;
 
   slideConfig = {
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
@@ -151,19 +151,27 @@ export class HomeComponent {
 
   testimonials = [
     {
-      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientView_1: ' We ensure excellence in service through understanding of our clients business and their unique requirements.',
+      clientView_2: ' Due to our close relationships and constant interactions with clients,',
+      clientView_3: ' we have developed solid understanding and insight in our focus industries that include.',
       clientName: 'xyz Company'
     },
     {
-      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientView_1: ' Consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      clientView_2: ' Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.',
+      clientView_3: ' lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.',
       clientName: 'ABC Company'
     },
     {
-      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientView_1: ' We ensure excellence in service through understanding of our clients business and their unique requirements.',
+      clientView_2: ' Due to our close relationships and constant interactions with clients,',
+      clientView_3: ' we have developed solid understanding and insight in our focus industries that include.',
       clientName: '123 Company'
     },
     {
-      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientView_1: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      clientView_2: ' Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo',
+      clientView_3: ' Proin sodales pulvinar tempor.',
       clientName: 'QWERTy'
     },
 ];
