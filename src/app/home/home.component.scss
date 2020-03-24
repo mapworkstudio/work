@@ -11,13 +11,13 @@
 	.carousel-item{
 		display:block;
 	.carousel-caption {
-		top: 55%;
+		top: 50%;
 		left: -100%;
 		z-index: 10;
 		color: #fff;
 		text-align: left;
 		width: 600px;
-		transform: translateY(-55%);
+		transform: translateY(-50%);
 		transition: all 1s;
 		opacity:0;
 		h1{
@@ -34,8 +34,8 @@
 	.info-img{
 		position: absolute;
 		right:-100%;
-		top:60%;
-		transform:translateY(-60%);
+		top:55%;
+		transform:translateY(-55%);
 		z-index:1;
 		transition: all 1s;
 		opacity:0;
@@ -140,6 +140,9 @@ ngb-carousel{
 	}
 	form{
 		margin-top:42px;
+		.btn{
+			margin-top:10px;
+		}
 	}
 }
 
