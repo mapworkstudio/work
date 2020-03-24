@@ -11,27 +11,27 @@ export class ProjectengineeringComponent implements OnInit {
     {
       title: 'Idea',
       info: 'Our idealogy text will come, Lorem ipsum dolor sit ametadipiscing elit, sed do eiusmod tempor.',
-      icon: '#icon_retail'
+      icon: '#icon_Idea'
     },
     {
       title: 'Concept',
       info: 'Concept text will come, Lorem ipsum dolor sit.',
-      icon: '#icon_retail'
+      icon: '#icon_Concept'
     },
     {
       title: 'Design',
       info: 'Design text will come, Lorem ipsum dolor sit ametadipiscing elit, sed do eiusmod tempor.',
-      icon: '#icon_retail'
+      icon: '#icon_Design'
     },
     {
       title: 'Develop',
       info: 'Develop text will come, Lorem ipsum dolor.',
-      icon: '#icon_retail'
+      icon: '#icon_Develop'
     },
     {
       title: 'Test',
       info: 'Test text will come, Lorem ipsum dolor sit ametadipiscing elit, sed do eiusmod tempor.',
-      icon: '#icon_retail'
+      icon: '#icon_Test'
     }
   ];
 
