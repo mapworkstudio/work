@@ -17,9 +17,22 @@
 }
 
 .slick-slide{
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    background:#fff;
     &.slick-current + .slick-active{
-        transform: scale(2);
+        transform: scale(1.2);
         transition:all 0.5s;
+        z-index: 1;
+        position: relative;
+        img{
+            opacity:1;
+           }
     }
+    &.slick-slide{
+       img{
+        opacity:.5;
+       }
+    }
+
 }
 

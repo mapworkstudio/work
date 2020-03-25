@@ -13,10 +13,10 @@ export class HeaderComponent implements OnInit {
   isOpen = true;
   constructor() {
     this.list = [
-        {name: 'about'},
-        {name: 'news'},
-        {name: 'client'},
-        {name: 'Projectengineering'},
+        {name: 'WhoWeAre'},
+        {name: 'OurHappyClients'},
+        {name: 'NewsAndEventUpdate'},
+        {name: 'ProjectEngineering'},
         {name: 'Technology'},
         {name: 'Industries'}
     ];

@@ -102,7 +102,7 @@
 
   <ul>
     <li *ngFor="let item of list; index as i" class="menu-list">
-      <a (click)="slideToggel()" routerLink="{{item.name}}" routerLinkActive="active" skipLocationChange=true>{{item.name}}</a>
+      <a (click)="slideToggel()" routerLink="{{item.name}}" routerLinkActive="active" skipLocationChange=true>{{item.name | createSpace}}</a>
     </li>
   </ul>
 </div>
