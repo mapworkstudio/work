@@ -3,7 +3,7 @@
         li{
             a{
                 padding:15px;
-                margin-bottom:15px;
+                margin-bottom:5px;
                 background:#e5e5e5;
                 color:#333333;
                 display:block;
@@ -16,22 +16,33 @@
     }
     & + section{
         background:#e5f0fa;
-        img{
-            max-width: 100%;
-        }
+        
     }
 }
 
+img{
+    width: 100%;
+ }
+
 .info{
-    background:#e5f0fa;
-    padding:15px;
+    
+    margin:70px 0 0 0;
+    .panel{
+        padding:20px;
+        background:#e5f0fa;
+    }
     p{
        position: relative;
-       padding-right:100px;
+       padding-right:125px;
        i{
            position: absolute;
            right:0;
            top:0;
        }
+    }
+    .panel-heading{
+        h6{
+            font-weight:bold;
+        }
     }
 }

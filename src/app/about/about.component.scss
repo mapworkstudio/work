@@ -23,7 +23,10 @@
         p{
             align-self: center;
         }
-    }
+	}
+	img{
+		width:100%;
+	}
 }
 
 
@@ -160,8 +163,4 @@ $green:#4bbb57;
 			}
 		}
 	}
-}
-
-.about-tab{
-	margin:70px 0;
 }

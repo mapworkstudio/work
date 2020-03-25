@@ -93,24 +93,32 @@ svg:not(:root) {
 		color:#000;
 	}
 	.slick-list{
-		padding:70px 5px !important;
+		padding:40px 5px !important;
 	}
   }
  
 
   .inner-banner{
-    margin-top:73px;
-    position:relative;
+	position:relative;
+	height: 300px;
+    overflow: hidden;
     img{
         width:100%;
     }
     .page-title{
         position: absolute;
-        bottom: 60px;
+        bottom: 30px;
         background:rgb(255, 255, 255, 0.8);
         width: 100%;
         padding: 10px 0;
-        color:#214f7a;
+		color:#214f7a;
+		h1{
+			margin:0;
+			text-transform: capitalize;
+		}
+		h6{
+			line-height: 25px;
+		}
     }
 }
 input.form-control{
@@ -157,6 +165,16 @@ textarea.form-control{
 	.main-banner{
 		.carousel-indicators{
 			bottom: 70px;
+		}
+	}
+
+	.div-center{
+		margin:0 auto;
+	}
+
+	section{
+		h2{
+			margin-bottom:30px;
 		}
 	}
 
