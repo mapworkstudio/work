@@ -16,13 +16,20 @@ export class AboutComponent implements OnInit {
 
 
   tabs = [
-    { title : 'About Us', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best. Over the years we have built up a solid team of software professionals that come from different backgrounds and enlarge the creative potential of ARKEDGE. The competence that they offer contains a wide range of custom programming skills including the latest and most effective development in Microsoft technologies.'},
-    { title : 'Why ARKEDGE', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. '},
-    { title : 'Centers of Excellence', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. '},
-    { title : 'Vision & Mission', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. '},
-    { title : 'Values', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. '},
-    { title : 'Leadership', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. '},
-    { title : 'News', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. '},
+    { title : 'About Us', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best.',
+  decs_2:'from different backgrounds and enlarge the creative potential of ARKEDGE. The competence that they offer contains a wide range of custom programming skills including the latest and most effective development in Microsoft technologies.'},
+    { title : 'Why ARKEDGE', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+    decs_2:'from different backgrounds'},
+    { title : 'Centers of Excellence', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+    decs_2:'from different backgrounds'},
+    { title : 'Vision & Mission', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+    decs_2:'from different backgrounds'},
+    { title : 'Values', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+    decs_2:'from different backgrounds'},
+    { title : 'Leadership', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+    decs_2:'from different backgrounds'},
+    { title : 'News', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+    decs_2:'from different backgrounds'},
   ];
   constructor() {
 
