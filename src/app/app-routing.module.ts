@@ -29,13 +29,13 @@ const routes: Routes = [
   {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
   {path: 'ManagedService', component: ManagedserviceComponent},
-  {path: 'Company', component: CompanyComponent},
+  {path: 'WhoWeAre', component: CompanyComponent},
   {path: 'Career', component: CareerComponent},
   {path: 'Contactus', component: ContactusComponent},
-  {path: 'news', component: NewsComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'client', component: ClientComponent},
-  {path: 'Projectengineering', component: ProjectengineeringComponent},
+  {path: 'NewsAndEventUpdate', component: NewsComponent},
+  {path: 'WhoWeAre', component: AboutComponent},
+  {path: 'OurHappyClients', component: ClientComponent},
+  {path: 'ProjectEngineering', component: ProjectengineeringComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];

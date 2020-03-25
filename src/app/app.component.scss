@@ -1,7 +1,7 @@
 body{
 	color:#555555;
 	font-family: 'Noto Sans', sans-serif;
-	font-size:14px;
+	font-size:16px;
 }
 ul{
 	list-style-type: none;
@@ -88,6 +88,9 @@ svg:not(:root) {
   }
 
   .section-product{
+	.slick-prev:before, .slick-next:before{
+		color:#000;
+	}
 	.slick-list{
 		padding:70px 0 !important;
 	}
