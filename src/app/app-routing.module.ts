@@ -29,7 +29,7 @@ const routes: Routes = [
   {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
   {path: 'ManagedService', component: ManagedserviceComponent},
-  {path: 'WhoWeAre', component: CompanyComponent},
+  {path: 'Company', component: AboutComponent},
   {path: 'Career', component: CareerComponent},
   {path: 'Contactus', component: ContactusComponent},
   {path: 'NewsAndEventUpdate', component: NewsComponent},
