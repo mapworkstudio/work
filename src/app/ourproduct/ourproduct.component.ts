@@ -9,7 +9,7 @@ export class OurproductComponent implements OnInit {
   slideConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     autoplay: true,
     autoplaySpeed: 1500,
     arrows: true,
@@ -35,11 +35,11 @@ export class OurproductComponent implements OnInit {
     ]
   };
   products = [
-    {img: 'assets/images/project'},
-    {img: 'assets/images/project'},
-    {img: 'assets/images/project'},
-    {img: 'assets/images/project'},
-    {img: 'assets/images/project'}
+    {img: 'assets/images/0'},
+    {img: 'assets/images/0'},
+    {img: 'assets/images/0'},
+    {img: 'assets/images/0'},
+    {img: 'assets/images/0'}
   ];
 
   constructor() { }

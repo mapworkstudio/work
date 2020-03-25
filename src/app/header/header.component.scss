@@ -177,9 +177,16 @@ nav {
         display: block;
         text-transform: capitalize;
         text-decoration:none;
-        &.active, &:focus{
-            color:#eab119;   
+        font-weight:bold;
+        &.active{
+            color:#276caa;   
         }
+        
+        }
+        &:focus{
+           a{
+                color:#276caa;   
+           }
         }
     }
     .navbar-brand{
