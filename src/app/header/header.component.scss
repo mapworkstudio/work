@@ -181,13 +181,10 @@ nav {
         &.active{
             color:#276caa;   
         }
-        
-        }
         &:focus{
-           a{
-                color:#276caa;   
-           }
-        }
+           color:#276caa;   
+         }
+        } 
     }
     .navbar-brand{
         margin:10px 0 10px 10px;
