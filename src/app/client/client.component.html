@@ -17,11 +17,32 @@
         <div class="row">
             <div *ngFor="let data of clientInfo; index as i" class="col-lg-4 col-md-4 col-sm-12">
                 <div class="panel" (click)="open(content)">
-                   <div class="panel-body {{data.clientimg}}-{{i+1}}">
+                   <div class="panel-body">
                        <a><img src="assets/images/logo{{i+1}}.png"></a>
                     </div>
+                 </div>
+                 <ng-template #content let-modal>
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-basic-title_{{i+1}}">Profile update</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                <div class="modal-body">
+                    
+                    <div class="panel">
+                        <div class="panel-header">
+                            <img src="assets/images/logo{{i+1}}.png">
+                         </div>
+                        <div class="panel-body">
+                            <h6>{{data.title}}</h6>
+                            <p>{{data.desc}}</p>
+                            <a href="{{data.url}}" target="_blank">{{data.url}}</a>
+                         </div>
+                    </div>
+                </div>
+              </ng-template>
              </div>
-            </div>
         </div>
     </div>
 </section>
@@ -45,13 +66,3 @@
 </section>
 
 
-<ng-template #content let-c="close" let-d="dismiss">
-        <div class="modal-header">
-        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-    <div class="modal-body">
-      <p>Data goes here.</p>
-    </div>
-  </ng-template>
