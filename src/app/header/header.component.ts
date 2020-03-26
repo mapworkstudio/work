@@ -14,9 +14,15 @@ export class HeaderComponent implements OnInit {
   constructor() {
     this.list = [
         {name: 'WhoWeAre'},
+        {name: 'WhyArkedgeTchnologies'},
+        {name: 'CentersOfExcellence'},
+        {name: 'VisionAndMission'},
+        {name: 'ValueOfExcellence'},
+        {name: 'OurLeadership'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
         {name: 'ProjectEngineering'},
+        {name: 'Testimonial'},
         {name: 'Technology'},
         {name: 'Industries'}
     ];
