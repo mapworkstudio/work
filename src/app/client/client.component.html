@@ -23,7 +23,7 @@
                  </div>
                  <ng-template #content let-modal>
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-basic-title_{{i+1}}">Profile update</h4>
+                        <h4 class="modal-title">{{data.title}}</h4>
                     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -35,7 +35,6 @@
                             <img src="assets/images/logo{{i+1}}.png">
                          </div>
                         <div class="panel-body">
-                            <h6>{{data.title}}</h6>
                             <p>{{data.desc}}</p>
                             <a href="{{data.url}}" target="_blank">{{data.url}}</a>
                          </div>
