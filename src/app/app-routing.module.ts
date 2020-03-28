@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdvancesolutionComponent } from './advancesolution/advancesolution.component';
+// import { AdvancesolutionComponent } from './advancesolution/advancesolution.component';
 import { HomeComponent } from './home/home.component';
 import { OurproductComponent } from './ourproduct/ourproduct.component';
 import { ManagedserviceComponent } from './managedservice/managedservice.component';
@@ -14,19 +14,20 @@ import { InnerPageHeaderComponent } from './inner-page-header/inner-page-header.
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { ClientComponent } from './client/client.component';
-import { IndustriesComponent } from './industries/industries.component';
-import { TechnologyComponent } from './technology/technology.component';
+// import { IndustriesComponent } from './industries/industries.component';
+// import { TechnologyComponent } from './technology/technology.component';
 import { ProjectengineeringComponent } from './projectengineering/projectengineering.component';
-
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { AdvanceSolutionModule } from './advancesolution/advancesolution.module';
 
 
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'Advancesolution', component: AdvancesolutionComponent},
-  {path: 'Technology', component: TechnologyComponent},
-  {path: 'Industries', component: IndustriesComponent},
+  // {path: 'Advancesolution', component: AdvancesolutionComponent},
+  // {path: 'Technology', component: TechnologyComponent},
+  // {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
   {path: 'ManagedService', component: ManagedserviceComponent},
   {path: 'Company', component: AboutComponent},
@@ -39,19 +40,21 @@ const routes: Routes = [
   {path: 'VisionAndMission', component: AboutComponent},
   {path: 'ValueOfExcellence', component: AboutComponent},
   {path: 'OurLeadership', component: AboutComponent},
-  {path: 'Testimonial', component: AboutComponent},
+  {path: 'Testimonial', component: TestimonialsComponent},
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'NewsAndEventUpdate', component: AboutComponent},
   {path: 'ValueOfExcellence', component: AboutComponent},
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'ProjectEngineering', component: ProjectengineeringComponent},
+  { path: 'Advancesolution', loadChildren: () =>
+  import(`./advancesolution/advancesolution.module`).then(m => m.AdvanceSolutionModule) },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
 
 @NgModule({
   declarations: [
-    AdvancesolutionComponent,
+    // AdvancesolutionComponent,
     HomeComponent,
     OurproductComponent,
     ManagedserviceComponent,
@@ -62,12 +65,13 @@ const routes: Routes = [
     NewsComponent,
     AboutComponent,
     ClientComponent,
-    TechnologyComponent,
-    IndustriesComponent,
-    ProjectengineeringComponent
+    // TechnologyComponent,
+    // IndustriesComponent,
+    ProjectengineeringComponent,
+    TestimonialsComponent
 ],
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { enableTracing: false }),
     BrowserModule,
     NgbModule,
     SlickCarouselModule

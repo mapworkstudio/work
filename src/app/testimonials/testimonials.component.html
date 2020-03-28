@@ -1,0 +1,37 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-client.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>TESTIMONIALS</h1>
+                    <h6>We value loyalty, creativity and productivity with results...</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="client-info">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let info of testimonials; index as i" class="col-lg-6 col-md-6 col-sm-12">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="icon-circle">
+                            <img src="assets/images/avatar.png">
+                        </div>
+                    </div>
+                   <div class="panel-body center">
+                    <h5>{{info.clientName}}</h5>
+                    <p>
+                        {{info.clientView_1}}
+                        {{info.clientView_2}}
+                        {{info.clientView_3}}
+                    </p>
+                    </div>
+                 </div>
+              </div>
+        </div>
+    </div>
+</section>

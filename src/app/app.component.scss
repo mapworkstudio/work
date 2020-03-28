@@ -182,6 +182,11 @@ textarea.form-control{
 		}
 	}
 
+	.modal{
+		top:50%;
+		transform: translateY(-250px);
+	}
+
 	@media (min-width: 1200px){
 		.container, .container-lg, .container-md, .container-sm, .container-xl{
 			max-width: 1399px;
