@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CreateSpace } from './space.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
