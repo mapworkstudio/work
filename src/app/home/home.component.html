@@ -3,16 +3,16 @@
         (slide)="onSlide($event)">
         <ng-template ngbSlide *ngFor="let info of banner; index as i">
             <div class="container">
-                    <div class="carousel-caption">
-                        <h1>{{info.title}}</h1>
-                        <h1>{{info.title_2}}</h1>
-                        <h3>{{info.description}}</h3>
-                        <button type="submit" class="btn btn-primary">LEARN MORE</button>
-                        <button type="submit" class="btn btn-warning">CONTACT US</button>
-                    </div>
-                    <div class="info-img">
-                        <img src="assets/images/banner-{{i+1}}-info.png" alt="My image {{i + 1}} description">
-                    </div>
+                <div class="carousel-caption">
+                    <h1>{{info.title}}</h1>
+                    <h1>{{info.title_2}}</h1>
+                    <h3>{{info.description}}</h3>
+                    <button type="submit" class="btn btn-primary">LEARN MORE</button>
+                    <button type="submit" class="btn btn-warning">CONTACT US</button>
+                </div>
+                <div class="info-img">
+                    <img src="assets/images/banner-{{i+1}}-info.png" alt="My image {{i + 1}} description">
+                </div>
             </div>
             <div class="picsum-img-wrapper">
                 <img src="assets/images/banner-1.jpg" alt="My image {{i + 1}} description">
@@ -104,8 +104,9 @@
                 <h1>OUR <span class="heading-highlight">PROJECTS</span></h1>
                 <h6>
                     <b>We bring powerful TOOLS for enhance your productivity.</b><br>
-                
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.<br>  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.<br> Proin
+                    gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
                 </h6>
             </div>
         </div>
@@ -156,12 +157,13 @@
 </section>
 
 <section class="testimonials">
-    <img src="assets/images/testimonials.jpg"> 
+    <img src="assets/images/testimonials.jpg">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>TESTIMONIALS</h1>
-                <ngb-carousel #carousel interval="5000" [showNavigationArrows]="showNavigationArrows" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                <ngb-carousel #carousel interval="5000" [showNavigationArrows]="showNavigationArrows"
+                    [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
                     <ng-template ngbSlide *ngFor="let info of testimonials; index as i">
                         <p>
                             {{info.clientView_1}}
@@ -274,12 +276,17 @@
                             <input type="text" class="form-control" placeholder="Your Mail" name="yourMail">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-                    </div>
 
+                    <div class="row form-group">
+                        <div class="col">
+                            <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                        </div>
+                    </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">SUBMIT</button>

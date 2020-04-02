@@ -18,16 +18,18 @@ import { ClientComponent } from './client/client.component';
 // import { TechnologyComponent } from './technology/technology.component';
 import { ProjectengineeringComponent } from './projectengineering/projectengineering.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { AdvanceSolutionModule } from './advancesolution/advancesolution.module';
+import { TechnologyComponent } from './technology/technology.component';
+import { IndustriesComponent } from './industries/industries.component';
+import { AdvancesolutionComponent } from './advancesolution/advancesolution.component';
 
 
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  // {path: 'Advancesolution', component: AdvancesolutionComponent},
-  // {path: 'Technology', component: TechnologyComponent},
-  // {path: 'Industries', component: IndustriesComponent},
+  {path: 'Advancesolution', component: AdvancesolutionComponent},
+  {path: 'Technology', component: TechnologyComponent},
+  {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
   {path: 'ManagedService', component: ManagedserviceComponent},
   {path: 'Company', component: AboutComponent},
@@ -46,15 +48,13 @@ const routes: Routes = [
   {path: 'ValueOfExcellence', component: AboutComponent},
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'ProjectEngineering', component: ProjectengineeringComponent},
-  { path: 'Advancesolution', loadChildren: () =>
-  import(`./advancesolution/advancesolution.module`).then(m => m.AdvanceSolutionModule) },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  {path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
 
 @NgModule({
   declarations: [
-    // AdvancesolutionComponent,
+    AdvancesolutionComponent,
     HomeComponent,
     OurproductComponent,
     ManagedserviceComponent,
@@ -65,8 +65,8 @@ const routes: Routes = [
     NewsComponent,
     AboutComponent,
     ClientComponent,
-    // TechnologyComponent,
-    // IndustriesComponent,
+    TechnologyComponent,
+    IndustriesComponent,
     ProjectengineeringComponent,
     TestimonialsComponent
 ],

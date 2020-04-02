@@ -94,7 +94,8 @@
             <div class="col-sm-12">
                 <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                     <div ngxSlickItem *ngFor="let product of products; index as i" class="slide">
-                        <img src="{{product.img}}{{i+1}}.png" alt="" width="100%">
+                        <img src="assets/images/0{{i+1}}.png" alt="" width="100%">
+                        <p class="col-sm-12 center">{{product.title}}</p>
                     </div>
                 </ngx-slick-carousel>
             </div>

@@ -14,10 +14,10 @@
               }
         }
     }
-}
-
-section:nth-child(odd){
-    background:#e5f0fa;
+    & + section{
+        background:#e5f0fa;
+        
+    }
 }
 
 img{
@@ -25,6 +25,8 @@ img{
  }
 
 .info{
+    
+    margin:70px 0 0 0;
     .panel{
         padding:20px;
         background:#e5f0fa;

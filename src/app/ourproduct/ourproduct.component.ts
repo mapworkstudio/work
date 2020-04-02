@@ -35,11 +35,12 @@ export class OurproductComponent implements OnInit {
     ]
   };
   products = [
-    {img: 'assets/images/0'},
-    {img: 'assets/images/0'},
-    {img: 'assets/images/0'},
-    {img: 'assets/images/0'},
-    {img: 'assets/images/0'}
+    {title: 'Looking for automation to drive performance and profitability'},
+    {title: 'helps enterprises rapidly build the infrastructure and capabilities'},
+    {title: 'Arkedge unified approach — encompassing strategy, software and managed services '},
+    {title: 'Looking for automation to drive performance and profitability'},
+    {title: 'helps enterprises rapidly build the infrastructure and capabilities'},
+
   ];
 
   constructor() { }

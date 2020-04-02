@@ -97,7 +97,7 @@ svg:not(:root) {
 		color:#000;
 	}
 	.slick-list{
-		padding:40px 5px !important;
+		padding:40px 5px 60px !important;
 	}
   }
  
@@ -127,6 +127,8 @@ svg:not(:root) {
 }
 input.form-control{
 	border-radius: 150px;
+	height: auto;
+    padding: 0.65rem 1rem; 
 }
 
 textarea.form-control{

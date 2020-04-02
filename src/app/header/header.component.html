@@ -31,15 +31,30 @@
                   <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
                      <h6> {{list.name}}</h6>
                       <li class="inner-list" *ngFor="let inlist of list.managedServiceList">
-                        <a>{{inlist.name}}</a>
+                        <a routerLink="" routerLinkActive="active" skipLocationChange=true>{{inlist.name}}</a>
                       </li>
               </div>
   </div>
   </div>
   <div class="col-lg-4 col-md-4 col-sm-12">
-    <h5>Heading goes here.</h5>
-    <img src="assets/images/3.jpg" alt="">
-    <a>Read more...</a>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="inner-banner">
+          <img src="assets/images/inner-banner-technology.jpg">
+          <a class="nav-link" routerLink="Technology" routerLinkActive="active" skipLocationChange=true>
+            Technology
+          </a>
+      </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="inner-banner">
+          <img src="assets/images/inner-banner-industries.jpg">
+          <a class="nav-link" routerLink="Industries" routerLinkActive="active" skipLocationChange=true>
+            Industries
+          </a>
+      </div>
+      </div>
+    </div>
   </div>
 
   </div>
@@ -80,6 +95,7 @@
 </nav>
 
 <div class="slider-menu" [ngClass]="isOpen ? '' : 'active'">
+  <div class="slider-menu-header">
   <a class="close-slide" (click)="slideToggel()">
     <i class="icon icon-ex-small">
       <svg focusable="false">
@@ -99,7 +115,7 @@
       <span class="company-type">TECHNOLOGIES</span>
     </div>
   </a>
-
+</div>
   <ul>
     <li *ngFor="let item of list; index as i" class="menu-list">
       <a (click)="slideToggel()" routerLink="{{item.name}}" routerLinkActive="active" skipLocationChange=true>{{item.name | createSpace}}</a>
