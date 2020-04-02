@@ -149,7 +149,6 @@ nav {
 
 .slider-menu{
     width: 350px;
-    padding:10px;
     position: fixed;
     height: calc(100vh);
     top: 0;
@@ -157,6 +156,9 @@ nav {
     z-index: 20;
     right: -350px;
     transition: all .5s;
+    .slider-menu-header{
+        padding:10px;
+    }
     .close-slide{
         float:right;
         padding: 10px;
@@ -168,11 +170,45 @@ nav {
     ul{
         margin:0;
         padding:0;
+        overflow-y: auto;
+        height: calc(100vh - 100px);
+        &::-webkit-scrollbar {
+            width: .5em;
+        }
+         
+        &::-webkit-scrollbar-track {
+           background:rgb(194, 194, 194, .3);
+        }
+         
+        &::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          outline: 1px solid slategrey;
+        }
     }
     li.menu-list{
         list-style-type: none;
+        border-bottom: 1px dotted #af9090;
+        position: relative;
+        &::after{
+            content: "";
+            width: 0;
+            height: 5px;
+            display: block;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background-color: #276caa;
+            transition: width 0.2s;
+        }
+            &:hover
+            {
+                &::after{
+                 width:100%;
+            }
+            
+        }
         a{
-        padding: 5px 10px;
+        padding: 8px 25px;
         font-size: 14px;
         color:#555555;
         display: block;
@@ -182,7 +218,7 @@ nav {
         &.active{
             color:#276caa;   
         }
-        &:focus{
+        &:hover{
            color:#276caa;   
          }
         } 

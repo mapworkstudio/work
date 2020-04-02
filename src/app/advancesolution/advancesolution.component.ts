@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-advancesolution',
@@ -6,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./advancesolution.component.scss']
 })
 export class AdvancesolutionComponent implements OnInit {
-
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
   }
