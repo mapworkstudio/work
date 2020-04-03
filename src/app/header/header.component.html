@@ -21,7 +21,7 @@
           Solution</a>
       </li>
       <li class="nav-item nav-dropdown-list">
-        <a class="nav-link" routerLink="ManagedServiceComponent" routerLinkActive="active"
+        <a class="nav-link" routerLink="ManagedService" routerLinkActive="active"
           skipLocationChange=true>Managed Service</a>
         <ul class="sub-nav">
           <li class="container">
@@ -31,7 +31,7 @@
                   <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
                      <h6> {{list.name}}</h6>
                       <li class="inner-list" *ngFor="let inlist of list.managedServiceList">
-                        <a routerLink="" routerLinkActive="active" skipLocationChange=true>{{inlist.name}}</a>
+                        <a routerLink="{{inlist.name}}" routerLinkActive="active" skipLocationChange=true>{{inlist.name | createSpace}}</a>
                       </li>
               </div>
   </div>

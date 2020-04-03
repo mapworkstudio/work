@@ -14,6 +14,20 @@
            font-weight:bold;
            font-size:16px;
         }
+        i{
+            line-height: 135px;
+            svg{
+                fill: #214f7a;
+            }
+        }
+        .panel-heading{
+            &:hover{
+                background:#214f7a;
+                svg{
+                    fill: #fff;
+                }
+            }
+        }
     }
     .col{
         margin-bottom:20px;
