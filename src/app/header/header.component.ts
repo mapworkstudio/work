@@ -21,32 +21,29 @@ export class HeaderComponent implements OnInit {
         {name: 'OurLeadership'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
-        {name: 'ProjectEngineering'},
-        {name: 'Testimonial'},
-        {name: 'Technology'},
-        {name: 'Industries'}
+        {name: 'Testimonial'}
     ];
     this.managedService = [
       {name: 'SOFTWARE ENGINEERING',
       managedServiceList : [
-        {name: 'Product Engineering'},
-        {name: 'Application Development'},
-        {name: 'UX/UI Development'},
-        {name: 'Software Testing & QA'}
+        {name: 'ProjectEngineering'},
+        {name: 'ApplicationDevelopment'},
+        {name: 'UX/UIDevelopment'},
+        {name: 'SoftwareTesting & QA'}
       ]},
       {name: 'DATA MANAGEMENT',
       managedServiceList : [
-        {name:'Cleanse Dataset'},
-        {name:'Data Mapping & Conversion'},
-        {name:'Data Migration & Consolidation'},
-        {name:'Spend Analysis'}
+        {name: 'CleanseDataset'},
+        {name: 'Data Mapping & Conversion'},
+        {name: 'Data Migration & Consolidation'},
+        {name: 'Spend Analysis'}
       ]},
-      {name:'IT STAFFING & TRAINING',
+      {name: 'IT STAFFING & TRAINING',
       managedServiceList : [
-        {name:'Staffing Services'},
-        {name:'Industries'},
-        {name:'Courses'},
-        {name:'Program Calendar'}
+        {name: 'StaffingServices'},
+        {name: 'Industries'},
+        {name: 'Courses'},
+        {name: 'Program Calendar'}
       ]}
     ]
   }
