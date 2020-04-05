@@ -164,6 +164,7 @@ $green:#4bbb57;
 .section-info{
 	.panel-container{
 		min-height: 330px;
+		margin-bottom:15px;
 		perspective: 1000px;
 		&:hover .panel{
 			transform: rotateX(180deg);
@@ -488,6 +489,38 @@ $purple:#787fc2;
 
 }
 
+.section-our-products{
+	.panel{
+		padding:0 15px;
+		margin-bottom: 15px;
+		background:rgba(204, 204, 204, 0.2);
+		.row{
+			div{
+				&:first-child{
+					background:#276caa;
+				}
+				img{
+					align-self: center;
+					padding: 15px 0;
+				}
+				&:nth-child(2){
+					padding:15px;
+					ul{
+						margin-left: 20px;
+						margin-bottom:20px;
+						li{
+							list-style-type: disc;
+							color:#276caa;
+							font-weight:bold;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}
+
 
 @media (max-width: 576px){
 	.main-banner{
@@ -505,6 +538,11 @@ $purple:#787fc2;
 			figure{
 				margin:0 0 15px;
 			}
+			}
+			&:nth-child(4), &:nth-child(5){
+				figure{
+					margin-bottom:15px;
+				}
 			}
 		}
 	}
