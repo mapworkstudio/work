@@ -15,13 +15,12 @@ export class HeaderComponent implements OnInit {
     this.list = [
         {name: 'WhoWeAre'},
         {name: 'WhyArkedgeTchnologies'},
-        {name: 'CentersOfExcellence'},
-        {name: 'VisionAndMission'},
         {name: 'ValueOfExcellence'},
         {name: 'OurLeadership'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
-        {name: 'Testimonial'}
+        {name: 'Testimonial'},
+        {name: 'Industries'}
     ];
     this.managedService = [
       {name: 'SOFTWARE ENGINEERING',
