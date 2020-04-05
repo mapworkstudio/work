@@ -7,29 +7,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   solution;
+  leaders;
   keydiff = [
-    {list : 'We provide custom application programming services to end customers.'},
-    {list : 'Our competence and experience ensure that we provide excellent services and products to our customers.'},
-    {list : 'At every stage of the development process, from conceptual design to product release, the highest quality standards are maintained.'},
-    {list : 'Our extensive communication facilities allow us to keep in touch with our customers 24X7.'}
+    { list: 'We provide custom application programming services to end customers.' },
+    { list: 'Our competence and experience ensure that we provide excellent services and products to our customers.' },
+    { list: 'At every stage of the development process, from conceptual design to product release, the highest quality standards are maintained.' },
+    { list: 'Our extensive communication facilities allow us to keep in touch with our customers 24X7.' }
   ];
 
 
   tabs = [
-    { title : 'About Us', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best.',
-  decs_2:'from different backgrounds and enlarge the creative potential of ARKEDGE. The competence that they offer contains a wide range of custom programming skills including the latest and most effective development in Microsoft technologies.'},
-    { title : 'Why ARKEDGE', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
-    decs_2:'from different backgrounds'},
-    { title : 'Centers of Excellence', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
-    decs_2:'from different backgrounds'},
-    { title : 'Vision & Mission', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
-    decs_2:'from different backgrounds'},
-    { title : 'Values', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
-    decs_2:'from different backgrounds'},
-    { title : 'Leadership', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
-    decs_2:'from different backgrounds'},
-    { title : 'News', decs : 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
-    decs_2:'from different backgrounds'},
+    {
+      title: 'About Us', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best.',
+      decs_2: 'from different backgrounds and enlarge the creative potential of ARKEDGE. The competence that they offer contains a wide range of custom programming skills including the latest and most effective development in Microsoft technologies.'
+    },
+    {
+      title: 'Why ARKEDGE', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+      decs_2: 'from different backgrounds'
+    },
+    {
+      title: 'Centers of Excellence', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+      decs_2: 'from different backgrounds'
+    },
+    {
+      title: 'Vision & Mission', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+      decs_2: 'from different backgrounds'
+    },
+    {
+      title: 'Values', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+      decs_2: 'from different backgrounds'
+    },
+    {
+      title: 'Leadership', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+      decs_2: 'from different backgrounds'
+    },
+    {
+      title: 'News', decs: 'ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. ',
+      decs_2: 'from different backgrounds'
+    },
   ];
   constructor() {
 
@@ -37,11 +52,11 @@ export class AboutComponent implements OnInit {
       {
         title: 'Data Management',
         color: 'red',
-        list : [
-          {name: 'Cleanse Dataset'},
-          {name: 'Data Mapping & Conversion'},
-          {name: 'Data Migration & Consolidation'},
-          {name: 'Spend Analysis'}
+        list: [
+          { name: 'Cleanse Dataset' },
+          { name: 'Data Mapping & Conversion' },
+          { name: 'Data Migration & Consolidation' },
+          { name: 'Spend Analysis' }
         ],
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio',
         icon: '#icon_mgmt'
@@ -49,11 +64,11 @@ export class AboutComponent implements OnInit {
       {
         title: 'Software Engineering',
         color: 'blue',
-        list : [
-          {name: 'Product Engineering'},
-          {name: 'Application Development'},
-          {name: 'UX/UI Development'},
-          {name: 'Software Testing & QA'}
+        list: [
+          { name: 'Product Engineering' },
+          { name: 'Application Development' },
+          { name: 'UX/UI Development' },
+          { name: 'Software Testing & QA' }
         ],
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio',
         icon: '#icon_softEngg'
@@ -61,17 +76,32 @@ export class AboutComponent implements OnInit {
       {
         title: 'IT Staffing & Training',
         color: 'green',
-        list : [
-          {name: 'Staffing Services'},
-          {name: 'Industries'},
-          {name: 'Courses'},
-          {name: 'Program Calendar'}
+        list: [
+          { name: 'Staffing Services' },
+          { name: 'Industries' },
+          { name: 'Courses' },
+          { name: 'Program Calendar' }
         ],
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio',
         icon: '#icon_training'
       },
     ];
-   }
+
+    this.leaders = [
+      {name : 'Person Name',
+      info : 'Chief Executive Officer & Co-Founder',
+      desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+     },
+     {name : 'Person Name',
+      info : 'Chief Executive Officer & Co-Founder',
+      desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+     },
+     {name : 'Person Name',
+      info : 'Chief Executive Officer & Co-Founder',
+      desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+     }
+   ];
+  }
 
   ngOnInit() {
   }
