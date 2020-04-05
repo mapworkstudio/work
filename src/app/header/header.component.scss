@@ -42,10 +42,10 @@ nav {
     list-style-type: none;
     margin-bottom: 0;
     .nav-item{
-        font-size:14px;
+        font-size:1vw;
         &:nth-child(-n+3){
             text-transform:uppercase;
-            font-size:16px;
+            font-size:1.2vw;
         }
         &:nth-child(4){
             margin-left:50px;
@@ -267,5 +267,11 @@ nav {
                 display:none;
             }
         }
+    }
+}
+
+@media (max-width: 1024px){
+    .company-info{
+        display:none;
     }
 }

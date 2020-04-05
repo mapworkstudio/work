@@ -11,6 +11,7 @@ ul{
 }
 h1{
 	font-size:40px;
+	margin-bottom:40px;
 }
 h2{
 	font-size:34px;
@@ -41,8 +42,13 @@ img{
 .heading-highlight{
     color:#276CAA;
 }
+.v-flex{
+	display: flex;
+}
 section{
-    padding:70px 0;
+	&:nth-child(even){
+		padding:70px 0;
+	}
 }
 .btn{
 	font-size:16px;
