@@ -192,10 +192,10 @@ nav {
         &::after{
             content: "";
             width: 0;
-            height: 5px;
+            height: 3px;
             display: block;
             position: absolute;
-            bottom: -5px;
+            bottom: -3px;
             left: 0;
             background-color: #276caa;
             transition: width 0.2s;
