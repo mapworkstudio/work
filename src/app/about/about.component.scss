@@ -16,8 +16,11 @@
         }
     }
 }
-
+.note-desc{
+	padding-top:0;
+}
 .about-info{
+	padding:0;
     background:#e5f0fa;
     .v-align{
         display:flex;
@@ -158,16 +161,17 @@ $green:#4bbb57;
 		.nav-item{
 			margin-bottom: 0;
 			.nav-link{
-			padding: .1rem 1rem; 
+			padding: .7rem 1rem; 
 			border:none;
 			background: #e5e5e5;
 			display:block;
 			border-radius: 0;
 			color:#333333;
-			font-size:14px;
+			font-size:16px;
+			font-weight:bold;
 			&.active, &:hover{
-				background: #214f7a;
-				color:#fff;
+				border-bottom:2px solid #214f7a;
+				color:#214f7a;
 			}
 			}
 		}
@@ -175,11 +179,11 @@ $green:#4bbb57;
 }
 
 .leader-ship{
-		border-top:1px solid #ccc;
 		margin-top:40px;
 		padding:0;
 	p{
 		padding-top:40px;
+		border-top:1px solid #ccc;
 	}
 	img{
 		width:auto;
