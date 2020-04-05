@@ -7,13 +7,25 @@
     }
     ul{
 		margin-top:35px;
-		margin-left:35px;
-         li{
+		li{
+			padding: 0 0 20px 20px;
+			list-style: none outside;
+			font-size: 16px;
+            position: relative;
             color:#fff;
-            padding: 10px 0;
-            list-style:disc;
-            font-size: 16px;
-        }
+			&::before{
+				content: " ";
+				background: #fff;
+				font-weight: bold;
+				position:absolute;
+				top:8px;
+				left:0px;
+				width: 10px;
+				height:10px;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
     }
 }
 .note-desc{
@@ -148,36 +160,6 @@ $green:#4bbb57;
 	}
 }
 
-.about-tab{
-	.tab-content{
-		margin-top:70px;
-	}
-	.tab-navigation{
-		background: #e5e5e5;
-	}
-	padding-top:0;
-	.nav-tabs {
-		border:none;
-		.nav-item{
-			margin-bottom: 0;
-			.nav-link{
-			padding: .7rem 1rem; 
-			border:none;
-			background: #e5e5e5;
-			display:block;
-			border-radius: 0;
-			color:#333333;
-			font-size:16px;
-			font-weight:bold;
-			&.active, &:hover{
-				border-bottom:2px solid #214f7a;
-				color:#214f7a;
-			}
-			}
-		}
-	}
-}
-
 .leader-ship{
 		margin-top:40px;
 		padding:0;
@@ -199,22 +181,55 @@ $green:#4bbb57;
 	}
 }
 
+.why-us{
+	padding:0;
+	.row{
+		&:nth-child(even){
+			padding:70px 0;
+		}
+		&:last-child{
+			padding:0;
+		}
+	}
+	h6{
+		font-weight: bold;
+	}
+	ul{
+		margin-top:35px;
+		 li{
+			padding: 0 0 20px 20px;
+			list-style: none outside;
+			font-size: 16px;
+			position: relative;
+			&::before{
+				content: " ";
+				background: #214f7a;
+				font-weight: bold;
+				position:absolute;
+				top:8px;
+				left:0px;
+				width: 10px;
+				height:10px;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.wa-info{
+	background:#e5f0fa;
+	padding:50px;
+	height: 100%;
+}
+
 @media (max-width: 576px){
 	.about-tab{
-	.tab-navigation{
-		background: none;
-	}
-	.nav-tabs .nav-item{
-		width:100%;
-		margin-top:10px;
-		background:#e5e5e5;
-	}
-	.leader-ship{
+.leader-ship{
 		img{
 			width: 100%;
 		    margin: 0;
 			margin-bottom:20px;
 		}
 	}
-}
-}
+}}

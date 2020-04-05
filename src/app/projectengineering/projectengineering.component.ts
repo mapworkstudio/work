@@ -35,6 +35,15 @@ export class ProjectengineeringComponent implements OnInit {
     }
   ];
 
+  keydiff = [
+    { list: 'New application development' },
+    { list: 'Existing application enhancement' },
+    { list: 'Application maintenance' },
+    { list: 'Application migration' },
+    { list: 'Production and post production support' },
+    { list: 'Application testing' }
+  ];
+
   constructor() { }
 
   ngOnInit() {

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CreateSpace } from './space.pipe';
+import { WaComponent } from './wa/wa.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CreateSpace } from './space.pipe';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    CreateSpace
+    CreateSpace,
+    WaComponent
     ],
   imports: [
     BrowserModule,
