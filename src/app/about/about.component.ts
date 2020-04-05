@@ -15,6 +15,22 @@ export class AboutComponent implements OnInit {
     { list: 'Our extensive communication facilities allow us to keep in touch with our customers 24X7.' }
   ];
 
+  bulletPoint = [
+    {list: 'Extensive experience and expertise in application development and product engineering for various clients.'},
+    {list: 'Expertise in Agile, RUP and Iterative methodologies across Microsoft technologies.'},
+    {list: 'Extensive experience in implementation of end to end projects in various business domains and technical platforms.'},
+    {list: 'Mature software development quality processes and methodologies. Experience and expertise of consulting in technology and operations.'},
+    {list: 'ARKEDGE has a special focus on software test automation using market standard tools'}
+  ];
+  bulletPoint_2 = [
+    {list: 'The Application Development CoE is engaged in designing, developing, maintaining, and testing enterprise scale applications using the lat est Microsoft® technologies and standards.'},
+    {list: 'The DLM CoE is the combination of processes, strategies and applied technologies to manage and improve the lifecycle of data / information across an enterprise.'},
+    {list: 'The Product Engineering CoE is involved in architecting and building .Net driven business solutions right from inception (by using agile development methodology only).'},
+    {list: 'The Software testing CoE independent testing services for each practice area along with third party testing services spanning the entire product development life-cycle.'},
+    {list: 'The Resourcing (Recruitment) CoE is engaged to provide wide range of Recruitment Services as well as background screening solutions.'},
+    {list: 'The Training CoE further extends our services spectrums with highest quality training in all major areas of information technology and management.'}
+  ];
+
 
   tabs = [
     {

@@ -14,7 +14,7 @@ export class AppComponent {
     this.router.events.subscribe(routerEvent => {
         if (routerEvent instanceof NavigationStart) {
             if (routerEvent.url === '/') {
-                this.router.navigate(['Company'], {skipLocationChange: true});
+                this.router.navigate(['ProjectEngineering'], {skipLocationChange: true});
             }
         }
     });

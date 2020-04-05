@@ -197,6 +197,50 @@ textarea.form-control{
 		transform: translateY(-250px);
 	}
 
+	.inner-nav-tab{
+		padding:0;
+		.tab-content{
+			margin-top:70px;
+		}
+		.tab-navigation{
+			background: #e5e5e5;
+		}
+		
+		.nav-tabs {
+			border:none;
+			.nav-item{
+				margin-bottom: 0;
+				.nav-link{
+				padding: .7rem 1rem; 
+				border:none;
+				background: #e5e5e5;
+				display:block;
+				border-radius: 0;
+				color:#333333;
+				font-size:16px;
+				font-weight:bold;
+				&.active, &:hover{
+					border-bottom:2px solid #214f7a;
+					color:#214f7a;
+				}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 576px){
+		.inner-nav-tab{
+		.tab-navigation{
+			background: none;
+		}
+		.nav-tabs .nav-item{
+			width:100%;
+			margin-top:10px;
+			background:#e5e5e5;
+		}
+
+	}}
+
 	@media (min-width: 1200px){
 		.container, .container-lg, .container-md, .container-sm, .container-xl{
 			max-width: 1399px;

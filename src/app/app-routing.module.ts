@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { AdvancesolutionComponent } from './advancesolution/advancesolution.component';
 import { HomeComponent } from './home/home.component';
 import { OurproductComponent } from './ourproduct/ourproduct.component';
 import { ManagedserviceComponent } from './managedservice/managedservice.component';
@@ -14,8 +13,6 @@ import { InnerPageHeaderComponent } from './inner-page-header/inner-page-header.
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { ClientComponent } from './client/client.component';
-// import { IndustriesComponent } from './industries/industries.component';
-// import { TechnologyComponent } from './technology/technology.component';
 import { ProjectengineeringComponent } from './projectengineering/projectengineering.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TechnologyComponent } from './technology/technology.component';

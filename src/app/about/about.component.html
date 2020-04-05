@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<section class="about-tab">
+<section class="about-tab inner-nav-tab">
     <div class="tab-navigation">
         <div class="col-sm-12">
             <div class="container">
@@ -148,7 +148,182 @@
                                 </div>
                             </div>
                            
-                        <section class="leader-ship" *ngFor="let leaderlist of leaders; index as i">
+                        <section class="why-us">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul>
+                                            <li *ngFor="let list of bulletPoint; index as i">
+                                                    {{list.list}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="wa-info">
+                                        <h2>Vision</h2>
+                                        <p>
+                                            ARKEDGE was founded with a philosophy that every organization has its own unique set of people, processes, technology, culture, values, skills & vision. We are committed to understand these unique parameters of organizations & customizing our solutions to suit them.
+                                            <br><br>
+                                            We aim for long term relationship that brings in immense satisfaction and prosperity to both ends. We value loyalty, creativity and productivity with results.
+                                        </p>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="wa-info">
+                                        <h2>Mission</h2>
+                                        <p>
+                                            Our endeavor is to achieve total customer satisfaction, by providing quality products and services, using simplifying technologies and continually improving processes, through competent employees and business partners.
+                                            <br><br>
+                                            To be the preferred choice of our customers, employees and partners
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                    <h1>
+                                        Centers of Excellence
+                                    </h1>
+                                    <p>
+                                        We have structured our business operations into six dedicated practice areas. Each practice area operates as a Center of Excellence (CoE).
+                                    </p>
+                                    <h6>
+                                        Key Differentiators
+                                    </h6>
+                                    
+
+                                        <ul>
+                                            <li *ngFor="let list of bulletPoint_2; index as i">
+                                                    {{list.list}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                    <h1>
+                                        Value Initiative
+                                    </h1>
+                                    <p>
+                                        A commitment to quality, learning from the previous successes and mistakes, setting higher benchmarks and generate productive results.
+                                    </p>
+
+                                    <h6>
+                                        Exceeding customer expectation
+                                    </h6>
+                                    <p>
+                                        Treating customers as lifetime assets and striving to integrate and partner with customers in creating value.
+                                     </p>
+
+                                     <h6>
+                                        Employee Empowerment
+                                    </h6>
+                                    <p>
+                                        Empowering employees at all levels and motivating them to challenge the status quo, to set and achieve ambitious goals for themselves and the company.
+                                     </p>
+
+                                     <h6>
+                                        Joy at Work
+                                    </h6>
+                                    <p>
+                                        Providing employees a conducive, challenging environment where creativity is valued, teamwork is encouraged, performances are rewarded and success celebrated.
+                                     </p>
+
+                                     <h6>
+                                        Integrity
+                                    </h6>
+                                    <p>
+                                        A commitment to be open, frank, loyal and ethical in our interactions with all our stakeholders.
+                                     </p>
+                                </div>
+                            </div>
+                            </div>
+                            </section>
+
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="3">
+                        <a ngbNavLink>Centers of Excellence</a>
+                        <ng-template ngbNavContent>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6>
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </h6>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="4">
+                        <a ngbNavLink>Vision & Mission</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6>
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </h6>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="5">
+                        <a ngbNavLink>Values</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6>
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </h6>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="6">
+                        <a ngbNavLink>Leadership</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6>
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </h6>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="leader-ship" *ngFor="let leaderlist of leaders; index as i">
                                 <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -162,74 +337,25 @@
                                 </div>
                             </div>
                             </section>
-
-                        </ng-template>
-                    </li>
-
-                    <li [ngbNavItem]="3">
-                        <a ngbNavLink>Centers of Excellence</a>
-                        <ng-template ngbNavContent>
-
-                            <h6>
-                                ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                qualified brass at the helm of the affairs.
-                            </h6>
-                            <p>
-                                from different backgrounds
-                            </p>
-                        </ng-template>
-                    </li>
-
-                    <li [ngbNavItem]="4">
-                        <a ngbNavLink>Vision & Mission</a>
-                        <ng-template ngbNavContent>
-                            <h5>Vision & Mission</h5>
-                            <h6>
-                                ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                qualified brass at the helm of the affairs.
-                            </h6>
-                            <p>
-                                from different backgrounds
-                            </p>
-                        </ng-template>
-                    </li>
-
-                    <li [ngbNavItem]="5">
-                        <a ngbNavLink>Values</a>
-                        <ng-template ngbNavContent>
-                            <h6>
-                                ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                qualified brass at the helm of the affairs.
-                            </h6>
-                            <p>
-                                from different backgrounds
-                            </p>
-                        </ng-template>
-                    </li>
-
-                    <li [ngbNavItem]="6">
-                        <a ngbNavLink>Leadership</a>
-                        <ng-template ngbNavContent>
-                            <h6>
-                                ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                qualified brass at the helm of the affairs.
-                            </h6>
-                            <p>
-                                from different backgrounds
-                            </p>
                         </ng-template>
                     </li>
 
                     <li [ngbNavItem]="7">
                         <a ngbNavLink>News</a>
                         <ng-template ngbNavContent>
-                            <h6>
-                                ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                qualified brass at the helm of the affairs.
-                            </h6>
-                            <p>
-                                from different backgrounds
-                            </p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h6>
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </h6>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </ng-template>
                     </li>
 

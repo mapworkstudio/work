@@ -507,22 +507,24 @@ $purple:#787fc2;
 				&:nth-child(2){
 					padding:25px;
 					ul{
-						margin-left: 23px;
 						margin-bottom:20px;
 						li{
-							list-style-type: none;
-							color:#276caa;
-							font-weight:bold;
-						&::before{
-							content: "\2022";
-							color: #000;
-							font-weight: bold;
-							display: inline-block; 
-							width: 1em;
-							margin-left: -1em;
-							font-size:25px;
-						}
-							
+							padding: 0 0 20px 20px;
+							list-style: none outside;
+							font-size: 16px;
+							position: relative;
+							&::before{
+								content: " ";
+								background: #214f7a;
+								font-weight: bold;
+								position:absolute;
+								top:8px;
+								left:0px;
+								width: 10px;
+								height:10px;
+								border-radius: 50%;
+								margin-right: 10px;
+							}
 						}
 
 					}
