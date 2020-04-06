@@ -248,10 +248,9 @@
                         </ng-template>
                     </li>
 
-                    <li [ngbNavItem]="3">
-                        <a ngbNavLink>Centers of Excellence</a>
+                   <li [ngbNavItem]="3">
+                        <a ngbNavLink>Partner</a>
                         <ng-template ngbNavContent>
-
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -269,44 +268,6 @@
                     </li>
 
                     <li [ngbNavItem]="4">
-                        <a ngbNavLink>Vision & Mission</a>
-                        <ng-template ngbNavContent>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <h6>
-                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                            qualified brass at the helm of the affairs.
-                                        </h6>
-                                        <p>
-                                            from different backgrounds
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </ng-template>
-                    </li>
-
-                    <li [ngbNavItem]="5">
-                        <a ngbNavLink>Values</a>
-                        <ng-template ngbNavContent>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <h6>
-                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                            qualified brass at the helm of the affairs.
-                                        </h6>
-                                        <p>
-                                            from different backgrounds
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </ng-template>
-                    </li>
-
-                    <li [ngbNavItem]="6">
                         <a ngbNavLink>Leadership</a>
                         <ng-template ngbNavContent>
                             <div class="container">
@@ -340,24 +301,78 @@
                         </ng-template>
                     </li>
 
-                    <li [ngbNavItem]="7">
+                    <!-- <li [ngbNavItem]="5">
                         <a ngbNavLink>News</a>
                         <ng-template ngbNavContent>
-                            <div class="container">
+                            <div class="container section-news">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h6>
-                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                            qualified brass at the helm of the affairs.
-                                        </h6>
-                                        <p>
-                                            from different backgrounds
-                                        </p>
+                                    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                                        <li [ngbNavItem]="01">
+                                          <a ngbNavLink>News</a>
+                                          <ng-template ngbNavContent>
+                                            <li *ngFor="let data of news; index as i" class="p2 grid-li">
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                       <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <p><b>{{data.desc_1}}</b></p>
+                                                        <p>{{data.desc_2}}</p>
+                                                       
+                                                    </div>
+                                             </div>
+                                            </li>
+                                        </ng-template>
+                                        </li>
+                                        <li [ngbNavItem]="02">
+                                            <a ngbNavLink>Events</a>
+                                            <ng-template ngbNavContent>
+                                            
+                                          </ng-template>
+                                          </li>
+                                          <li [ngbNavItem]="03">
+                                            <a ngbNavLink>Webinars</a>
+                                            <ng-template ngbNavContent>
+                                              
+                                          </ng-template>
+                                          </li>
+                                          <li [ngbNavItem]="04">
+                                            <a ngbNavLink>Press Releases</a>
+                                            <ng-template ngbNavContent>
+                                            
+                                          </ng-template>
+                                          </li>
+                                          <li [ngbNavItem]="05">
+                                            <a ngbNavLink>Video Gallery</a>
+                                            <ng-template ngbNavContent>
+                                             
+                                          </ng-template>
+                                          </li>
+                                      </ul>
+                                      
+                                      <div [ngbNavOutlet]="nav" class="mt-4"></div>
+                                </div> </div>
+                            </div>
+                            
+                            <section class="news-video">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                            
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zmEG-5zEmPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                            
+                                            <h6 class="center">
+                                                Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.
+                                            </h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                         </ng-template>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>

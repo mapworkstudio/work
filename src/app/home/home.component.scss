@@ -24,6 +24,7 @@
 			color:#FFC100;
 			text-transform: uppercase;
 			font-weight:bold;
+			margin:0;
 		}
 		.btn{
 			border:2px solid #fff;
@@ -509,10 +510,11 @@ $purple:#787fc2;
 					ul{
 						margin-bottom:20px;
 						li{
-							padding: 0 0 20px 20px;
+							padding: 0 0 10px 20px;
 							list-style: none outside;
 							font-size: 16px;
 							position: relative;
+							font-weight:bold;
 							&::before{
 								content: " ";
 								background: #214f7a;

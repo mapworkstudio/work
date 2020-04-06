@@ -203,16 +203,37 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <h6>
-                                            Arkedge has a well-defined and mature application development service offering. Arkedge application development model covers all phases of the Software Development Life Cycle (SDLC), beginning with transforming business requirements into project functional requirements, development, quality, testing, implementation, training and application support. Our distributed delivery methodology effectively leverages the onsite subject matter expertise and the offshore development teams, resulting in cost-effective solutions. Each of the development phases can be defined with metrics and subsequently tracked with the monitoring tools and well defined project management and execution processes.
+                                            Arkedge has a well-defined and mature application development service
+                                            offering. Arkedge application development model covers all phases of the
+                                            Software Development Life Cycle (SDLC), beginning with transforming business
+                                            requirements into project functional requirements, development, quality,
+                                            testing, implementation, training and application support. Our distributed
+                                            delivery methodology effectively leverages the onsite subject matter
+                                            expertise and the offshore development teams, resulting in cost-effective
+                                            solutions. Each of the development phases can be defined with metrics and
+                                            subsequently tracked with the monitoring tools and well defined project
+                                            management and execution processes.
                                         </h6>
                                         <p>
-                                            Arkedge provides outsourced software development services for in-house applications, across the project lifecycle. We partner with you from internal proposals and budgeting, through project approvals, all the way to delivery, training, maintenance and support. Our flexible offshore software development model allows companies to maximize their ROI, while maintaining complete control over projects.
+                                            Arkedge provides outsourced software development services for in-house
+                                            applications, across the project lifecycle. We partner with you from
+                                            internal proposals and budgeting, through project approvals, all the way to
+                                            delivery, training, maintenance and support. Our flexible offshore software
+                                            development model allows companies to maximize their ROI, while maintaining
+                                            complete control over projects.
                                         </p>
 
                                         <p>
                                             <img src="assets/images/managservice/app-dev-met.jpg" align="right">
-                                            At each stage of the application development cycle we bring people, process and technology expertise to pro-actively guide you through the challenges of meeting application requirements within budget, time and quality. A key aspect of Arkedge's application development methodology is the early and extensive use of screen mockups or wireframes. In our experience, mockups and wireframes speed up initial approvals, improve the reliability of requirements gathering and documentation, and greatly enhance user acceptance and utilization of the delivered application.
-                                            
+                                            At each stage of the application development cycle we bring people, process
+                                            and technology expertise to pro-actively guide you through the challenges of
+                                            meeting application requirements within budget, time and quality. A key
+                                            aspect of Arkedge's application development methodology is the early and
+                                            extensive use of screen mockups or wireframes. In our experience, mockups
+                                            and wireframes speed up initial approvals, improve the reliability of
+                                            requirements gathering and documentation, and greatly enhance user
+                                            acceptance and utilization of the delivered application.
+
                                         </p>
                                     </div>
                                 </div>
@@ -244,7 +265,11 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <p>
-                                                Systems modelling with analysis and design using UML tools Customers can be rest assured that Arkedge will provide technical follow-through during the planning, design, development and deployment of every project. It also offers on-going management, maintenance and monitoring of all developed applications and the systems they run on.
+                                                Systems modelling with analysis and design using UML tools Customers can
+                                                be rest assured that Arkedge will provide technical follow-through
+                                                during the planning, design, development and deployment of every
+                                                project. It also offers on-going management, maintenance and monitoring
+                                                of all developed applications and the systems they run on.
                                             </p>
                                         </div>
                                     </div>
@@ -262,44 +287,168 @@
                                     <div class="col-sm-12">
                                         <h6>
                                             ARKEDGE is a rapidly growing professionally managed organization with
-                                            competent and
-                                            qualified brass at the helm of the affairs.
+                                            competent and qualified brass at the helm of the affairs. The organization
+                                            is making its presence felt on the engineering solution and services,
+                                            Staffing and IT training circuit. Equipped with cross cultural operating
+                                            experience; an asset, it drives the organization to deliver nothing but the
+                                            best.
                                         </h6>
                                         <p>
-                                            from different backgrounds
+                                            We specialize in improving operational performance and IT delivery.
+                                            We do this by improving the way our clients use people, processes and
+                                            technologies. Here is the place to envision, discover and fulfil your
+                                            technology needs.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </ng-template>
-                    </li>
 
-                    <li [ngbNavItem]="4">
-                        <a ngbNavLink>Software Testing & QA</a>
-                        <ng-template ngbNavContent>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <h6>
-                                            ARKEDGE is a rapidly growing professionally managed organization with
-                                            competent and
-                                            qualified brass at the helm of the affairs.
-                                        </h6>
-                                        <p>
-                                            from different backgrounds
-                                        </p>
+                            <section class="ui-ux-info">
+                                <div class="container">
+                                    <div class="row">
+                                        <div *ngFor="let item of uiUxInfo" class="col-md-4 col-lg-4 col-sm-12">
+                                            <div class="panel center">
+                                                <div class="panel-heading">
+                                                    <div class="icon-circle">
+                                                        <i class="icon icon-large">
+                                                            <svg focusable="false">
+                                                                <use attr.xlink:href="{{item.icon}}"></use>
+                                                            </svg>
+                                                        </i>
+                                                    </div>
+                                                    <h5>{{item.title}}</h5>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p>{{item.description}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </ng-template>
-                    </li>
-                </ul>
+                            </section>
+
+                            <section class="ui-ux-process">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 center">
+                                            <h1>UX/UI Development Process</h1>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-3 col-lg-2 col-sm-12">
+                                            <div class="icon-circle">
+                                                <i class="icon icon-large">
+                                                    <svg focusable="false">
+                                                        <use xlink:href="#icon_strategy"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-lg-10 col-sm-12">
+                                            <h6>UX/UI Development Process</h6>
+                                            <p>Business requirements define the value proposition of a product. They are
+                                                the answers to why a new product is requested. As the visualized form of
+                                                requirements, user interface designs should be also based on business
+                                                requirements to satisfy the strategic level objectives of creating that
+                                                product.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9 col-lg-10 col-sm-12">
+                                            <h6>Understand your Users</h6>
+                                            <p>"Designing for everybody" is not a feasible and effective strategy in
+                                                terms of usability. Interfaces of a product are usable if they are good
+                                                fit for its users. Thus user interface design should be based on the
+                                                profile of target user groups.</p>
+                                        </div>
+
+                                        <div class="col-md-3 col-lg-2 col-sm-12">
+                                            <div class="icon-circle">
+                                                <i class="icon icon-large">
+                                                    <svg focusable="false">
+                                                        <use xlink:href="#icon_understanding"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-lg-2 col-sm-12">
+                                            <div class="icon-circle">
+                                                <i class="icon icon-large">
+                                                    <svg focusable="false">
+                                                        <use xlink:href="#icon_product"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-lg-10 col-sm-12">
+                                            <h6>Define your Requirements & Content</h6>
+                                            <p>User interfaces are composed not only of functional requirements (tasks)
+                                                but also of content requirements. Therefore, in parallel to interaction
+                                                design (based on functional requirements), the information architecture
+                                                (based on content requirements) should be also designed. The main
+                                                objective of information architecture design is to identify content
+                                                requirements, define content categories, and finalize the navigation
+                                                structures.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9 col-lg-10 col-sm-12">
+                                            <h6>Shape your Product</h6>
+                                            <p>Our UX designers then convert interaction designs and information
+                                                architectures into user interfaces by applying UX design and usability
+                                                principles and guidelines. They design low-fidelity prototypes by
+                                                sketching or using prototyping tools. Then our Visual designers convert
+                                                low-fidelity prototypes into high-fidelity visual designs with the most
+                                                aesthetic color, metaphor, and font selections.</p>
+                                        </div>
+
+                                        <div class="col-md-3 col-lg-2 col-sm-12">
+                                            <div class="icon-circle">
+                                                <i class="icon icon-large">
+                                                    <svg focusable="false">
+                                                        <use xlink:href="#icon_value"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+</section>
+
+</ng-template>
+</li>
+
+<li [ngbNavItem]="4">
+    <a ngbNavLink>Software Testing & QA</a>
+    <ng-template ngbNavContent>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6>
+                        ARKEDGE is a rapidly growing professionally managed organization with
+                        competent and
+                        qualified brass at the helm of the affairs.
+                    </h6>
+                    <p>
+                        from different backgrounds
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </ng-template>
+</li>
+</ul>
+</div>
+</div>
+</div>
 
 
-    <div [ngbNavOutlet]="nav"></div>
+<div [ngbNavOutlet]="nav"></div>
 
 
 </section>
