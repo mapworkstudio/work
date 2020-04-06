@@ -13,14 +13,14 @@ export class HeaderComponent implements OnInit {
   isOpen = true;
   constructor() {
     this.list = [
-        {name: 'WhoWeAre'},
         {name: 'WhyArkedgeTchnologies'},
         {name: 'ValueOfExcellence'},
         {name: 'OurLeadership'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
-        {name: 'Testimonial'},
-        {name: 'Industries'}
+        {name: 'TestimonialClientspeaks'},
+        {name: 'Industries'},
+        {name: 'Technologies'}
     ];
     this.managedService = [
       {name: 'SOFTWARE ENGINEERING',

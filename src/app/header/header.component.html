@@ -39,20 +39,16 @@
   <div class="col-lg-4 col-md-4 col-sm-12">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="inner-banner">
+         <a class="nav-link" routerLink="Technology" routerLinkActive="active" skipLocationChange=true>
           <img src="assets/images/inner-banner-technology.jpg">
-          <a class="nav-link" routerLink="Technology" routerLinkActive="active" skipLocationChange=true>
             Technology
           </a>
       </div>
-      </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="inner-banner">
-          <img src="assets/images/inner-banner-industries.jpg">
           <a class="nav-link" routerLink="Industries" routerLinkActive="active" skipLocationChange=true>
+          <img src="assets/images/inner-banner-industries.jpg">
             Industries
           </a>
-      </div>
       </div>
     </div>
   </div>
@@ -130,6 +126,26 @@
       <a (click)="slideToggel()" routerLink="{{item.name}}" routerLinkActive="active" skipLocationChange=true>{{item.name | createSpace}}</a>
     </li>
   </ul>
+  <div class="slider-footer-contact">
+    <a class="nav-link" href="mailto:info@arkedge.com">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_Email"></use>
+        </svg>
+      </i>
+      info@arkedge.com
+    </a>
+  
+    <a class="nav-link">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_phone"></use>
+        </svg>
+      </i>
+      321-321-6544
+    </a>
+    </div>
 </div>
+
 <div class="overlay" [ngClass]="isOpen ? '' : 'active'" (click)="slideToggel()">
 </div>

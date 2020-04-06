@@ -147,7 +147,8 @@ section{
 			padding: 0 0 20px 20px;
 			list-style: none outside;
 			font-size: 16px;
-			position: relative;
+            position: relative;
+            font-weight: bold;
 			&::before{
 				content: " ";
 				background: #214f7a;
