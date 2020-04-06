@@ -1466,7 +1466,7 @@
       path: 'OurLeadership',
       component: _about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"]
     }, {
-      path: 'Testimonial',
+      path: 'TestimonialClientspeaks',
       component: _testimonials_testimonials_component__WEBPACK_IMPORTED_MODULE_17__["TestimonialsComponent"]
     }, {
       path: 'OurHappyClients',
@@ -2231,8 +2231,6 @@
       constructor() {
         this.isOpen = true;
         this.list = [{
-          name: 'WhoWeAre'
-        }, {
           name: 'WhyArkedgeTchnologies'
         }, {
           name: 'ValueOfExcellence'
@@ -2243,9 +2241,11 @@
         }, {
           name: 'NewsAndEventUpdate'
         }, {
-          name: 'Testimonial'
+          name: 'TestimonialClientspeaks'
         }, {
           name: 'Industries'
+        }, {
+          name: 'Technologies'
         }];
         this.managedService = [{
           name: 'SOFTWARE ENGINEERING',

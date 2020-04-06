@@ -793,7 +793,7 @@ const routes = [
     { path: 'VisionAndMission', component: _about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"] },
     { path: 'ValueOfExcellence', component: _about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"] },
     { path: 'OurLeadership', component: _about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"] },
-    { path: 'Testimonial', component: _testimonials_testimonials_component__WEBPACK_IMPORTED_MODULE_17__["TestimonialsComponent"] },
+    { path: 'TestimonialClientspeaks', component: _testimonials_testimonials_component__WEBPACK_IMPORTED_MODULE_17__["TestimonialsComponent"] },
     { path: 'OurHappyClients', component: _client_client_component__WEBPACK_IMPORTED_MODULE_15__["ClientComponent"] },
     { path: 'NewsAndEventUpdate', component: _about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"] },
     { path: 'ValueOfExcellence', component: _about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"] },
@@ -1265,14 +1265,14 @@ let HeaderComponent = class HeaderComponent {
     constructor() {
         this.isOpen = true;
         this.list = [
-            { name: 'WhoWeAre' },
             { name: 'WhyArkedgeTchnologies' },
             { name: 'ValueOfExcellence' },
             { name: 'OurLeadership' },
             { name: 'OurHappyClients' },
             { name: 'NewsAndEventUpdate' },
-            { name: 'Testimonial' },
-            { name: 'Industries' }
+            { name: 'TestimonialClientspeaks' },
+            { name: 'Industries' },
+            { name: 'Technologies' }
         ];
         this.managedService = [
             { name: 'SOFTWARE ENGINEERING',
