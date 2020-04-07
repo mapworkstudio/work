@@ -37,7 +37,8 @@
     .v-align{
         display:flex;
         p{
-            align-self: center;
+			align-self: center;
+			padding-left:150px
         }
 	}
 	img{
@@ -169,6 +170,10 @@ $green:#4bbb57;
 	p{
 		padding-top:40px;
 		border-top:1px solid #ccc;
+		a{
+			color:#214f7a;
+			font-weight:bold;
+		}
 	}
 	img{
 		width:auto;
@@ -185,13 +190,13 @@ $green:#4bbb57;
 }
 
 .why-us{
-	padding:0;
+	padding:0 0 70px 0;
 	.row{
 		&:nth-child(even){
 			padding:70px 0;
 		}
 		&:last-child{
-			padding:0;
+			padding:45px 0 0 0;
 		}
 	}
 	h6{
@@ -226,72 +231,24 @@ $green:#4bbb57;
 	height: 100%;
 }
 
-
-.section-news{
-    margin:70px auto;
-    .nav-tabs{
-        width: 100%;
-        border-bottom:1px solid #214f7a;
-        .nav-link{
-            border:none;
-            color:#214f7a;
-            &.active{
-                border-bottom:2px solid #214f7a;
-                font-weight:bold;
-            }
-        }
+.partner-info{
+	padding:70px 0;
+    padding-bottom:20px;
+    .panel{
+        margin-bottom:50px;
+        border: 1px solid rgba(33, 79, 122, 0.1);
+        padding: 20px;
     }
-    li
-   {
-    &.grid-li{
-        width:25%;
-         float:left;
-         list-style-type: none;
-         p{
-             margin:0;
-         }
-         .panel{
-            margin: 0 0 10px 10px;;
-             border:1px solid #ccc;
-             .panel-body{
-                 padding:15px;
-             }
-           
-         }
-         img{
-             width:100%;
-         }
-         &:first-child{
-             width:50%;
-             .panel{
-                 background: #e5f0fa;
-                 border:none;
-                 margin-left:0;
-                 p{
-                     font-size:16px;
-                     margin-bottom: 20px;
-                     &:first-child{
-                        margin-top: 20px;
-                        margin-bottom: 20px;
-                        font-size:18px;
-                    }
-                 }
-             }
-         }
-  
- }
-   }
-   
 }
-.news-video{
-    padding:70px 0;
-    background:#e5f0fa;
-    .video{
-        margin-bottom:70px;
-       iframe{
-        margin:0 auto;
-        display: block;
-       }
+.modal-body{
+    h6{
+        font-weight: bold;
+    }
+    a{
+        color:#276caa;
+        &:hover{
+            color:#000;
+        }
     }
 }
 
@@ -305,4 +262,12 @@ $green:#4bbb57;
 			margin-bottom:20px;
 		}
 	}
-}}
+}
+.about-info{
+	.v-align{
+		p{
+			padding:0;
+		}
+	}
+}
+}

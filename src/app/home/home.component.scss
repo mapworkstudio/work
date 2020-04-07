@@ -145,6 +145,9 @@ ngb-carousel{
 			margin-top:5px;
 		}
 	}
+	.email-link{
+		color:#276caa;
+	}
 }
 
 $red:#b9646e;
@@ -496,6 +499,9 @@ $purple:#787fc2;
 		padding:0 15px;
 		margin-bottom: 15px;
 		background:rgba(204, 204, 204, 0.2);
+		h5{
+			font-weight:bold;
+		}
 		.row{
 			div{
 				&:first-child{
@@ -534,6 +540,7 @@ $purple:#787fc2;
 				}
 			}
 		}
+		
 	}
 }
 

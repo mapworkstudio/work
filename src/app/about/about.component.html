@@ -24,11 +24,11 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <h6>
+                                            <p class="running-text">
                                                 ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best.
 
 
-                                            </h6>
+                                            </p>
                                             <p>
                                                 Over the years we have built up a solid team of software professionals that come from different backgrounds and enlarge the creative potential of ARKEDGE. The competence that they offer contains a wide range of custom programming skills including the latest and most effective development in Microsoft technologies.
                                             </p>
@@ -62,7 +62,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-8 col-md-8 col-sm-12 v-align">
-                                            <p>Ever-growing demand for Web Application solutions is driven by rapidly changing market conditions and technology progress. To streamline your business, we address those issues with our Internet and Intranet solutions. In addition we also provide you web / animation design services.
+                                            <p>Ever-growing demand for Web Application solutions is driven by rapidly changing market conditions and technology progress. To streamline your business, we address those issues with our Internet and Intranet solutions. In addition we also provide you web / animation design services.<br><br>
+                                                In addition ARKEDGE specializes in a bunch of IT training services for corporate, institutions and individuals. We do organize corporate training programs for industry officials who find it difficult to mingle their expertise with latest IT tools and IT based technology. We do impart IT training for graduates in multiple discipline including computer application, hard core technology, business administration, and individuals who are in the mid of their management education.
+
+
                                             </p>
 
                                         </div>
@@ -137,10 +140,10 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h6>
+                                        <p class="running-text">
                                             ARKEDGE is a rapidly growing professionally managed organization with competent and
                                             qualified brass at the helm of the affairs.
-                                        </h6>
+                                        </p>
                                         <p>
                                             from different backgrounds
                                         </p>
@@ -254,16 +257,50 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h6>
+                                        <p class="running-text">
                                             ARKEDGE is a rapidly growing professionally managed organization with competent and
                                             qualified brass at the helm of the affairs.
-                                        </h6>
+                                        </p>
                                         <p>
                                             from different backgrounds
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+
+                                <section class="partner-info">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div *ngFor="let data of partnerInfo; index as i" class="col-lg-3 col-md-3 col-sm-12">
+                                                <div class="panel" (click)="open(content)">
+                                                   <div class="panel-body">
+                                                       <a><img src="assets/images/logo{{i+1}}.png"></a>
+                                                    </div>
+                                                 </div>
+                                                 <ng-template #content let-modal>
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">{{data.title}}</h4>
+                                                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                <div class="modal-body">
+                                                    
+                                                    <div class="panel">
+                                                        <div class="panel-header">
+                                                            <img src="assets/images/logo{{i+1}}.png">
+                                                         </div>
+                                                        <div class="panel-body">
+                                                            <p>{{data.desc}}</p>
+                                                            <a href="{{data.url}}" target="_blank">{{data.url}}</a>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                              </ng-template>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </section>
+                             </div>
                         </ng-template>
                     </li>
 
@@ -273,10 +310,10 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h6>
+                                        <p class="running-text">
                                             ARKEDGE is a rapidly growing professionally managed organization with competent and
                                             qualified brass at the helm of the affairs.
-                                        </h6>
+                                        </p>
                                         <p>
                                             from different backgrounds
                                         </p>
@@ -287,12 +324,13 @@
                             <section class="leader-ship" *ngFor="let leaderlist of leaders; index as i">
                                 <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 col-md-11 div-center">
                                         <p>
                                             <img src="assets/images/leadership/leader-{{i+1}}.jpg" align="left">
                                             <span class="title-name">{{leaderlist.name}}</span><br><br>
                                             <span class="title-info">{{leaderlist.info}}</span><br><br>
                                             {{leaderlist.desc}}
+                                            <a>Read More..</a>
                                         </p>
                                     </div>
                                 </div>
