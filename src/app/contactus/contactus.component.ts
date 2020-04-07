@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactusComponent implements OnInit {
   contactInfo = [
-          {title : 'General Informaton', subtitle : 'Inquiry', id : 'info@arkedge.com'},
-          {title : 'Sales & Learning', subtitle : 'Business development', id : 'sales@arkedge.com'},
-          {title : 'Current Openings', subtitle : 'Job apply', id : 'careers@arkedge.com'}
+          {title : 'General Informaton', subtitle : 'Inquiry', id : 'info@arkedge.com', icon: '#icon_contact' , phone: '321-321-6544'},
+          {title : 'Sales & Learning', subtitle : 'Business development', id : 'sales@arkedge.com', icon: '#icon_development'},
+          {title : 'Current Openings', subtitle : 'Job apply', id : 'careers@arkedge.com', icon: '#icon_approved'}
   ];
 
 getTouch = [

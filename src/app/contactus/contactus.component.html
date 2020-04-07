@@ -22,8 +22,18 @@
                         <h5>{{data.title}}</h5>
                     </div>
                     <div class="panel-body">
-                        <p>{{data.subtitle}}</p>
-                        <p>{{data.id}}</p>
+                        <div>
+                            <i class="icon icon-medium">
+                                <svg focusable="false">
+                                    <use attr.xlink:href="{{data.icon}}"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <div>
+                            <p>{{data.subtitle}}</p>
+                        <a href="mailto:{{data.id}}">{{data.id}}</a>
+                        <p>{{data.phone}}</p>
+                        </div>
                     </div>
                 </div>
             </div>

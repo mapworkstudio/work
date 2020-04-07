@@ -69,14 +69,15 @@
             <div class="col-sm-12 center">
                 <h1>OUR <span class="heading-highlight">PRODUCTS</span></h1>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig2">
+            <div ngxSlickItem class="col-lg-6 col-md-6 col-sm-12">
                 <div class="panel">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 v-flex">
                             <img src="assets/images/01.png">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <h2>Product Name 1</h2>
+                            <h5>Product Name 1</h5>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore
@@ -99,14 +100,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div ngxSlickItem class="col-lg-6 col-md-6 col-sm-12">
                 <div class="panel">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 v-flex">
                             <img src="assets/images/01.png">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <h2>Product Name 1</h2>
+                            <h5>Product Name 2</h5>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore
@@ -129,6 +130,37 @@
                     </div>
                 </div>
             </div>
+            <div ngxSlickItem class="col-lg-6 col-md-6 col-sm-12">
+                <div class="panel">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 v-flex">
+                            <img src="assets/images/01.png">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h5>Product Name 3</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                            <ul>
+                                <li>
+                                    Robust version design
+                                </li>
+                                <li>
+                                    Cross-platform architecture
+                                </li>
+                                <li>
+                                    Wide variety of integration requirements
+                                </li>
+                            </ul>
+                            <button type="submit" class="btn btn-primary">KNOW MORE</button>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </ngx-slick-carousel>
         </div>
     </div>
 </section>
@@ -284,10 +316,9 @@
                                 INDIA</p>
 
                             <h6>Contact</h6>
-                            <p>
-                                info@arkedge.com<br>
-
-                                calling +91 9029290808.
+                            <p> 
+                             <a class="email-link" href="mailto:info@arkedge.com">info@arkedge.com</a><br>
+                             Calling : 321-321-6544
                             </p>
                         </div>
                     </div>
