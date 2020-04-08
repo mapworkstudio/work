@@ -15,30 +15,6 @@
             display: table;
         }   
     }
-    .career-info{
-    .panel{
-        padding:30px;
-        background:#e5f0fa;
-        .panel-body{
-            margin-top:50px;
-         }
-         h6{
-            font-weight:bold;
-            margin:0;
-            line-height: 18px;
-        }
-        p{
-            margin:0;
-        }
-        &:hover{
-            background:#214f7a;
-            h6, p{
-                color:#fff;
-            }
-        }
-     }
-    
-}
 .custom-file-label{
     left:15px;
     width: calc(100% - 30px);

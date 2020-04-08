@@ -245,6 +245,74 @@ section{
     }
 }
 
+.qa-testing{
+    img{
+        width:auto;
+        vertical-align: top;
+        margin-left:70px;
+    }
+}
+
+.manage-space{
+    margin:30px 0;
+}
+
+.qa-info{
+    margin-bottom:50px;
+}
+
+.qa-testing-info{
+    margin-bottom:40px;
+    h6{
+        font-weight:bold;
+    }
+
+    .icon-circle{
+        width: 250px;
+        height: 250px;
+        background:#e5f0fa;
+        margin:0 auto;
+        align-self: center;
+        border-radius:50%;
+        i{
+            line-height: 250px;
+            margin: 0 auto;
+            display: table;
+            svg{
+                fill: #214f7a;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    ul.qa-test-info{
+        margin-left: 5px;
+        align-self: center;
+        li{
+            padding: 0 0 10px 20px;
+            list-style: none outside;
+            font-size: 16px;
+            position: relative;
+            font-weight: bold;
+            &::before{
+                content: " ";
+                background: #214f7a;
+                font-weight: bold;
+                position:absolute;
+                top:8px;
+                left:0px;
+                width: 10px;
+                height:10px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+
 @media (max-width: 576px){
     .methodologies{
         ul{
@@ -258,6 +326,11 @@ section{
     .app-development{
         img{
             width:100%;
+        }
+    }
+    .qa-testing{
+        img{
+             margin-left:0px;
         }
     }
 }
