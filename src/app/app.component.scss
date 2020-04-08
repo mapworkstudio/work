@@ -244,6 +244,33 @@ textarea.form-control{
 		text-transform: uppercase;
 	}
 
+
+	.career-info, .qa-info{
+		.panel{
+			padding:30px;
+			background:#e5f0fa;
+			.panel-body{
+				margin-top:50px;
+			 }
+			 h6{
+				font-weight:bold;
+				margin:0;
+				line-height: 18px;
+			}
+			p{
+				margin:0;
+			}
+			&:hover{
+				background:#214f7a;
+				h6, p{
+					color:#fff;
+				}
+			}
+			height:100%;
+		 }
+		
+	}
+
 	@media (max-width: 576px){
 		.inner-nav-tab{
 		.tab-navigation{

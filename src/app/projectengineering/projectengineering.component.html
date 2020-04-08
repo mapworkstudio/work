@@ -431,19 +431,134 @@
                     <li [ngbNavItem]="4">
                         <a ngbNavLink>Software Testing & QA</a>
                         <ng-template ngbNavContent>
-                            <div class="container">
+                            <div class="container qa-testing">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <p class="running-text">
-                                            ARKEDGE is a rapidly growing professionally managed organization with
-                                            competent and
-                                            qualified brass at the helm of the affairs.
+                                        <p class="running-text"> 
+                                            Arkedge is committed to providing high-quality software solutions to its clients. Therefore we take a serious approach to the testing process and quality assurance of the solutions that are developed either by our development team or your existing or new applications. The current techniques and approaches applied to software testing help identify and prevent occurrence of the problems associated with the improper functionality, low reliability, productivity, scalability and other defects of the applications.
                                         </p>
-                                        <p>
-                                            from different backgrounds
+                                        <p class="v-flex">
+                                            We have robust testing processes and frameworks that can seamlessly plug and play at any stage of the software and product development life cycle to provide you the flexible scale and repeatability in meeting demanding quality requirements and go-live schedules.<br><br>
+                                            Our strong belief is to form a QA team in the initial stage of the development phase; this undoubtedly helps reduce the risks of fixing global bugs in later stages. The QA engineers are involved in the development process right off the mark: they are provided with the available documentation, acquainted with the business processes that are to be implemented in the project and technical specifications requested by the client. On the basis of the provided resources our engineers develop a testing plan that meets all the mentioned requirements. It defines the scope of testing and documents the process of quality assurance.
+                                            <img src="assets/images/managservice/qa-testing.png" align="right">
+                                        </p>
+                                        <p class="running-text manage-space">Arkedge helps with critical aspects of clients' systems, such as planning, process control, performance metrics, test automation, test execution, defect tracking, and reporting.
                                         </p>
                                     </div>
+                                    <div *ngFor="let data of qaInfo" class="col-lg-6 col-md-6 col-sm-12 qa-info">
+                                        <div class="panel">
+                                                <div class="panel-heading">
+                                                   <h6>{{data.title}}</h6>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p>{{data.info}}</p>
+                                                </div>
+                                         </div>
+                                    </div>
+
                                 </div>
+
+                                <div class="row qa-testing-info">
+                                  <div class="col-md-4 col-lg-4 col-sm-12 v-flex">
+                                        <div class="icon-circle">
+                                            <i class="icon icon-large">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_seeting3"></use>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8 col-sm-12">
+                                        <h6>Functional Testing</h6>
+                                        <p>Functional testing is done using the functional specifications provided by the client or by using the design specifications like use cases provided by the design team. Functional testing validates that an application conforms to its specifications and meets its expected functional requirements. During functionality testing, a range of inputs as test data is created and tests are performed to validate if whether each feature conforms to the requirements.
+                                        </p>
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="row qa-test-info">
+                                                    <li *ngFor="let data of qafunctionTest" class="col-md-6 col-lg-6 col-sm-12">
+                                                        {{data.info}}
+                                                    </li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row qa-testing-info">
+                                    
+                                      <div class="col-md-8 col-lg-8 col-sm-12">
+                                          <h6>Non-Functional Testing</h6>
+                                          <p>Testing the application against client's performance requirement; Non-Functioning testing is done based on the requirements and test scenarios defined by the client.
+                                          </p>
+                                          
+                                          <div class="row">
+                                              <div class="col-sm-12">
+                                                  <ul class="row qa-test-info">
+                                                      <li *ngFor="let data of qanonfunctionTest" class="col-md-6 col-lg-6 col-sm-12">
+                                                          {{data.info}}
+                                                      </li>
+                                                  </ul>
+                                              </div> 
+                                          </div>
+  
+                                      </div>
+
+                                      <div class="col-md-4 col-lg-4 col-sm-12 v-flex">
+                                        <div class="icon-circle">
+                                            <i class="icon icon-large">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_seeting1"></use>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                    </div>
+  
+                                  </div>
+
+                                  <div class="row qa-testing-info">
+
+                                        <div class="col-sm-12">  
+                                            <h6>Automation Lab</h6>
+                                            <p>Arkedge has a special focus on software test automation using market standard tools. Arkedge approaches automation design and development as a software development project in itself; to create an automated testing solution that is flexible enough to adapt to changes in your application and that will not need much rewriting for each new build. Arkedge test automation experts will ensure your tool investment is put to good use and will build automation skills into your organization for future re-usability and maintainability.
+                                            </p>
+                                        </div>
+                                   
+
+                                    <div class="col-md-4 col-lg-4 col-sm-12 v-flex">
+                                          <div class="icon-circle">
+                                              <i class="icon icon-large">
+                                                  <svg focusable="false">
+                                                      <use xlink:href="#icon_seeting2"></use>
+                                                  </svg>
+                                              </i>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-8 col-lg-8 col-sm-12">
+
+                                       
+ <p>It is important to consider automation of the test environment as early as possible and design it into the system from the outset. It's also important to recognize that automation is not appropriate for every project or for all testing on any particular project.
+<br><br>
+    Arkedge can help you achieve this balance so that the benefit from test automation at the right time and in the right way. Some of the automation focus areas' are:
+                                          </p>
+                                          
+                                          <div class="row">
+                                              <div class="col-sm-12">
+                                                  <ul class="row qa-test-info">
+                                                      <li *ngFor="let data of qalabfunctionTest
+                                                      " class="col-md-6 col-lg-6 col-sm-12">
+                                                          {{data.info}}
+                                                      </li> 
+                                                  </ul>
+                                              </div> 
+                                          </div>
+  
+                                      </div>
+  
+                                  </div>
+
                             </div>
                         </ng-template>
                     </li>
