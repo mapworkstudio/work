@@ -14,8 +14,6 @@ export class HeaderComponent implements OnInit {
   constructor() {
     this.list = [
         {name: 'WhyArkedgeTchnologies'},
-        {name: 'ValueOfExcellence'},
-        {name: 'OurLeadership'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
         {name: 'TestimonialClientspeaks'},
@@ -42,9 +40,9 @@ export class HeaderComponent implements OnInit {
         {name: 'StaffingServices'},
         {name: 'Industries'},
         {name: 'Courses'},
-        {name: 'Program Calendar'}
+        {name: 'ProgramCalendar'}
       ]}
-    ]
+    ];
   }
 
   slideToggel() {

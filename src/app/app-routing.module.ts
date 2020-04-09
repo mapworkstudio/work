@@ -18,6 +18,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { AdvancesolutionComponent } from './advancesolution/advancesolution.component';
+import { StaffingComponent } from './staffing/staffing.component';
+import { DatamgmtComponent } from './datamgmt/datamgmt.component';
 
 
 
@@ -45,6 +47,8 @@ const routes: Routes = [
   {path: 'ValueOfExcellence', component: AboutComponent},
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'ProjectEngineering', component: ProjectengineeringComponent},
+  {path: 'StaffingServices', component: StaffingComponent},
+  {path: 'CleanseDataset', component: DatamgmtComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
@@ -65,7 +69,9 @@ const routes: Routes = [
     TechnologyComponent,
     IndustriesComponent,
     ProjectengineeringComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    StaffingComponent,
+    DatamgmtComponent
 ],
   imports: [
     RouterModule.forRoot(routes, { enableTracing: false }),
