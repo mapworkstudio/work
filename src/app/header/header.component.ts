@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
         {name: 'WhyArkedgeTchnologies'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
-        {name: 'TestimonialClientspeaks'},
+        {name: 'TestimonialClientSpeaks'},
         {name: 'Industries'},
         {name: 'Technologies'}
     ];

@@ -44,8 +44,6 @@ export class StaffingComponent implements OnInit {
     {coursetype: 'SC01', courseDescription: 'Getting started with.Net, C# and ASP.NET', courseDuration: '1 Day'},
     {coursetype: 'SC01', courseDescription: 'Getting started with.Net, C# and ASP.NET', courseDuration: '1 Day'},
   ];
-
-  
 programCalendar = [
   {courseTitle : 'Post Degree Programming Course with ONE Live Project', location : 'Sr. Business Analyst',  targetDate: '04-Aug-18'},
   {courseTitle : 'Getting started with.Net, C# and ASP.NET', location : 'Mumbai, India', targetDate: '04-Jul-18'},

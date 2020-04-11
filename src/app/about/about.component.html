@@ -309,29 +309,50 @@
                         <ng-template ngbNavContent>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 col-sm-12 col-md-10 div-center center">
                                         <p class="running-text">
-                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
-                                            qualified brass at the helm of the affairs.
+                                            A great leader's courage to fulfill his vision comes from passion, not position.
                                         </p>
                                         <p>
-                                            from different backgrounds
+                                            At ARKEDGE, we all aspire to be tomorrow's leader. Individually we are pathfinders and collectively we are a doer (achiever).
+                                            <br>
+                                            We are passionate about everything that we do and so do it the best way.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <section class="leader-ship" *ngFor="let leaderlist of leaders; index as i">
+                            <section class="leader-ship first-child">
                                 <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-12 col-md-11 div-center">
-                                        <p>
+                                    <div class="col-sm-12">
+                                        <!-- <span class="img-container">
                                             <img src="assets/images/leadership/leader-{{i+1}}.jpg" align="left">
-                                            <span class="title-name">{{leaderlist.name}}</span><br><br>
+                                        </span> -->
+                                        <p>
+                                            <img class="div-3" src="assets/images/leadership/person3.png" align="left">
+                                           <span class="title-name">Same Martinez</span><br>
+                                            <span class="title-info">Chief Executive Officer & Co-Founder</span><br><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+                                           
+                                          </p>
+                                          <button class="btn btn-primary">Read More</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                                <section class="leader-ship">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4 col-md-4 div-center center" *ngFor="let leaderlist of leaders; index as i">
+                                        <p>
+                                            <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png" align="left">
+                                           <span class="title-name">{{leaderlist.name}}</span><br>
                                             <span class="title-info">{{leaderlist.info}}</span><br><br>
                                             {{leaderlist.desc}}
-                                            <a>Read More..</a>
+                                            
                                         </p>
+                                        <button class="btn btn-primary">Read More</button>
                                     </div>
                                 </div>
                             </div>

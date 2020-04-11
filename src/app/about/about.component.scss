@@ -1,3 +1,11 @@
+$randomBg:#c3d04e, #8778d9, #ffab00, #ff5630, #02b8d9, #5391ee;
+
+@for $i from 1 through length($randomBg) {
+	.div-#{$i} {
+		background-color: nth($randomBg, $i);
+	}
+}
+
 .about-key-diff{
     background:url(../../assets/images/about.jpg) no-repeat bottom center #1d4b76;
     padding:70px 0;
@@ -164,12 +172,18 @@ $green:#4bbb57;
 .leader-ship{
 		margin-top:40px;
 		padding:0;
+		&.first-child{
+			background:#f2f2f2; 
+			padding-bottom:40px;
+		}
 		&:last-child{
 			padding-bottom:70px;
+			img{
+				margin:0 0 40px 0;
+			}
 		}
 	p{
 		padding-top:40px;
-		border-top:1px solid #ccc;
 		a{
 			color:#214f7a;
 			font-weight:bold;
@@ -178,14 +192,21 @@ $green:#4bbb57;
 	img{
 		width:auto;
 		margin: 0 40px 0px 0;
+		border-radius: 50%;
+		padding: 20px;
 	}
 	.title-name{
-		font-size:36px;
+		font-size:25px;
 		font-weight:bold;
 	}
 	.title-info{
-		font-size:18px;
-		font-weight:bold; 
+		font-size:16px;
+		color:#5C5C5C;
+	}
+	.btn{
+		padding:10px;
+		border-radius:5px;
+		font-size:12px;
 	}
 }
 

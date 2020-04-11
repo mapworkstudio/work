@@ -41,7 +41,7 @@ const routes: Routes = [
   {path: 'VisionAndMission', component: AboutComponent},
   {path: 'ValueOfExcellence', component: AboutComponent},
   {path: 'OurLeadership', component: AboutComponent},
-  {path: 'TestimonialClientspeaks', component: TestimonialsComponent},
+  {path: 'TestimonialClientSpeaks', component: TestimonialsComponent},
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'NewsAndEventUpdate', component: AboutComponent},
   {path: 'ValueOfExcellence', component: AboutComponent},

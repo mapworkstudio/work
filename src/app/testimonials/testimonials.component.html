@@ -12,27 +12,42 @@
     </div>
 </div>
 
-<section class="client-info">
+<section>
     <div class="container">
         <div class="row">
-            <div *ngFor="let info of testimonials; index as i" class="col-lg-6 col-md-6 col-sm-12">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <div class="icon-circle">
-                            <img src="assets/images/avatar.png">
-                        </div>
-                    </div>
-                   <div class="panel-body center">
-                    <h5>{{info.clientName}}</h5>
-                    <h6 class="heading-highlight">client post / company name</h6>
-                    <p>
-                        {{info.clientView_1}}
-                        {{info.clientView_2}}
-                        {{info.clientView_3}}
-                    </p>
-                    </div>
-                 </div>
-              </div>
+            <div class="col-sm-12 col-sm-12 col-md-10 div-center center">
+                <p class="running-text">
+                    A great leader's courage to fulfill his vision comes from passion, not position.
+                </p>
+                <p>
+                    At ARKEDGE, we all aspire to be tomorrow's leader. Individually we are pathfinders and collectively we are a doer (achiever).
+                    <br>
+                    We are passionate about everything that we do and so do it the best way.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-info">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12" *ngFor="let info of testimonials; index as i">
+                <p>
+                    <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png" align="{{info.align}}">
+                   <span  class="v-flex">
+                       <p style="align-self: center;">
+                    <span class="title-name">{{info.name}}</span><br>
+                    <span class="title-info">{{info.info}}</span><br><br>
+                    {{info.desc}}<br><br>
+                    <button class="btn btn-primary">Read More</button>
+                 </p>
+                   </span>
+                </p>
+               
+            </div>
         </div>
     </div>
 </section>
