@@ -1453,7 +1453,7 @@ let HeaderComponent = class HeaderComponent {
             { name: 'NewsAndEventUpdate' },
             { name: 'TestimonialClientSpeaks' },
             { name: 'Industries' },
-            { name: 'Technologies' }
+            { name: 'Technology' }
         ];
         this.managedService = [
             { name: 'SOFTWARE ENGINEERING',

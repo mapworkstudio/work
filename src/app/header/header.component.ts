@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
         {name: 'NewsAndEventUpdate'},
         {name: 'TestimonialClientSpeaks'},
         {name: 'Industries'},
-        {name: 'Technologies'}
+        {name: 'Technology'}
     ];
     this.managedService = [
       {name: 'SOFTWARE ENGINEERING',

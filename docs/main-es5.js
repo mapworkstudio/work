@@ -2544,7 +2544,7 @@
         }, {
           name: 'Industries'
         }, {
-          name: 'Technologies'
+          name: 'Technology'
         }];
         this.managedService = [{
           name: 'SOFTWARE ENGINEERING',
