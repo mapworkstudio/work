@@ -170,6 +170,7 @@ $green:#4bbb57;
 		min-height: 330px;
 		margin-bottom:15px;
 		perspective: 1000px;
+		overflow:hidden;
 		&:hover .panel{
 			transform: rotateX(180deg);
 		}
