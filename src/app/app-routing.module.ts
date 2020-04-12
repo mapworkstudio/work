@@ -20,6 +20,7 @@ import { IndustriesComponent } from './industries/industries.component';
 import { AdvancesolutionComponent } from './advancesolution/advancesolution.component';
 import { StaffingComponent } from './staffing/staffing.component';
 import { DatamgmtComponent } from './datamgmt/datamgmt.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 
 
@@ -49,6 +50,7 @@ const routes: Routes = [
   {path: 'ProjectEngineering', component: ProjectengineeringComponent},
   {path: 'StaffingServices', component: StaffingComponent},
   {path: 'CleanseDataset', component: DatamgmtComponent},
+  {path: 'Sitemap', component: SitemapComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
@@ -71,7 +73,8 @@ const routes: Routes = [
     ProjectengineeringComponent,
     TestimonialsComponent,
     StaffingComponent,
-    DatamgmtComponent
+    DatamgmtComponent,
+    SitemapComponent
 ],
   imports: [
     RouterModule.forRoot(routes, { enableTracing: false }),

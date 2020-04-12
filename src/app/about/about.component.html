@@ -135,7 +135,7 @@
                     </li>
 
                     <li [ngbNavItem]="2">
-                        <a ngbNavLink>Why ARKEDGE</a>
+                        <a ngbNavLink>Why ARKEDGE?</a>
                         <ng-template ngbNavContent>
                             <div class="container">
                                 <div class="row">
@@ -341,12 +341,12 @@
                                 </div>
                                 </div>
                             </section>
-                                <section class="leader-ship">
+                                <section class="leader-ship"> 
                                 <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12 col-lg-4 col-md-4 div-center center" *ngFor="let leaderlist of leaders; index as i">
                                         <p>
-                                            <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png" align="left">
+                                            <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png">
                                            <span class="title-name">{{leaderlist.name}}</span><br>
                                             <span class="title-info">{{leaderlist.info}}</span><br><br>
                                             {{leaderlist.desc}}

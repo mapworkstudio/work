@@ -141,6 +141,11 @@ nav {
 
 
 .tele-no{
+    &.email{
+        .nav-link{
+         padding:1.5rem 5px 1.5rem 10px !important;
+       }
+    }
     svg{
         fill:#eab119;
     }
