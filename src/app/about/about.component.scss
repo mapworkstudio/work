@@ -79,6 +79,7 @@ $green:#4bbb57;
         margin-top:60px;
 		min-height: 330px;
 		perspective: 1000px;
+		overflow: hidden;
 		&:hover .panel{
 			transform: rotateX(180deg);
 		}
@@ -161,6 +162,7 @@ $green:#4bbb57;
 		}
 		h5{
 			margin:20px 0;
+			color:#fff;
 		}
 		p{
 			margin:0;
@@ -177,9 +179,14 @@ $green:#4bbb57;
 			padding-bottom:40px;
 		}
 		&:last-child{
-			padding-bottom:70px;
+			padding-bottom:30px;
+			.div-center{
+				margin-bottom:50px;
+			} 
 			img{
-				margin:0 0 40px 0;
+				margin: 0 auto 30px;
+				width: 80%;
+				display: block;
 			}
 		}
 	p{
@@ -193,7 +200,6 @@ $green:#4bbb57;
 		width:auto;
 		margin: 0 40px 0px 0;
 		border-radius: 50%;
-		padding: 20px;
 	}
 	.title-name{
 		font-size:25px;

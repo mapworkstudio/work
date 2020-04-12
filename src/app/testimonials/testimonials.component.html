@@ -36,14 +36,16 @@
 
             <div class="col-sm-12" *ngFor="let info of testimonials; index as i">
                 <p>
-                    <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png" align="{{info.align}}">
-                   <span  class="v-flex">
-                       <p style="align-self: center;">
-                    <span class="title-name">{{info.name}}</span><br>
-                    <span class="title-info">{{info.info}}</span><br><br>
-                    {{info.desc}}<br><br>
-                    <button class="btn btn-primary">Read More</button>
-                 </p>
+                    <span class="span">
+                        <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png" align="{{info.align}}">
+                        <span class="title-name">{{info.name}}</span>
+                        <span class="title-info">{{info.info}}</span>
+                    </span>
+                    
+                    <span  class="v-text-align">
+                       <p>
+                            {{info.desc}}
+                        </p>
                    </span>
                 </p>
                

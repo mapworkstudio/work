@@ -18,15 +18,16 @@ export class HeaderComponent implements OnInit {
         {name: 'NewsAndEventUpdate'},
         {name: 'TestimonialClientSpeaks'},
         {name: 'Industries'},
-        {name: 'Technology'}
+        {name: 'Technology'},
+        {name: 'Sitemap'}
     ];
     this.managedService = [
       {name: 'SOFTWARE ENGINEERING',
       managedServiceList : [
         {name: 'ProjectEngineering'},
         {name: 'ApplicationDevelopment'},
-        {name: 'UX/UIDevelopment'},
-        {name: 'SoftwareTesting & QA'}
+        {name: 'Ux/UiDevelopment'},
+        {name: 'SoftwareTesting & Qa'}
       ]},
       {name: 'DATA MANAGEMENT',
       managedServiceList : [
