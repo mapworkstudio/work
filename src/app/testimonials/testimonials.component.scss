@@ -35,10 +35,10 @@ p{
 	}
 
 img{
-	width:auto;
+	width:50%;
 	border-radius: 50%;
 	display:block;
-	margin-bottom:30px;
+	margin:0 auto 30px;
 
 }
 
@@ -87,6 +87,7 @@ img{
 				display: block;
 				p{
 					align-self: center;
+					float:left;
 				}
 			}
 		}

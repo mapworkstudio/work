@@ -31,7 +31,7 @@ const routes: Routes = [
   {path: 'Technology', component: TechnologyComponent},
   {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
-  {path: 'ManagedService', component: ManagedserviceComponent},
+  {path: 'ManagedServices', component: ManagedserviceComponent}, 
   {path: 'Company', component: AboutComponent},
   {path: 'Career', component: CareerComponent},
   {path: 'Contactus', component: ContactusComponent},

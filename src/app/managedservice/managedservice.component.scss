@@ -5,13 +5,27 @@
         margin:70px 0;
     }
     ul{
-        margin-bottom:15px;
-        li{
-            padding: 10px 0;
-            list-style: inside disc;
+		margin-top:35px;
+		 li{
+			padding: 0 0 20px 20px;
+			list-style: none outside;
             font-size: 16px;
-        }
-    }
+            font-weight: bold;
+			position: relative;
+			&::before{
+				content: " ";
+				background: #214f7a;
+				font-weight: bold;
+				position:absolute;
+				top:8px;
+				left:0px;
+				width: 10px;
+				height:10px;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+	}
     img{
         max-width:100%;
     }
@@ -24,6 +38,7 @@
 		min-height: 330px;
         perspective: 1000px;
         margin-bottom: 25px;
+        overflow: hidden;
 		&:hover .panel{
 			transform: rotateX(180deg);
 		}
@@ -74,6 +89,7 @@
             margin:0;
             padding:20px 10px;
             text-align:left;
+            color:#fff;
 		}
 		}
 		
