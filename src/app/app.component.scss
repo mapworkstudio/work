@@ -111,12 +111,12 @@ svg:not(:root) {
 .slick-slider {
 	width: 96%;
 	margin: auto;
-  }
-
-  .section-product{
 	.slick-prev:before, .slick-next:before{
 		color:#000;
 	}
+  }
+
+  .section-product{
 	.slick-list{
 		padding:40px 5px 60px !important;
 	}

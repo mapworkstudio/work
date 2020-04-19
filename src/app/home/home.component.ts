@@ -48,12 +48,12 @@ export class HomeComponent {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1500,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1
@@ -62,7 +62,7 @@ export class HomeComponent {
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1

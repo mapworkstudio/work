@@ -39,9 +39,9 @@ export class HeaderComponent implements OnInit {
       {name: 'IT STAFFING & TRAINING',
       managedServiceList : [
         {name: 'StaffingServices'},
-        {name: 'Industries'},
-        {name: 'Courses'},
-        {name: 'ProgramCalendar'}
+        {name: 'StaffServiceIndustry'},
+        {name: 'TrainingCourses'},
+        {name: 'TrainingSchedule'}
       ]}
     ];
   }
