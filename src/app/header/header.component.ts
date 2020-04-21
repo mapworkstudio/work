@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   managedService;
   managedServiceSoftEng;
   isOpen = true;
+  isSlideOpen = true;
   constructor() {
     this.list = [
         {name: 'WhyArkedgeTchnologies'},
@@ -22,21 +23,21 @@ export class HeaderComponent implements OnInit {
         {name: 'Sitemap'}
     ];
     this.managedService = [
-      {name: 'SOFTWARE ENGINEERING',
+      {name: 'SoftwareEngineering',
       managedServiceList : [
         {name: 'ProjectEngineering'},
         {name: 'ApplicationDevelopment'},
         {name: 'Ux/UiDevelopment'},
         {name: 'SoftwareTesting & Qa'}
       ]},
-      {name: 'DATA MANAGEMENT',
+      {name: 'DataMangment',
       managedServiceList : [
         {name: 'CleanseDataset'},
         {name: 'Data Mapping & Conversion'},
         {name: 'Data Migration & Consolidation'},
         {name: 'Spend Analysis'}
       ]},
-      {name: 'IT STAFFING & TRAINING',
+      {name: 'ItStafingAndServices',
       managedServiceList : [
         {name: 'StaffingServices'},
         {name: 'StaffServiceIndustry'},
@@ -48,6 +49,14 @@ export class HeaderComponent implements OnInit {
 
   slideToggel() {
     this.isOpen = !this.isOpen;
+  }
+
+  slideOpen() {
+    this.isSlideOpen = !this.isSlideOpen;
+  }
+
+  getUrl(a) {
+     alert(a);
   }
 
   ngOnInit() {

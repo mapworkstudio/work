@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,6 @@ import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/n
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
   sevices;
   solution;
 
@@ -71,7 +71,7 @@ export class HomeComponent {
     ]
   };
 
-  constructor() {
+  constructor(private router: Router) {
     this.sevices = [
       {
         title: 'IT, telecom and software',
@@ -149,7 +149,6 @@ export class HomeComponent {
       },
     ];
   }
-
   // images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
   banner = [
@@ -266,5 +265,14 @@ projects = [
       this.togglePaused();
     }
   }
+
+  btnClick = function() {
+    this.router.navigateByUrl('/Contactus');
+};
+
+btnOurProduct = function() {
+  this.router.navigateByUrl('/OurProduct');
+};
+
 }
 

@@ -9,7 +9,6 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { InnerPageHeaderComponent } from './inner-page-header/inner-page-header.component';
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { ClientComponent } from './client/client.component';
@@ -47,9 +46,9 @@ const routes: Routes = [
   {path: 'NewsAndEventUpdate', component: AboutComponent},
   {path: 'ValueOfExcellence', component: AboutComponent},
   {path: 'OurHappyClients', component: ClientComponent},
-  {path: 'ProjectEngineering', component: ProjectengineeringComponent},
-  {path: 'StaffingServices', component: StaffingComponent},
-  {path: 'CleanseDataset', component: DatamgmtComponent},
+  {path: 'SoftwareEngineering', component: ProjectengineeringComponent},
+  {path: 'ItStafingAndServices', component: StaffingComponent},
+  {path: 'DataMangment', component: DatamgmtComponent},
   {path: 'Sitemap', component: SitemapComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full' }
 
@@ -64,7 +63,6 @@ const routes: Routes = [
     CompanyComponent,
     CareerComponent,
     ContactusComponent,
-    InnerPageHeaderComponent,
     NewsComponent,
     AboutComponent,
     ClientComponent,
