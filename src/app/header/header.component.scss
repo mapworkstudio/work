@@ -117,12 +117,15 @@ nav {
              }
              }
              &.nav-dropdown-list{
-                 &:hover {
+                 &.open {
                  background:#276caa;
                  .sub-nav{
                    height:auto;
                    top:70px;
                    display: block;
+                   h6{
+                       text-transform: uppercase;
+                   }
                  }
                 }
              }

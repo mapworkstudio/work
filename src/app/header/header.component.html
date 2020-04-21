@@ -20,18 +20,17 @@
         <a class="nav-link" routerLink="Advancesolution" routerLinkActive="active" skipLocationChange=true>Advance
           Solution</a>
       </li>
-      <li class="nav-item nav-dropdown-list">
-        <a class="nav-link" routerLink=" " routerLinkActive="active"
-          skipLocationChange=true>Managed Services</a>
+      <li class="nav-item nav-dropdown-list" (click)="slideOpen()" [ngClass]="isSlideOpen ? '' : 'open'">
+        <a class="nav-link">Managed Services</a>
         <ul class="sub-nav">
           <li class="container">
             <div class="row">
               <div class="col-lg-8 col-md-8 col-sm-12">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
-                     <h6> {{list.name}}</h6>
+                     <h6> {{list.name | createSpace}}</h6>
                       <li class="inner-list" *ngFor="let inlist of list.managedServiceList">
-                        <a routerLink="{{inlist.name}}" routerLinkActive="active" skipLocationChange=true>{{inlist.name | createSpace}}</a>
+                        <a routerLink="{{list.name}}" routerLinkActive="active" skipLocationChange=true (click)="getUrl(inlist.name);">{{inlist.name | createSpace}}</a>
                       </li>
               </div>
   </div>
