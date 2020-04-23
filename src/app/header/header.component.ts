@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
   }
 
   getUrl(a) {
-     alert(a);
+     
   }
 
   ngOnInit() {
