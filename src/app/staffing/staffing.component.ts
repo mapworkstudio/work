@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-staffing',
@@ -53,9 +54,12 @@ programCalendar = [
   {courseTitle : 'Ms Excel 2007 for Experienced', location : 'Mumbai, India', targetDate: '15-Aug-18'}
 ];
 
-  constructor() { }
+
+  urlID;
+  constructor(private sharedservice: SharedService) { }
 
   ngOnInit() {
+    this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
   }
 
 }

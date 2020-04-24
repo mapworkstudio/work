@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-datamgmt',
@@ -92,10 +93,10 @@ export class DatamgmtComponent implements OnInit {
     {list: 'Obtain visibility into how much money is spent with whom, on what and how'}
   ];
 
-
-  constructor() { }
+  urlID;
+  constructor(private sharedservice: SharedService) { }
 
   ngOnInit() {
+    this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
   }
-
 }

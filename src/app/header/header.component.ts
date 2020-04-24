@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { viewClassName } from '@angular/compiler';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,10 @@ export class HeaderComponent implements OnInit {
   managedServiceSoftEng;
   isOpen = true;
   isSlideOpen = true;
-  constructor() {
+
+  urlID;
+
+  constructor(private sharedservice: SharedService) {
     this.list = [
         {name: 'WhyArkedgeTchnologies'},
         {name: 'OurHappyClients'},
@@ -20,6 +24,7 @@ export class HeaderComponent implements OnInit {
         {name: 'TestimonialClientSpeaks'},
         {name: 'Industries'},
         {name: 'Technology'},
+        {name: 'Career'},
         {name: 'Sitemap'}
     ];
     this.managedService = [
@@ -55,11 +60,11 @@ export class HeaderComponent implements OnInit {
     this.isSlideOpen = !this.isSlideOpen;
   }
 
-  getUrl(a) {
-     
-  }
-
   ngOnInit() {
+    this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
   }
 
+  getUrl(i) {
+    this.sharedservice.nextMessage(i);
+  }
 }

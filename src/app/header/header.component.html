@@ -17,6 +17,9 @@
           Product</a>
       </li>
       <li class="nav-item">
+      <a class="nav-link" routerLink="ai" routerLinkActive="active" skipLocationChange=true>AI</a>
+    </li>
+      <li class="nav-item">
         <a class="nav-link" routerLink="Advancesolution" routerLinkActive="active" skipLocationChange=true>Advance
           Solution</a>
       </li>
@@ -29,8 +32,8 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
                      <h6> {{list.name | createSpace}}</h6>
-                      <li class="inner-list" *ngFor="let inlist of list.managedServiceList">
-                        <a routerLink="{{list.name}}" routerLinkActive="active" skipLocationChange=true (click)="getUrl(inlist.name);">{{inlist.name | createSpace}}</a>
+                      <li class="inner-list" *ngFor="let inlist of list.managedServiceList; index as i">
+                        <a routerLink="{{list.name}}" routerLinkActive="active" skipLocationChange=true (click)="getUrl(i+1);">{{inlist.name | createSpace}}</a>
                       </li>
               </div>
   </div>
@@ -59,9 +62,6 @@
 
   <li class="nav-item">
     <a class="nav-link" routerLink="Company" routerLinkActive="active" skipLocationChange=true>COMPANY</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="Career" routerLinkActive="active" skipLocationChange=true>CAREER</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" routerLink="Contactus" routerLinkActive="active" skipLocationChange=true>CONTACT US</a>
