@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CreateSpace } from './space.pipe';
+import { SharedService } from './shared.service';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { CreateSpace } from './space.pipe';
     NgbModule,
     SlickCarouselModule
   ],
-  providers: [Title],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

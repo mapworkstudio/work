@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-projectengineering',
@@ -86,15 +87,17 @@ qalabfunctionTest = [
   {info: 'Unit Test'},
   {info: 'Functional Test'},
   {info: 'Regression Test'},
-  {info: 'Test Data Creation'}, 
+  {info: 'Test Data Creation'},
   {info: 'Load Testing'},
   {info: 'Stress Testing'},
   {info: 'Volume Testing'}
 ];
 
-  constructor() { }
+urlID;
+constructor(private sharedservice: SharedService) { }
 
-  ngOnInit() {
-  }
+ngOnInit() {
+  this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
+}
 
 }
