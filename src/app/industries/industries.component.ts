@@ -17,6 +17,45 @@ export class IndustriesComponent implements OnInit {
     {title : 'Health Care & Pharmaceuticals', icon: 'icon_vaccineflat'}
   ];
 
+  sevices = [
+    {
+      title: 'IT, telecom and software',
+      color: 'skyblue',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      icon: '#icon_telecom'
+    },
+    {
+      title: 'ITES - BPO & KPO',
+      color: 'yellow ',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      icon: '#icon_customerService'
+    },
+    {
+      title: 'Engineering & Manufacturing',
+      color: 'orange',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      icon: '#icon_engineeringMgf'
+    },
+    {
+      title: 'Consumer goods and retail',
+      color: 'limegreen',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      icon: '#icon_retail'
+    },
+    {
+      title: 'Financial services and insurance',
+      color: 'purple',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      icon: '#icon_finervice'
+    },
+    {
+      title: 'Health care & Pharmaceuticals',
+      color: 'blue',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      icon: '#icon_healthCare'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {
