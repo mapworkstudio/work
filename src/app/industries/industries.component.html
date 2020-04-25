@@ -30,9 +30,7 @@
 <section class="section-industy-info">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 col-md-9 col-sm-12 div-center center">
-                <div class="row">
-            <div *ngFor="let data of industryInfo" class="col-lg-4 col-md-4 col-sm-12 col">
+            <!-- <div *ngFor="let data of industryInfo" class="col-lg-4 col-md-4 col-sm-12 col">
                 <div class="panel">
                     <div class="panel-heading">
                         <i class="icon icon-large">
@@ -45,10 +43,25 @@
                         <p>{{data.title}}</p>
                     </div>
                 </div>
-            </div>
-        </div>
-            </div>
+            </div> -->
 
+            <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12 section-sevices center">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="icon-circle {{item.color}}">
+                            <i class="icon icon-medium">
+                                <svg focusable="false">
+                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <h5>{{item.title}}</h5>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
