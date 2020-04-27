@@ -21,6 +21,7 @@ import { StaffingComponent } from './staffing/staffing.component';
 import { DatamgmtComponent } from './datamgmt/datamgmt.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { AiComponent } from './ai/ai.component';
+import { PressreleaseComponent } from './pressrelease/pressrelease.component';
 
 
 
@@ -52,6 +53,7 @@ const routes: Routes = [
   {path: 'DataMangment', component: DatamgmtComponent},
   {path: 'Sitemap', component: SitemapComponent},
   {path: 'ai', component: AiComponent},
+  {path: 'PressRelease', component: PressreleaseComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
@@ -75,10 +77,11 @@ const routes: Routes = [
     StaffingComponent,
     DatamgmtComponent,
     SitemapComponent,
-    AiComponent
+    AiComponent,
+    PressreleaseComponent
 ],
   imports: [
-    RouterModule.forRoot(routes, { enableTracing: false }),
+    RouterModule.forRoot(routes, { enableTracing: false, scrollPositionRestoration: 'enabled', }),
     BrowserModule,
     NgbModule,
     SlickCarouselModule

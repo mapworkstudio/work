@@ -8,6 +8,24 @@ import { SharedService } from '../shared.service';
 })
 export class StaffingComponent implements OnInit {
 
+  ourProcess = [
+    {
+    title: 'Quality Employee',
+    // tslint:disable-next-line: max-line-length
+    desc: 'We take the time to listen and understand your business. Our industry-specific recruiters and account teams, combined with our access to the best talent, ensure that we locate, screen and place only the most qualified employees.',
+  },
+  {
+    title: 'Quality Relationship',
+    // tslint:disable-next-line: max-line-length
+    desc: 'But we don’t stop there. We stay connected with you to ensure our employees are meeting your expectations and we are delivering on our promises.',
+  },
+  {
+    title: 'Strategic Partnership',
+    // tslint:disable-next-line: max-line-length
+    desc: 'Working together, we develop a strategic partnership to provide workforce consultation to make your staffing process more effective and evolve your business.',
+  }
+];
+
   staffingSolution = [
     {title: ' Rapid Staffing Solutions',
     // tslint:disable-next-line: max-line-length
