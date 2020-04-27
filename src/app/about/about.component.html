@@ -336,8 +336,24 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
                                            
                                           </p>
-                                          <button class="btn btn-primary">Read More</button>
-                                    </div>
+                                          <button class="btn btn-primary" (click)="open(content)">Read More</button>
+                                          <ng-template #content let-modal>
+                                            <div class="modal-header">
+                                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <!-- <img class="div-3" src="assets/images/leadership/person3.png" align="left"> -->
+                                               <span class="title-name">Same Martinez</span><br>
+                                                <span class="title-info">Chief Executive Officer & Co-Founder</span><br><br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+                                               
+                                              </p>
+                                        </div>
+                                      </ng-template>
+                                        </div>
                                 </div>
                                 </div>
                             </section>
@@ -352,87 +368,30 @@
                                             {{leaderlist.desc}}
                                             
                                         </p>
-                                        <button class="btn btn-primary">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                            </section>
-                        </ng-template>
-                    </li>
+                                        <button class="btn btn-primary" (click)="open(content)">Read More</button>
 
-                    <!-- <li [ngbNavItem]="5">
-                        <a ngbNavLink>News</a>
-                        <ng-template ngbNavContent>
-                            <div class="container section-news">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-                                        <li [ngbNavItem]="01">
-                                          <a ngbNavLink>News</a>
-                                          <ng-template ngbNavContent>
-                                            <li *ngFor="let data of news; index as i" class="p2 grid-li">
-                                                <div class="panel">
-                                                    <div class="panel-heading">
-                                                       <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
-                                                    </div>
-                                                    <div class="panel-body">
-                                                        <p><b>{{data.desc_1}}</b></p>
-                                                        <p>{{data.desc_2}}</p>
-                                                       
-                                                    </div>
-                                             </div>
-                                            </li>
-                                        </ng-template>
-                                        </li>
-                                        <li [ngbNavItem]="02">
-                                            <a ngbNavLink>Events</a>
-                                            <ng-template ngbNavContent>
-                                            
-                                          </ng-template>
-                                          </li>
-                                          <li [ngbNavItem]="03">
-                                            <a ngbNavLink>Webinars</a>
-                                            <ng-template ngbNavContent>
-                                              
-                                          </ng-template>
-                                          </li>
-                                          <li [ngbNavItem]="04">
-                                            <a ngbNavLink>Press Releases</a>
-                                            <ng-template ngbNavContent>
-                                            
-                                          </ng-template>
-                                          </li>
-                                          <li [ngbNavItem]="05">
-                                            <a ngbNavLink>Video Gallery</a>
-                                            <ng-template ngbNavContent>
-                                             
-                                          </ng-template>
-                                          </li>
-                                      </ul>
-                                      
-                                      <div [ngbNavOutlet]="nav" class="mt-4"></div>
-                                </div> </div>
-                            </div>
-                            
-                            <section class="news-video">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                            
-                                            <div class="video">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zmEG-5zEmPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <ng-template #content let-modal>
+                                            <div class="modal-header">
+                                             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                             </div>
-                            
-                                            <h6 class="center">
-                                                Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.
-                                            </h6>
+                                        <div class="modal-body">
+                                            <p>
+                                                <!-- <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png"> -->
+                                               <span class="title-name">{{leaderlist.name}}</span><br>
+                                                <span class="title-info">{{leaderlist.info}}</span><br><br>
+                                                {{leaderlist.desc}}
+                                                
+                                            </p>
                                         </div>
+                                      </ng-template>
                                     </div>
                                 </div>
+                            </div>
                             </section>
                         </ng-template>
-                    </li> -->
-
+                    </li>  
                 </ul>
             </div>
         </div>

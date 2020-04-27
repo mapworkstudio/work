@@ -11,5 +11,6 @@ export class SharedService {
 
   nextMessage(urlID) {
     this.urlID.next(urlID);
+    window.scrollTo(0, 0);
   }
-}
+ }

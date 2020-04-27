@@ -24,6 +24,7 @@ export class HeaderComponent implements OnInit {
         {name: 'TestimonialClientSpeaks'},
         {name: 'Industries'},
         {name: 'Technology'},
+        {name: 'PressRelease'},
         {name: 'Career'},
         {name: 'Sitemap'}
     ];
