@@ -7,8 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { CreateSpace } from './space.pipe';
 import { SharedService } from './shared.service';
+import { CreateSpacePipe } from './space.pipe.module';
 
 
 
@@ -16,13 +16,13 @@ import { SharedService } from './shared.service';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent,
-    CreateSpace
+    HeaderComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    CreateSpacePipe,
     SlickCarouselModule
   ],
   providers: [SharedService],

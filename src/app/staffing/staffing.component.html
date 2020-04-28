@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 center">
-                    <h1>IT STAFFING & TRAINING</h1>
+                    <h1>IT STAFFING & TRAINING - {{tabName}}</h1>
                     <h6>Softwares : Data Life-cycle Management : IT Staffing & Training</h6>
                 </div>
             </div>
@@ -16,7 +16,7 @@
     <div class="tab-navigation">
         <div class="col-sm-12">
             <div class="container">
-                <ul ngbNav #nav="ngbNav" [activeId]="urlID" class="nav-tabs">
+                <ul ngbNav #nav="ngbNav" [activeId]="tabIndex" class="nav-tabs">
                     <li [ngbNavItem]="1">
                         <a ngbNavLink>STAFFING SERVICES</a>
                         <ng-template ngbNavContent>

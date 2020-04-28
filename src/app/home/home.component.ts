@@ -266,11 +266,15 @@ projects = [
     }
   }
 
-  btnClick = function() {
+btnClick = function() {
     this.router.navigateByUrl('/Contactus');
 };
 
 btnOurProduct = function() {
+  this.router.navigateByUrl('/OurProduct');
+};
+
+lernmore = function(url) {
   this.router.navigateByUrl('/OurProduct');
 };
 

@@ -33,7 +33,7 @@
                   <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
                      <h6> {{list.name | createSpace}}</h6>
                       <li class="inner-list" *ngFor="let inlist of list.managedServiceList; index as i">
-                        <a routerLink="{{list.name}}" routerLinkActive="active" skipLocationChange=true (click)="getUrl(i+1);">{{inlist.name | createSpace}}</a>
+                        <a routerLink="{{list.name}}" routerLinkActive="active" skipLocationChange=true (click)="getUrl(i+1, inlist.name);">{{inlist.name | createSpace}}</a>
                       </li>
               </div>
   </div>

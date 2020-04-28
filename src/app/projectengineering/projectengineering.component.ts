@@ -93,11 +93,12 @@ qalabfunctionTest = [
   {info: 'Volume Testing'}
 ];
 
-urlID;
+tabIndex;
+tabName;
 constructor(private sharedservice: SharedService) { }
-
 ngOnInit() {
-  this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
+  this.sharedservice.sharedMessage.subscribe(Id => this.tabIndex = Id.Id);
+  this.sharedservice.sharedMessage.subscribe(Id => this.tabName = Id.name.replace(/([A-Z])/g, ' $1').trim());
 }
 
 }

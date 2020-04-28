@@ -53,8 +53,7 @@ const routes: Routes = [
   {path: 'DataMangment', component: DatamgmtComponent},
   {path: 'Sitemap', component: SitemapComponent},
   {path: 'ai', component: AiComponent},
-  {path: 'PressRelease', component: PressreleaseComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full' }
+  {path: 'PressRelease', component: PressreleaseComponent}
 
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { SharedService } from '../shared.service';
 
 @Component({
@@ -6,6 +6,7 @@ import { SharedService } from '../shared.service';
   templateUrl: './datamgmt.component.html',
   styleUrls: ['./datamgmt.component.scss']
 })
+
 export class DatamgmtComponent implements OnInit {
 
   dataMigration = [
@@ -93,10 +94,11 @@ export class DatamgmtComponent implements OnInit {
     {list: 'Obtain visibility into how much money is spent with whom, on what and how'}
   ];
 
-  urlID;
+  tabIndex;
+  tabName;
   constructor(private sharedservice: SharedService) { }
-
   ngOnInit() {
-    this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
+    this.sharedservice.sharedMessage.subscribe(Id => this.tabIndex = Id.Id);
+    this.sharedservice.sharedMessage.subscribe(Id => this.tabName = Id.name.replace(/([A-Z])/g, ' $1').trim());
   }
 }
