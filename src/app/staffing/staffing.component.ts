@@ -1,11 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { SharedService } from '../shared.service';
+import { CreateSpace } from '../space.pipe';
 
 @Component({
   selector: 'app-staffing',
   templateUrl: './staffing.component.html',
   styleUrls: ['./staffing.component.scss']
 })
+
+@NgModule({
+  declarations: [
+    CreateSpace
+  ]})
+
 export class StaffingComponent implements OnInit {
 
   ourProcess = [
@@ -73,11 +80,12 @@ programCalendar = [
 ];
 
 
-  urlID;
-  constructor(private sharedservice: SharedService) { }
-
-  ngOnInit() {
-    this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
-  }
+tabIndex;
+tabName;
+constructor(private sharedservice: SharedService) { }
+ngOnInit() {
+  this.sharedservice.sharedMessage.subscribe(Id => this.tabIndex = Id.Id, );
+  this.sharedservice.sharedMessage.subscribe(Id => this.tabName = Id.name.replace(/([A-Z])/g, ' $1').trim());
+}
 
 }

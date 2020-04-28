@@ -13,9 +13,6 @@ export class HeaderComponent implements OnInit {
   managedServiceSoftEng;
   isOpen = true;
   isSlideOpen = true;
-
-  urlID;
-
   constructor(private sharedservice: SharedService) {
     this.list = [
         {name: 'WhyArkedgeTchnologies'},
@@ -62,10 +59,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.sharedservice.sharedMessage.subscribe(urlID => this.urlID = urlID);
   }
 
-  getUrl(i) {
-    this.sharedservice.nextMessage(i);
+  getUrl(i, title) {
+    this.sharedservice.nextMessage(i, title);
   }
 }
