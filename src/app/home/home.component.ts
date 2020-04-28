@@ -267,15 +267,15 @@ projects = [
   }
 
 btnClick = function() {
-    this.router.navigateByUrl('/Contactus');
+    this.router.navigateByUrl('/Contactus', {skipLocationChange: true});
 };
 
 btnOurProduct = function() {
-  this.router.navigateByUrl('/OurProduct');
+  this.router.navigateByUrl('/OurProduct', {skipLocationChange: true});
 };
 
 lernmore = function(url) {
-  this.router.navigateByUrl('/OurProduct');
+  this.router.navigateByUrl('/ManagedServices' , {skipLocationChange: true});
 };
 
 }

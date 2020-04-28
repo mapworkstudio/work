@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ourproduct',
@@ -43,7 +44,11 @@ export class OurproductComponent implements OnInit {
 
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  inquery = function() {
+    this.router.navigateByUrl('/Contactus', {skipLocationChange: true});
+  };
 
   ngOnInit() {
   }
