@@ -62,19 +62,19 @@
 
         <div *ngFor="let item of solution; index as i" class="col-lg-6 col-md-6 col-sm-12 panel-container">
             <div class="panel">
-                <!-- <div class="panel-front" *ngIf="i != 0">
+               <div class="panel-front">
                     <div class="panel-heading">
-                       <img src="assets/images/ourServices-{{i+1}}.jpg">
+                       <img src="assets/images/managservice/ourServices-{{i+1}}.png">
                     </div>
                     <div class="panel-body">
 
                         <p>{{item.description}}</p>
                     </div>
-                </div> -->
-                <div class="panel-back {{item.color}}">
+                </div>
+               <div class="panel-back {{item.color}}">
                     <h5>{{item.title}}</h5>
                     <p>{{item.description_2}}</p>
-                </div>
+                </div> 
             </div>
         </div>
 </div>

@@ -17,13 +17,13 @@
           Product</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" routerLink="ai" routerLinkActive="active" skipLocationChange=true>AI</a>
+      <a class="nav-link" routerLink="ai" routerLinkActive="active" skipLocationChange=true>artificial intelligence</a>
     </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="Advancesolution" routerLinkActive="active" skipLocationChange=true>Advance
-          Solution</a>
+          Solutions</a>
       </li>
-      <li class="nav-item nav-dropdown-list" (click)="slideOpen()" [ngClass]="isSlideOpen ? '' : 'open'">
+      <li class="nav-item nav-dropdown-list">
         <a class="nav-link">Managed Services</a>
         <ul class="sub-nav">
           <li class="container">
@@ -60,11 +60,17 @@
   </ul>
   </li>
 
-  <li class="nav-item">
+  <!-- <li class="nav-item">
     <a class="nav-link" routerLink="Company" routerLinkActive="active" skipLocationChange=true>COMPANY</a>
-  </li>
+  </li> -->
   <li class="nav-item">
-    <a class="nav-link" routerLink="Contactus" routerLinkActive="active" skipLocationChange=true>CONTACT US</a>
+    <a class="nav-link contactUs" routerLink="Contactus" routerLinkActive="active" skipLocationChange=true>
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_contactUs"></use>
+        </svg>
+      </i>
+    </a>
   </li>
   <li class="nav-item tele-no email">
     <a class="nav-link" href="mailto:info@arkedge.com">
