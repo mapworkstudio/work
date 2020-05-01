@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, OnDestroy} from '@angular/core';
 import { viewClassName } from '@angular/compiler';
 import { SharedService } from '../shared.service';
 
@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   managedServiceSoftEng;
   isOpen = true;
   isSlideOpen = true;
+
   constructor(private sharedservice: SharedService) {
     this.list = [
         {name: 'WhyArkedgeTchnologies'},
@@ -21,7 +22,6 @@ export class HeaderComponent implements OnInit {
         {name: 'TestimonialClientSpeaks'},
         {name: 'Industries'},
         {name: 'Technology'},
-        {name: 'PressRelease'},
         {name: 'Career'},
         {name: 'Sitemap'}
     ];
@@ -51,12 +51,15 @@ export class HeaderComponent implements OnInit {
   }
 
   slideToggel() {
+    const body = document.getElementsByTagName('body')[0];
     this.isOpen = !this.isOpen;
+    if (!this.isOpen) {
+      body.classList.add('remove-scroll');
+    } else {
+      body.classList.remove('remove-scroll'); 
+    }
   }
 
-  slideOpen() {
-    this.isSlideOpen = !this.isSlideOpen;
-  }
 
   ngOnInit() {
   }
@@ -64,4 +67,5 @@ export class HeaderComponent implements OnInit {
   getUrl(i, title) {
     this.sharedservice.nextMessage(i, title);
   }
+
 }

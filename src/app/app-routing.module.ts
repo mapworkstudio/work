@@ -21,7 +21,6 @@ import { StaffingComponent } from './staffing/staffing.component';
 import { DatamgmtComponent } from './datamgmt/datamgmt.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { AiComponent } from './ai/ai.component';
-import { PressreleaseComponent } from './pressrelease/pressrelease.component';
 
 
 
@@ -32,7 +31,7 @@ const routes: Routes = [
   {path: 'Technology', component: TechnologyComponent},
   {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
-  {path: 'ManagedServices', component: ManagedserviceComponent}, 
+  {path: 'ManagedServices', component: ManagedserviceComponent},
   {path: 'Company', component: AboutComponent},
   {path: 'Career', component: CareerComponent},
   {path: 'Contactus', component: ContactusComponent},
@@ -52,8 +51,7 @@ const routes: Routes = [
   {path: 'ItStafingAndServices', component: StaffingComponent},
   {path: 'DataMangment', component: DatamgmtComponent},
   {path: 'Sitemap', component: SitemapComponent},
-  {path: 'ai', component: AiComponent},
-  {path: 'PressRelease', component: PressreleaseComponent}
+  {path: 'ai', component: AiComponent}
 
 ];
 
@@ -76,8 +74,7 @@ const routes: Routes = [
     StaffingComponent,
     DatamgmtComponent,
     SitemapComponent,
-    AiComponent,
-    PressreleaseComponent
+    AiComponent
 ],
   imports: [
     RouterModule.forRoot(routes, { enableTracing: false, scrollPositionRestoration: 'enabled', }),
