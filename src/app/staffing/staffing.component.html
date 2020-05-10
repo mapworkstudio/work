@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 center">
-                    <h1>IT STAFFING & TRAINING - {{tabName}}</h1>
+                    <h1>IT STAFFING & TRAINING</h1>
                     <h6>Softwares : Data Life-cycle Management : IT Staffing & Training</h6>
                 </div>
             </div>
@@ -67,10 +67,91 @@
                                     </div>
                                 </div>
                             </section>
+
+                            <section class="services-provided">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h1>Service we provide</h1>
+                                        </div>
+                                        <div *ngFor="let data of servicesProvided; index as i" class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="panel">
+                                                <a><img src="assets/images/managservice/staffing/staffing-service-{{i+1}}.jpg"></a>
+                                                <div class="panel-footer">
+                                                    <button type="submit" class="btn btn-primary" (click)="open(content)">{{data.title}}</button>
+                                                </div>
+                                               
+                                            </div>
+                            
+                                            <ng-template #content let-modal>
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">{{data.title}}</h4>
+                                                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                            
+                                                    <div class="panel">
+                                                      <div class="panel-body">
+                                                            <p>{{data.desc}}</p>
+                                                            <a href="{{data.url}}" target="_blank">{{data.url}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ng-template>
+                                        </div>
+                                    </div>
+
+                                    <div class="row best-staffing">
+                                        <div class="col-sm-6">
+                                            <img src="assets/images/managservice/staffing/staffing-service-7.jpg">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="assets/images/managservice/staffing/staffing-service-8.jpg">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-12 values">
+                                            <img src="assets/images/managservice/staffing/staffing-service-9.jpg">
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h6>KEY DIFFERENTIATORS</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of keyDiff"> 
+                                                    {{item.title}}
+                                                    <p>
+                                                        {{item.desc}}
+                                        
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h6>Our clients</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of clients">
+                                                    {{item.title}}
+                                                    <p>
+                                                        {{item.desc}}
+                                        
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                 
+                                </div>
+                            </section>
                         </ng-template>
                     </li>
                     <li [ngbNavItem]="2">
-                        <a ngbNavLink>Staff Service Industry</a>
+                        <a ngbNavLink>STAFFING INDUSTRIES</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">
@@ -96,18 +177,39 @@
                     </li>
 
                     <li [ngbNavItem]="3">
-                        <a ngbNavLink>Training Courses</a>
+                        <a ngbNavLink>IT TRAINING</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <p class="running-text">
+                                                Having been in the corporate training domain for almost two decades now, we understand each business' requirements with ease and develop customized training programs which will suit the client's needs. Arkedge offers all-inclusive corporate training services to cater to the IT training needs of your organization. Some of the key services we offer include -</p>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <h6>Proven methodology, profound impact & sustainable results</h6>
+                                                <ul class="info-bar">
+                                                    <li *ngFor="let item of training">
+                                                        {{item.title}}
+                                                        <p>
+                                                            {{item.desc}}
+                                            
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        <div class="col-sm-12">
+                                            <h1>COURSES</h1>
+                                            <p>
+                                                Arkedge offers a range of corporate training programs and these programs can be customized to meet the requirements of your organization. <br>
                                                 We ensure excellence in service through understanding of our client's business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:
                                             </p>
-                                            </div>
+                                        </div>
+
                                         <div class="col-sm-12">
-                                            <table class="table table-striped table-bordered">
+                                            <!-- <table class="table table-striped table-bordered">
                                                 <thead>
                                                   <tr>
                                                     <th>Course Type</th>
@@ -124,8 +226,48 @@
                                                     <td><a href="assets/arkege.pdf" download>View Details</a></td>
                                                   </tr>
                                                 </tbody>
-                                                </table>
+                                                </table> -->
+
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Certification Programs</th>
+                                                        <th>Information and Communication Technologies Training</th>
+                                                        <th>Management Development</th>
+                                                       </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr *ngFor="let data of courses">
+                                                        <td>{{data.coursetype}}</td>
+                                                        <td>{{data.infoCommTech}}</td>
+                                                        <td>{{data.mgdev}}</td>
+                                                      </tr>
+                                                    </tbody>
+                                                    </table>
+
                                         </div>
+
+                                        <div class="col-sm-12">
+                                            <h1>What Makes Us Pioneers in the Area of Corporate IT Training?</h1>
+                                            <h6>Outsouce2india is among the crème-de-la-crème companies out there which offers peerless corporate IT training for SMEs as well as global corporates. Some of the key reasons to choose us include -</h6>
+                                            </div>
+                                        <div class="col-sm-12">
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of whyTraining">
+                                                   {{item.title}}
+                                                    <div class="comp-methodology"> 
+                                                       <p> {{item.desc}}</p>
+                                                        <ul class="info-bar">
+                                                            <li *ngFor="let li of item.list">
+                                                               {{li.title}}
+                                                             </li>
+                                                        </ul>
+                                                     
+                                                      
+                                                    </div>
+                                                </li>
+                                            </ul> </div>
+
                                       
                                     </div>
                                 </div>
@@ -134,15 +276,14 @@
                     </li>
 
                     <li [ngbNavItem]="4">
-                        <a ngbNavLink>Training Schedule</a>
+                        <a ngbNavLink>PROGRAM SCHEDULE</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <p class="running-text">
-                                                We ensure excellence in service through understanding of our client's business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:
-                                            </p>
+                                                Arkedge offers a range of corporate training programs and these programs can be customized to meet the requirements of your organization. </p>
                                             </div>
                                         <div class="col-sm-12">
                                             <table class="table table-striped table-bordered">
