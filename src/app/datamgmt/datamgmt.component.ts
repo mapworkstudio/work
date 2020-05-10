@@ -96,9 +96,23 @@ export class DatamgmtComponent implements OnInit {
 
   tabIndex;
   tabName;
-  constructor(private sharedservice: SharedService) { }
+  constructor(private sharedservice: SharedService) {
+  }
   ngOnInit() {
     this.sharedservice.sharedMessage.subscribe(Id => this.tabIndex = Id.Id);
     this.sharedservice.sharedMessage.subscribe(Id => this.tabName = Id.name.replace(/([A-Z])/g, ' $1').trim());
   }
+
+  title(i) {
+    if (i === 1) {
+      this.tabName = 'Cleanse Dataset';
+    } else if (i === 2) {
+      this.tabName = 'Data Mapping & Conversion';
+    } else if (i === 3) {
+      this.tabName = 'Data Migration & Consolidation';
+    } else if (i === 4) {
+      this.tabName = 'Spend Analysis';
+    }
+  }
+
 }

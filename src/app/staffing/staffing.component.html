@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-12 center">
                     <h1>IT STAFFING & TRAINING</h1>
-                    <h6>Softwares : Data Life-cycle Management : IT Staffing & Training</h6>
+                    <h6>{{tabName}}</h6>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <div class="container">
                 <ul ngbNav #nav="ngbNav" [activeId]="tabIndex" class="nav-tabs">
                     <li [ngbNavItem]="1">
-                        <a ngbNavLink>STAFFING SERVICES</a>
+                        <a ngbNavLink (click)="title(1)">STAFFING SERVICES</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">
@@ -71,8 +71,8 @@
                             <section class="services-provided">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <h1>Service we provide</h1>
+                                        <div class="col-sm-12 center">
+                                            <h1>Service <span class="heading-highlight">we provide</span></h1>
                                         </div>
                                         <div *ngFor="let data of servicesProvided; index as i" class="col-lg-4 col-md-4 col-sm-12">
                                             <div class="panel">
@@ -90,7 +90,7 @@
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body fix-height"> 
                             
                                                     <div class="panel">
                                                       <div class="panel-body">
@@ -118,8 +118,8 @@
                                             <img src="assets/images/managservice/staffing/staffing-service-9.jpg">
                                         </div>
 
-                                        <div class="col-sm-12">
-                                            <h6>KEY DIFFERENTIATORS</h6>
+                                        <div class="col-sm-12 features">
+                                            <h6>Key Differentiators</h6>
                                             <ul class="info-bar">
                                                 <li *ngFor="let item of keyDiff"> 
                                                     {{item.title}}
@@ -131,7 +131,7 @@
                                             </ul>
                                         </div>
 
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-12 features">
                                             <h6>Our clients</h6>
                                             <ul class="info-bar">
                                                 <li *ngFor="let item of clients">
@@ -151,7 +151,7 @@
                         </ng-template>
                     </li>
                     <li [ngbNavItem]="2">
-                        <a ngbNavLink>STAFFING INDUSTRIES</a>
+                        <a ngbNavLink (click)="title(2)">STAFFING INDUSTRIES</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">
@@ -177,7 +177,7 @@
                     </li>
 
                     <li [ngbNavItem]="3">
-                        <a ngbNavLink>IT TRAINING</a>
+                        <a ngbNavLink (click)="title(3)">IT TRAINING</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">
@@ -200,7 +200,7 @@
                                                 </ul>
                                             </div>
 
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-12 center">
                                             <h1>COURSES</h1>
                                             <p>
                                                 Arkedge offers a range of corporate training programs and these programs can be customized to meet the requirements of your organization. <br>
@@ -248,7 +248,7 @@
                                         </div>
 
                                         <div class="col-sm-12">
-                                            <h1>What Makes Us Pioneers in the Area of Corporate IT Training?</h1>
+                                            <h2>What Makes Us Pioneers in the Area of Corporate IT Training?</h2>
                                             <h6>Outsouce2india is among the crème-de-la-crème companies out there which offers peerless corporate IT training for SMEs as well as global corporates. Some of the key reasons to choose us include -</h6>
                                             </div>
                                         <div class="col-sm-12">
@@ -276,7 +276,7 @@
                     </li>
 
                     <li [ngbNavItem]="4">
-                        <a ngbNavLink>PROGRAM SCHEDULE</a>
+                        <a ngbNavLink (click)="title(4)">PROGRAM SCHEDULE</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
                                 <div class="container">

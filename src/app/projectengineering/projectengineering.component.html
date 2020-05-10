@@ -4,8 +4,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 center">
-                    <h1>SOFTWARE ENGINEERING - {{tabName}}</h1>
-                    <h6>Softwares : Data Life-cycle Management : IT Staffing & Training</h6>
+                    <h1>SOFTWARE ENGINEERING</h1>
+                    <h6>{{tabName}}</h6>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <div class="container">
                 <ul ngbNav #nav="ngbNav" [activeId]="tabIndex" class="nav-tabs">
                     <li [ngbNavItem]="1">
-                        <a ngbNavLink>Product Engineering</a>
+                        <a ngbNavLink (click)="title(1)">Product Engineering</a>
                         <ng-template ngbNavContent>
                             <section class="section-project-engineering">
                                 <div class="container">
@@ -197,7 +197,7 @@
                     </li>
 
                     <li [ngbNavItem]="2">
-                        <a ngbNavLink>Application Development</a>
+                        <a ngbNavLink (click)="title(2)">Application Development</a>
                         <ng-template ngbNavContent>
                             <div class="container app-development">
                                 <div class="row">
@@ -282,7 +282,7 @@
                     </li>
 
                     <li [ngbNavItem]="3">
-                        <a ngbNavLink>UX/UI Development</a>
+                        <a ngbNavLink (click)="title(3)">UX/UI Development</a>
                         <ng-template ngbNavContent>
                             <div class="container">
                                 <div class="row">
@@ -433,7 +433,7 @@
                     </li>
 
                     <li [ngbNavItem]="4">
-                        <a ngbNavLink>Software Testing & QA</a>
+                        <a ngbNavLink (click)="title(4)">Software Testing & QA</a>
                         <ng-template ngbNavContent>
                             <div class="container qa-testing">
                                 <div class="row">
