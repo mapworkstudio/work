@@ -308,7 +308,7 @@ Our experts understand the nuances of diversity across geographies, industries, 
   constructor(private sharedservice: SharedService, config: NgbModalConfig, private modalService: NgbModal) { }
 
   open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title_1'}).result.then((result) => {
+    this.modalService.open(content, { windowClass : 'staffing-popup'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;

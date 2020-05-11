@@ -24,7 +24,8 @@ section {
 	}}
 
 p{
-	padding-top:40px;
+	padding:40px 50px 0;
+	font-family: "Poppins", sans-serif;
 	a{
 		color:#214f7a;
 		font-weight:bold;
@@ -69,6 +70,37 @@ img{
 	border-radius:5px;
 	font-size:12px;
 }
+
+blockquote {
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-bottom:-30px;
+	position: relative; 
+	margin: 0 auto; 
+	padding-left: 0.4em; 
+	}
+	
+	blockquote p:before { 
+		content: "\201C";
+		font-weight: bold;
+		font-size:100px;
+		color:#eab119;
+		position: absolute; 
+		top: 50px;
+		left: 0px; 
+		font-family: 'Georgia'; 
+	} 
+	blockquote p:after { 
+		content: "\201D";
+		font-weight: bold;
+		font-size:100px;
+		color:#eab119;
+		position: absolute; 
+		bottom:-25px;
+		right: 0px; 
+		font-family: 'Georgia'; 
+	}
+
 }
 
 @media (max-width: 576px){
