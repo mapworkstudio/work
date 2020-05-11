@@ -293,6 +293,18 @@ textarea.form-control{
 		
 	}
 
+
+	.staffing-popup{
+		.modal-body.fix-height{
+			height: 350px;
+			overflow: auto;
+		}
+		.modal-dialog{
+			max-width: none;
+			width:75%;
+		}
+	}
+
 	@media (max-width: 576px){
 		.inner-nav-tab{
 		.tab-navigation{
