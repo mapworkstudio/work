@@ -30,15 +30,17 @@ export class HeaderComponent implements OnInit {
       managedServiceList : [
         {name: 'ProjectEngineering'},
         {name: 'ApplicationDevelopment'},
+        {name: 'DataEngineering'},
         {name: 'Ux/UiDevelopment'},
         {name: 'SoftwareTesting & Qa'}
       ]},
-      {name: 'DataMangment',
+      {name: 'ConsultingSercvices',
       managedServiceList : [
-        {name: 'CleanseDataset'},
-        {name: 'Data Mapping & Conversion'},
-        {name: 'Data Migration & Consolidation'},
-        {name: 'Spend Analysis'}
+        {name: 'DataScience'},
+        {name: 'InformationSecurityDataMapping&Conversion'},
+        {name: 'PerformanceOptimization'},
+        {name: 'CloudComputing'},
+        {name: 'DataManagement'}
       ]},
       {name: 'ItStafingAndServices',
       managedServiceList : [

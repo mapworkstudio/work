@@ -302,6 +302,9 @@ textarea.form-control{
 		.modal-dialog{
 			max-width: none;
 			width:75%;
+			p{
+				white-space: pre-wrap
+			}
 		}
 	}
 

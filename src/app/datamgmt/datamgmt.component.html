@@ -12,7 +12,8 @@
     </div>
 </div>
 
-<section class="manage-service-tab inner-nav-tab">
+
+<!-- <section class="manage-service-tab inner-nav-tab">
     <div class="tab-navigation">
         <div class="col-sm-12">
             <div class="container">
@@ -241,6 +242,297 @@
                                                     </li>
                                                 </ul>
                                             </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div [ngbNavOutlet]="nav"></div>
+</section> -->
+
+<section class="manage-service-tab inner-nav-tab">
+    <div class="tab-navigation">
+        <div class="col-sm-12">
+            <div class="container">
+                <ul ngbNav #nav="ngbNav" [activeId]="tabIndex" class="nav-tabs">
+                    <li [ngbNavItem]="1">
+                        <a ngbNavLink (click)="title(1)">Data Science</a>
+                        <ng-template ngbNavContent>
+                            <section class="datamgmt">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text">
+                                                The data cleansing is a process of correcting the errors lies in the
+                                                records of a dataset. This error in the records of the dataset may occur
+                                                due to a deliberate attempt or an inadvertent occurrence including
+                                                incorrect data entry, inaccurate transfer of data from one system to
+                                                another, and inappropriate file handling, in structuring the data and
+                                                deleting the corrupted data. These errors in the records make the data
+                                                inaccurate and inappropriate for any further use.
+                                            </p>
+                                            <p>
+                                                The data cleansing process attempts to bring the data back to its
+                                                original form, or a form where the data can be processed, analyzed and
+                                                used by managers in decision making processes. The cleansing of data not
+                                                only includes the rectification of errors but also includes
+                                                normalization and standardization of the data.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                        <a ngbNavLink (click)="title(2)">Information SecurityData Mapping & Conversion</a>
+                        <ng-template ngbNavContent>
+                            <section class="datamgmt">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text v-flex">
+
+                                                Ensuring your data is correct and accurate is an important task in
+                                                preparing to go live with a new database and Enterprise application. We
+                                                understand the effort involved in data entry. You do not have to
+                                                re-enter all the information into the new application. We provide data
+                                                mapping and conversion services in order to simplify the process of
+                                                moving your current data from any legacy system into the new database. A
+                                                script is used to convert the historical or static data. Once the data
+                                                is converted, it is tested for completion and integrity.
+                                                <img src="assets/images/managservice/app-dev-met.jpg" align="right">
+                                            </p>
+                                            <p>
+                                                The data cleansing process attempts to bring the data back to its
+                                                original form, or a form where the data can be processed, analyzed and
+                                                used by managers in decision making processes. The cleansing of data not
+                                                only includes the rectification of errors but also includes
+                                                normalization and standardization of the data.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="3">
+                        <a ngbNavLink (click)="title(3)">Performance Optimization</a>
+                        <ng-template ngbNavContent>
+                            <section class="datamgmt">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text v-flex">
+
+                                                Data Migration and consolidation are often the most understood and
+                                                underestimated process in any implementation. ARKEDGE migration services
+                                                is a combination of packaged migration frameworks combined with custom
+                                                developed utilities (custom extractors, filters, translators, reports,
+                                                etc) that allow the accurate and efficient migration of data from third
+                                                party systems. This service is aimed at heterogeneous system
+                                                environments.
+                                                <img src="assets/images/managservice/app-dev-met.jpg" align="right">
+                                            </p>
+                                            <p>
+                                                ARKEDGE approaches a project with a mix of manual and tool based
+                                                techniques for migration, based on various factors. Wherever technically
+                                                feasible, a direct approach is utilized, using the standard spreadsheet
+                                                templates and the up-loader, thereby eliminating the converter process.
+                                                The migration methodology consists of phases including Requirements,
+                                                Planning, Designing, Deployment, Testing, and Migration.
+                                                <br><br>
+                                                We have built specific expertise in Data Migration in ARKEDGE. We have
+                                                innovatively designed and created templates, tools, processes and
+                                                methodologies to support various kinds of consolidation and migration
+                                                activities in these technologies.
+                                                <br><br>
+                                                ETL (Extract Transform Load) techniques are used to merge, purge,
+                                                cleanse, match and de-dupe the data.
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <h6>We carry great experience and expertise in below practice areas:</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of dataMigration">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="4">
+                        <a ngbNavLink (click)="title(4)">Cloud Computing</a>
+                        <ng-template ngbNavContent>
+                            <section class="datamgmt">
+                                <div class="container">
+                                    <div class="row"> 
+                                        <div class="col-sm-12">
+                                            <p class="running-text v-flex">
+
+                                                Spend data management has emerged as a lead strategy that enterprises
+                                                will use to drive continuous improvements in supply chain management.
+                                                Despite the immense value that well managed spend has been proven to
+                                                deliver, very few organizations have a structured methodology for
+                                                analyzing spend data and using it as an effective decision support tool.
+                                               </p>
+                                            <p>
+                                                <img src="assets/images/managservice/app-dev-met.jpg" align="right">
+                                                Most companies have multiple enterprise transaction systems and lack the
+                                                tools and processes to properly aggregate, cleanse, normalize and
+                                                monitor their spend with multiple vendors at the line item level.
+                                                <br><br>
+                                                Though some companies have analytical abilities built into enterprise
+                                                software systems, they fail to generate the intelligence that is sought
+                                                by executive management due to tools being limited in their
+                                                intelligence, as compared to an actual Analyst.
+                                                <br><br>
+                                                The services assist customers in getting insights on their direct and
+                                                indirect spending, monitor the performance of suppliers and identify
+                                                opportunities to consolidate spending or reduce costs of procurement.
+                                                <br><br>
+                                                Arkedge offers a solution that helps clients attain full visibility into
+                                                their spend; better understanding where savings opportunities exist, and
+                                                how to achieve the best savings.
+                                               
+                                            
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="row spend-analysis"> 
+                                        <div class="col-sm-12">
+                                            <h2>Arkedge eSpend Solution</h2>
+                                            <p>
+                                                Arkedge's spend analysis solution provides a total solution to companies
+                                                that are looking to consolidate spend data from multiple systems,
+                                                transform data quality and analyze transactions, to provide actionable
+                                                results. Our spend analysis offering combines our commodity expertise
+                                                with automated technology and provides a comprehensive view of your
+                                                organization's spend. This "bottom-up" approach includes:</p>
+                                            <h6>Requirement review and finalization</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of espendRequirement">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h2>Data Collection and Consolidation</h2>
+                                           <ul class="info-bar">
+                                                <li *ngFor="let item of dataCollection">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h2>Data Cleansing, Normalization and Clustering</h2>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of dataCleansing">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h2>Classification, Enrichment and Review</h2>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of classification">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h2>Advanced Data Analytics Reports</h2>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of advancedData">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <p>
+                                                Arkedge eSpend can accept data from various file type, i.e., Text, MS Excel, XML, MS Access etc. Our analyst's upload, review, accept, reject, validate, normalize, cleanse, cluster classify, and analyze the data through eSpend analysis tool.
+                                                <br><br>
+                                                Reports such as spend by business unit, geography, reporting period, category, vendor, UNSPSC code, language, price variance, etc. are available within the tool. A detailed opportunity assessment is also performed to provide insights to clients on where and how to achieve cost savings across their entire spend.</p>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <h2>Benefits of Spend Analytics</h2>
+                                                <ul class="info-bar">
+                                                    <li *ngFor="let item of spendAnalytics">
+                                                        {{item.list}}
+                                                    </li>
+                                                </ul>
+                                                <ul class="info-bar obtain-visibility">
+                                                    <li *ngFor="let item of obtainvisibility">
+                                                        {{item.list}}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="5">
+                        <a ngbNavLink (click)="title(5)">Data Management</a>
+                        <ng-template ngbNavContent>
+                            <section class="datamgmt">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text v-flex">
+
+                                                Data Migration and consolidation are often the most understood and
+                                                underestimated process in any implementation. ARKEDGE migration services
+                                                is a combination of packaged migration frameworks combined with custom
+                                                developed utilities (custom extractors, filters, translators, reports,
+                                                etc) that allow the accurate and efficient migration of data from third
+                                                party systems. This service is aimed at heterogeneous system
+                                                environments.
+                                                <img src="assets/images/managservice/app-dev-met.jpg" align="right">
+                                            </p>
+                                            <p>
+                                                ARKEDGE approaches a project with a mix of manual and tool based
+                                                techniques for migration, based on various factors. Wherever technically
+                                                feasible, a direct approach is utilized, using the standard spreadsheet
+                                                templates and the up-loader, thereby eliminating the converter process.
+                                                The migration methodology consists of phases including Requirements,
+                                                Planning, Designing, Deployment, Testing, and Migration.
+                                                <br><br>
+                                                We have built specific expertise in Data Migration in ARKEDGE. We have
+                                                innovatively designed and created templates, tools, processes and
+                                                methodologies to support various kinds of consolidation and migration
+                                                activities in these technologies.
+                                                <br><br>
+                                                ETL (Extract Transform Load) techniques are used to merge, purge,
+                                                cleanse, match and de-dupe the data.
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <h6>We carry great experience and expertise in below practice areas:</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of dataMigration">
+                                                    {{item.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </section>

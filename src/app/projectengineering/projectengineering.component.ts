@@ -51,6 +51,39 @@ export class ProjectengineeringComponent implements OnInit {
     { icon: '#icon_explor', title: 'Discover + Design + Develop', description: 'D3 Service Discover + Design + Develop. To create a digital experience that will shift your business to the next level.z' }
   ];
 
+  dataEngi = [
+    {
+      icon: '#icon_daycare',
+      title: 'Advisory & Architecture Design',
+      description: 'Leverage from Scalable Enterprise Data Architecture Models'
+    },
+    {
+      icon: '#icon_iteration',
+      title: 'Data Analytics & BI Enablement',
+      description: 'Leverage from an enterprise-ready Business Intelligence Platform'
+    },
+    {
+      icon: '#icon_explor',
+      title: 'Data Management & Governance',
+      description: 'Deploy Effective Data Governance Solutions'
+    },
+    {
+      icon: '#icon_explor',
+      title: 'Data Movement & ETL',
+      description: 'Collect, Combine and Synthesize your enterprise data at speed'
+    },
+    {
+      icon: '#icon_explor',
+      title: 'ML Engineering',
+      description: 'Build and Automate a full stack of Machine Learning applications'
+    },
+    {
+      icon: '#icon_explor',
+      title: 'ML EngineeringData & Analytics Platforms Support',
+      description: 'Configure, Implement, and Support Big Data and Cloud Infrastructure'
+    }
+  ];
+
 
   qaInfo = [
     {
@@ -107,8 +140,10 @@ title(i) {
   } else if (i === 2) {
     this.tabName = 'Data Mapping & Conversion';
   } else if (i === 3) {
-    this.tabName = 'Data Migration & Consolidation';
+    this.tabName = 'DATA ENGINEERING';
   } else if (i === 4) {
+    this.tabName = 'Data Migration & Consolidation';
+  } else if (i === 5) {
     this.tabName = 'Spend Analysis';
   }
 }

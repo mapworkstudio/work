@@ -145,36 +145,38 @@ export class StaffingComponent implements OnInit {
 
   servicesProvided = [
    {title: 'EXECUTIVE SEARCH',
-    desc: `For an organisation to achieve its objectives, it needs high-calibre and committed leaders. For many years, we have successfully placed a large number of senior individuals, including chief executives, divisional heads and functional heads across a broad range of sectors.
+desc: `For an organisation to achieve its objectives, it needs high-calibre and committed leaders. For many years, we have successfully placed a large number of senior individuals, including chief executives, divisional heads and functional heads across a broad range of sectors.
 
-    We understand that our recruitment services play a crucial role in the development and success of our clients. We therefore place the utmost importance on understanding the needs of the organisation and the requirements of the situation.
-    
-    Each assignment is unique and we offer a bespoke service based on our client’s needs. Working in specialist teams, we are able to utilise our complementary skills and knowledge base to the full. We use structured processes throughout the whole project, adopting a pragmatic approach. This continues even after the assignment has been completed, with a follow-up review and on-going dialogue with both the candidate and the client to ensure that the placement is a success.
-    
-    Our executive recruitment offering is personally led by our senior management team who have rich, diverse backgrounds with direct industry experience across various geographical markets. We are therefore able to offer clients a truly unique understanding of their needs inside and out, thus allowing us to place executives with the ideal background, attitude and approach in the most timely and effective manner. For our Executive and Leadership Search services, please reach out to us and let’s explore how we may be of help`,
-    url: 'http://bcc-india.com'},
+We understand that our recruitment services play a crucial role in the development and success of our clients. We therefore place the utmost importance on understanding the needs of the organisation and the requirements of the situation.
+
+Each assignment is unique and we offer a bespoke service based on our client’s needs. Working in specialist teams, we are able to utilise our complementary skills and knowledge base to the full. We use structured processes throughout the whole project, adopting a pragmatic approach. This continues even after the assignment has been completed, with a follow-up review and on-going dialogue with both the candidate and the client to ensure that the placement is a success.
+
+Our executive recruitment offering is personally led by our senior management team who have rich, diverse backgrounds with direct industry experience across various geographical markets. We are therefore able to offer clients a truly unique understanding of their needs inside and out, thus allowing us to place executives with the ideal background, attitude and approach in the most timely and effective manner. For our Executive and Leadership Search services, please reach out to us and let’s explore how we may be of help`,
+},
     
     {title: 'MIDDLE MANAGEMENT',
-    desc: `Middle Management represents the actual backbone of a successful organisation. Get this wrong and organisations face a lifetime trying to react to market changes, thus ultimately dying out. An effective CEO, in order to maximise their or their company’s performance has to creatively, aggressively, and systematically build the capabilities of the company’s middle management team.
+desc: `Middle Management represents the actual backbone of a successful organisation. Get this wrong and organisations face a lifetime trying to react to market changes, thus ultimately dying out. An effective CEO, in order to maximise their or their company’s performance has to creatively, aggressively, and systematically build the capabilities of the company’s middle management team.
 
-    This is important for two reasons: First, virtually all major strategic initiatives have to be carried out by the middle managers. Their flexibility and leadership skills will determine how able they are to tailor and adapt initiatives to the company’s changing circumstances. Second, a strong middle management team will produce outstanding operational results, easing the need for top managers to oversee and intervene directly in day-to-day operations. A well-functioning middle management team also will proactively create a constant stream of new initiatives to remedy problems and seize new opportunities. Middle management excellence is the key leverage point for great performance.
-    
-    Therefore if one looked carefully at the great companies of our day, like GE for example, middle management excellence is in fact one of top management’s very highest priorities. Even after GE managers leave the company, they most often have the “look and feel” of GE’s management team: a focus on systematically teaching their subordinates to analyse and improve the businesses, and on teaching them to pass this skill on to their own management teams.
-    
-    Winfort has strong expertise in helping clients within our focused sectors in building this layer of strong talent. For more information on our middle management search services, please reach out to us and let’s explore how we may be of help.`,
-    url: 'http://dreamingcode.com'},
+This is important for two reasons: First, virtually all major strategic initiatives have to be carried out by the middle managers. Their flexibility and leadership skills will determine how able they are to tailor and adapt initiatives to the company’s changing circumstances. Second, a strong middle management team will produce outstanding operational results, easing the need for top managers to oversee and intervene directly in day-to-day operations. A well-functioning middle management team also will proactively create a constant stream of new initiatives to remedy problems and seize new opportunities. Middle management excellence is the key leverage point for great performance.
+
+Therefore if one looked carefully at the great companies of our day, like GE for example, middle management excellence is in fact one of top management’s very highest priorities. Even after GE managers leave the company, they most often have the “look and feel” of GE’s management team: a focus on systematically teaching their subordinates to analyse and improve the businesses, and on teaching them to pass this skill on to their own management teams.
+
+Winfort has strong expertise in helping clients within our focused sectors in building this layer of strong talent. For more information on our middle management search services, please reach out to us and let’s explore how we may be of help.`,},
     
     {title: 'DIVERSITY HIRING',
-    desc: `Diversity hiring is not just a service we’re proficient in, but one of the key factors that our team of professional search experts breathe and apply in all their exceptional talent searches.
-Our experts understand the nuances of diversity across geographies, industries, and demographics. We aim to bust the myth of women not getting enough opportunities to work for certain industry sectors and hence, we inordinately support our clients with diversity and inclusion. Research also backs up inclusion of diversity in hiring as a key factor for organizations’ growth path.<br>
-    Forbes Insights has identified workforce diversity and inclusion as a key driver of internal innovation and business growth. A survey found that 67% of active and passive job seekers said that diversity is an important factor when considering companies and job offers. Hence, Diversity hiring is a crucial aspect of our team culture.<br>
-    Diversity is at the forefront of our leadership agenda at Winfort, as well as while working on our Client’s mandates. We believe that a more inclusive workforce and leadership team, fosters better governance and decision making and provides organizations with a sustained competitive advantage.
-    Team Winfort has successfully driven this agenda for over a decade with over 43% of our placements, and a significantly higher proportion of our shortlists, being diversity candidates. We have developed significant databases, particularly of female candidates in leadership roles across industries in India.
-     We are privileged to have clients who too recognize and support diversity hiring in various industry sectors. Our ‘Returnship Program’ acts as an enabler to mothers looking to return to a fulfilling career, post their maternity, which is appreciated and used on a regular basis by our clients looking to hire diverse talented professionals. Our “Diverse Leadership program” is focused on organizations that want to build a more inclusive team. <br>
-     ‘We are proud of the fact that we are helping break the stereotype in a category like Technology, which historically has been predominantly a male bastion. As of last year alone, Winfort helped place 43% diversity candidates- an accomplishment which we,Winfortians hold close to our heart.
-    Hence, If you are a professional, looking for an inclusive career path or a progressive organization, looking to hire talented candidates, devoid of cultural and sexual orientation biases, reach out to us.
-    We promise to partner with you and help bring diversity in your organization. Let’s connect`,
-    url: 'http://royalcollegemiraroad.edu.in/'},
+      desc: `Diversity hiring is not just a service we’re proficient in, but one of the key factors that our team of professional search experts breathe and apply in all their exceptional talent searches.
+Our experts understand the nuances of diversity across geographies, industries, and demographics. We aim to bust the myth of women not getting enough opportunities to work for certain industry sectors and hence, we inordinately support our clients with diversity and inclusion. Research also backs up inclusion of diversity in hiring as a key factor for organizations’ growth path.
+
+Forbes Insights has identified workforce diversity and inclusion as a key driver of internal innovation and business growth. A survey found that 67% of active and passive job seekers said that diversity is an important factor when considering companies and job offers. Hence, Diversity hiring is a crucial aspect of our team culture.
+
+Diversity is at the forefront of our leadership agenda at Winfort, as well as while working on our Client’s mandates. We believe that a more inclusive workforce and leadership team, fosters better governance and decision making and provides organizations with a sustained competitive advantage.
+Team Winfort has successfully driven this agenda for over a decade with over 43% of our placements, and a significantly higher proportion of our shortlists, being diversity candidates. We have developed significant databases, particularly of female candidates in leadership roles across industries in India.
+We are privileged to have clients who too recognize and support diversity hiring in various industry sectors. Our ‘Returnship Program’ acts as an enabler to mothers looking to return to a fulfilling career, post their maternity, which is appreciated and used on a regular basis by our clients looking to hire diverse talented professionals. Our “Diverse Leadership program” is focused on organizations that want to build a more inclusive team. 
+
+‘We are proud of the fact that we are helping break the stereotype in a category like Technology, which historically has been predominantly a male bastion. As of last year alone, Winfort helped place 43% diversity candidates- an accomplishment which we,Winfortians hold close to our heart.
+Hence, If you are a professional, looking for an inclusive career path or a progressive organization, looking to hire talented candidates, devoid of cultural and sexual orientation biases, reach out to us.
+We promise to partner with you and help bring diversity in your organization. Let’s connect`,
+},
     
     {title: 'MARKET MAPPING',
     desc: `“ The secret of my success is that we have gone to exceptional lengths to hire the best in the world.” – Steve Jobs
@@ -190,17 +192,17 @@ Our experts understand the nuances of diversity across geographies, industries, 
     With over 2 decades of experience, Winfort’s team of talented professionals combines technology, business and market skills to deliver information that is crucial for organizations to build their strategic hiring plans and take advised decisions.
     
     If you are a company that believes in the power of information and market intelligence and prefers a competitive analysis prior to making a hiring decision, Winfort is the one-stop solution for you.`,
-    url: 'http://alshariah.com/'},
+},
     
     {title: 'CONTRACT STAFFING',
     desc: `Digital and Transformation – the two buzz words that define today’s business environment.  With companies evolving their strategies and processes on a regular basis, the ability of an organisation to manage it’s processes and resources flexibly becomes critical to stay competitive and succeed.
 
     At Winfort, we have been supporting our customers for over 20 years with flexible staffing solutions.  Leveraging our strong database and technical capability, we have provided flexible staffing and payroll solutions in diverse areas such as technology, analytics, finance, consulting, recruitment etc.  Our unique business model allows organisations to focus on running their business, while we manage their complete payroll and administration process, including all regulatory compliances.`,
-    url: 'http://miraclefoods.in/'},
+ },
 
     {title: 'RPO',
     desc: `It is a form of knowledge process outsourcing where an employer outsources or transfers all or part of its recruitment activities to an external service provider like Winfort. The ability to pursue growth opportunities for any organisation requires skilled and motivated talent. Recruitment process outsourcing (RPO) can bring you that talent in a cost effective manner. As a specialised leader in recruitment outsourcing and consulting, Winfort leverages it’s talent hiring expertise to optimize the recruiting process. We are committed to lowering costs, increasing productivity and retention, and delivering a best-in-class hiring manager and candidate experience. We have a full suite of recruitment process outsourcing (RPO) solutions to meet your specific talent acquisition needs.`,
-    url: 'http://miraclefoods.in/'}
+}
   ];
 
   staffingSolution = [
