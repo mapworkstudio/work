@@ -282,7 +282,46 @@
                     </li>
 
                     <li [ngbNavItem]="3">
-                        <a ngbNavLink (click)="title(3)">UX/UI Development</a>
+                        <a ngbNavLink (click)="title(3)">DATA ENGINEERING</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 center">
+                                        <h2>Our Data Engineering Service Offerings</h2>
+                                        <p>We enable our clients to unleash the power of data and maximize the outcomes
+                                        through modern data architectures.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="ui-ux-info">
+                                <div class="container">
+                                    <div class="row">
+                                        <div *ngFor="let item of dataEngi" class="col-md-4 col-lg-4 col-sm-12">
+                                            <div class="panel center">
+                                                <div class="panel-heading">
+                                                    <div class="icon-circle">
+                                                        <i class="icon icon-large">
+                                                            <svg focusable="false">
+                                                                <use attr.xlink:href="{{item.icon}}"></use>
+                                                            </svg>
+                                                        </i>
+                                                    </div>
+                                                    <h5>{{item.title}}</h5>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p>{{item.description}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="4">
+                        <a ngbNavLink (click)="title(4)">UX/UI Development</a>
                         <ng-template ngbNavContent>
                             <div class="container">
                                 <div class="row">
@@ -432,8 +471,8 @@
                         </ng-template>
                     </li>
 
-                    <li [ngbNavItem]="4">
-                        <a ngbNavLink (click)="title(4)">Software Testing & QA</a>
+                    <li [ngbNavItem]="5">
+                        <a ngbNavLink (click)="title(5)">Software Testing & QA</a>
                         <ng-template ngbNavContent>
                             <div class="container qa-testing">
                                 <div class="row">

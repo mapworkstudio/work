@@ -49,7 +49,7 @@ const routes: Routes = [
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'SoftwareEngineering', component: ProjectengineeringComponent},
   {path: 'ItStafingAndServices', component: StaffingComponent},
-  {path: 'DataMangment', component: DatamgmtComponent},
+  {path: 'ConsultingSercvices', component: DatamgmtComponent},
   {path: 'Sitemap', component: SitemapComponent},
   {path: 'ai', component: AiComponent}
 
