@@ -136,15 +136,15 @@ ngOnInit() {
 
 title(i) {
   if (i === 1) {
-    this.tabName = 'Cleanse Dataset';
+    this.tabName = 'Product Engineering';
   } else if (i === 2) {
-    this.tabName = 'Data Mapping & Conversion';
+    this.tabName = 'Application Development';
   } else if (i === 3) {
-    this.tabName = 'DATA ENGINEERING';
+    this.tabName = 'Data Engineering';
   } else if (i === 4) {
-    this.tabName = 'Data Migration & Consolidation';
+    this.tabName = 'UX/UI Development';
   } else if (i === 5) {
-    this.tabName = 'Spend Analysis';
+    this.tabName = 'Software Testing & QA';
   }
 }
 

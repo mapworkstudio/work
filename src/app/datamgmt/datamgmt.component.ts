@@ -107,7 +107,7 @@ export class DatamgmtComponent implements OnInit {
     if (i === 1) {
       this.tabName = 'Data Science';
     } else if (i === 2) {
-      this.tabName = 'Information SecurityData Mapping & Conversion';
+      this.tabName = 'Information Security';
     } else if (i === 3) {
       this.tabName = 'Performance Optimization';
     } else if (i === 4) {

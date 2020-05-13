@@ -334,13 +334,13 @@ We promise to partner with you and help bring diversity in your organization. Le
 
   title(i) {
     if (i === 1) {
-      this.tabName = 'Cleanse Dataset';
+      this.tabName = 'Staffing Services';
     } else if (i === 2) {
-      this.tabName = 'Data Mapping & Conversion';
+      this.tabName = 'Staffing Industries';
     } else if (i === 3) {
-      this.tabName = 'Data Migration & Consolidation';
+      this.tabName = 'IT Training';
     } else if (i === 4) {
-      this.tabName = 'Spend Analysis';
+      this.tabName = 'Program Schedule';
     }
   }
 
