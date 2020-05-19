@@ -21,6 +21,10 @@
                         <a ngbNavLink (click)="title(1)">STAFFING SERVICES</a>
                         <ng-template ngbNavContent>
                             <section class="section-staffing">
+                                <div class="col-sm-12 center section-header">
+                                    <h3>People. Process. Technology</h3>
+                                    <h6>Proven methodology, profound impact & sustainable results</h6>
+                                    </div>
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-12">
@@ -29,9 +33,7 @@
                                             </div>
 
                                             <div class="col-sm-12">
-                                                <h3>People. Process. Technology</h3>
-                                                <h6>Proven methodology, profound impact & sustainable results</h6>
-                                                   <ul class="info-bar">
+                                               <ul class="info-bar">
                                                        <li *ngFor="let item of ourProcess">
                                                           {{item.title}}
                                                            <p>
@@ -41,7 +43,7 @@
                                                            </p>
                                                        </li>
                                                    </ul>
-                                               </div>
+                                               </div>  
 
                                         <div class="col-sm-12">
                                          <h6>Permanent Staffing</h6>
@@ -186,17 +188,24 @@
                                                 Having been in the corporate training domain for almost two decades now, we understand each business' requirements with ease and develop customized training programs which will suit the client's needs. Arkedge offers all-inclusive corporate training services to cater to the IT training needs of your organization. Some of the key services we offer include -</p>
                                             </div>
 
-                                            <div class="col-sm-12">
-                                                <h6>Proven methodology, profound impact & sustainable results</h6>
-                                                <ul class="info-bar">
-                                                    <li *ngFor="let item of training">
-                                                        {{item.title}}
-                                                        <p>
-                                                            {{item.desc}}
-                                            
-                                                        </p>
-                                                    </li>
-                                                </ul>
+                                            <div class="col-lg-11 col-md-11 col-sm-12 div-center">
+                                                <!-- <h6>Proven methodology, profound impact & sustainable results</h6> -->
+                                                <div class="panel {{item.position}}" *ngFor="let item of training">
+                                                    <div class="panel-heading">
+                                                        <div class="icon-circle">
+                                                            <i class="icon icon-large">
+                                                                <svg focusable="false">
+                                                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                                                </svg>
+                                                            </i>
+                                                        </div>
+                                                        <h5>{{item.title}}</h5>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <p>{{item.desc}}</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
 
                                         <div class="col-sm-12 center">

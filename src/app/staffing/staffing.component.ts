@@ -40,21 +40,29 @@ export class StaffingComponent implements OnInit {
 
   training = [
     {
+      position: 'right',
+      icon: '#icon_project',
       title: 'Project Preparatory Program',
       // tslint:disable-next-line: max-line-length
       desc: `In today's world, there is absolutely no dearth of technological projects to bank one's business on. However, with advancing techs, the demands from IT professionals are also increasing manifold times. It is never possible for one individual to have a complete grasp of every tool and technology. In case the next project of the company requires a certain skillset or proficiency in a particular type of assignment, Arkedge would happily provide a crash course to enable your employees so that they have the relevant skill for the project.`,
     },
     {
+      position: 'left',
+      icon: '#icon_certificate',
       title: 'Certification Program',
       // tslint:disable-next-line: max-line-length
       desc: `The certification programs offered by Arkedge aims to further hone the skills and aptitudes of your employees and IT professionals so that they can serve your business better. Keeping in mind the growing trends of the digital domain, we impart adequate training in branches lie Artificial Intelligence, Machine Learning, Virtual and Augmented Reality, cloud computing, blockchain and Internet of Things (IoT).`,
     },
     {
+      position: 'right',
+      icon: '#icon_recruitment',
       title: 'Post-recruitment Orientation Program',
       // tslint:disable-next-line: max-line-length
       desc: `It is the duty of every company to conduct an introductory orientation course for the new recruits to allow them to acclimatize with the kind of work they will be dealing with in their new workplace. While this post-recruitment training program is a necessity for efficiency and work-readiness of the new recruits, it can quite a hassle for your company to arrange for at a constant basis. Arkedge extends its services to cover the program in minute details and turn your fresh members into highly productive resources.`,
     },
     {
+      position: 'left',
+      icon: '#icon_skillset',
       title: 'Skill Updating Program',
       // tslint:disable-next-line: max-line-length
       desc: `Technology is progressing at an exponential rate and it is required that the manual workforce handling them should also be trained properly to keep up with the speed. Arkedge's skill updating program helps you bridge the gap between what you know and what you are being expected to know. It covers the many nuances of the market-popular, specific technologies, new versions or updates or software and so on.`,

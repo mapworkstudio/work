@@ -6,10 +6,50 @@
     }
 .col-sm-12{
     &:not(:first-child){
-        padding-top:30px;
+        padding-top:60px;
     }  
 }
+.section-header{
+    background:#e5f0fa;
+    padding:60px 0;
+    margin-bottom:60px;
+    margin-top:-70px;
 }
+
+.panel{
+    position:relative;
+    margin-bottom:60px;
+    &.left{
+        padding-right:175px;
+         .icon-circle{
+            right:0;
+        }
+    }
+    &.right{
+        padding-left:175px;
+         .icon-circle{
+            left:0;
+        }
+    }
+    .icon-circle{
+        position: absolute;
+        top:0;
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        background:#e5f0fa;
+        i{
+            line-height: 135px;
+            margin: 0 auto;
+            display: table;
+            svg{
+                fill:#214f7a;
+            }
+        }
+    }
+}
+}
+
 
 ul.info-bar{
     margin-left: 5px;
