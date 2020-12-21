@@ -67,6 +67,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeStyle(){
+     this.dropDown.nativeElement.hidden = false;
+  }
+
   getUrl(i, title) {
     this.dropDown.nativeElement.hidden = true;
     this.sharedservice.nextMessage(i, title);
