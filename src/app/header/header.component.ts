@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy} from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef} from '@angular/core';
 import { viewClassName } from '@angular/compiler';
 import { SharedService } from '../shared.service';
 
@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   managedServiceSoftEng;
   isOpen = true;
   isSlideOpen = true;
+  @ViewChild("dropDown",{static:true}) dropDown: ElementRef;
 
   constructor(private sharedservice: SharedService) {
     this.list = [
@@ -67,6 +68,7 @@ export class HeaderComponent implements OnInit {
   }
 
   getUrl(i, title) {
+    this.dropDown.nativeElement.hidden = true;
     this.sharedservice.nextMessage(i, title);
   }
 
