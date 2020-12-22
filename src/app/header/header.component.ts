@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
     this.managedService = [
       {name: 'SoftwareEngineering',
       managedServiceList : [
-        {name: 'ProjectEngineering'},
+        {name: 'ProductEngineering'},
         {name: 'ApplicationDevelopment'},
         {name: 'DataEngineering'},
         {name: 'Ux/UiDevelopment'},
